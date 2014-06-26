@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-06-26T17:09:46+01:00</updated>
+  <updated>2014-06-26T17:14:52+01:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to use the ExactTarget SOAP API to setup and send a transactional email in .Net without logging into ExactTarget]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-exacttarget-soap-api-to-send-a-transactional-email-in-net/"/>
+    <link href="http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-exacttarget-soap-api-to-send-a-transactional-email-in-dot-net-without-logging-into-exacttarget/"/>
     <updated>2014-06-26T15:07:00+01:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-exacttarget-soap-api-to-send-a-transactional-email-in-net</id>
+    <id>http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-exacttarget-soap-api-to-send-a-transactional-email-in-dot-net-without-logging-into-exacttarget</id>
     <content type="html"><![CDATA[<p>I recently had to use the ExaxtTarget SOAP API to send transactional emails from a website but setting up a new  one required me to log in to ExactTarget and shaving yaks called &ldquo;Data Extension&rdquo;, &ldquo;Triggered Send&rdquo;, &ldquo;Triggered Send Definition&rdquo;, &ldquo;Delivery Profile&rdquo;, &ldquo;Email Templates&rdquo; etc..</p>
 
 <p>I just wanted to be able to send a simple transactional email without first having to perform a number of steps in the cumbersome ExactTarget UI &hellip;.so I created a library to make my life easier when I need to set up a new transactional email. I hope this can help some poor soul out there suffering the same fate I have.</p>
