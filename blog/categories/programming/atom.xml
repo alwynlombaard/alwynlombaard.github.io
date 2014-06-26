@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-06-26T17:26:19+01:00</updated>
+  <updated>2014-06-26T18:52:27+01:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -71,7 +71,7 @@ try
 }
 catch(Exception ex)
 {
-  //handle
+  //you better handle exceptions here
 }</code></pre></noscript></div>
 </p>
 
@@ -167,9 +167,9 @@ catch(Exception ex)
 {
   var triggeredEmail = new ExactTargetTriggeredEmail(&quot;order-dispatched&quot;, 
                                           &quot;recipient@temp.uri&quot;);
-  triggeredEmail.AddReplacementValue(&quot;Subject&quot;,&quot;Your order has dispatched&quot;);
+  triggeredEmail.AddReplacementValue(&quot;Subject&quot;,&quot;Your order has been dispatched&quot;);
   triggeredEmail.AddReplacementValue(&quot;Body&quot;, 
-      &quot;&lt;p&gt;Test paragraph&lt;/p&gt;&lt;p class=&#39;red&#39;&gt;This is some text in red&lt;/p&gt;&quot;);
+      &quot;&lt;p&gt;Your order has been dispatched!&lt;/p&gt;&lt;p class=&#39;red&#39;&gt;This is some text in red&lt;/p&gt;&quot;);
   
   var emailTrigger = new EmailTrigger(config);
   emailTrigger.Trigger(triggeredEmail);
