@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Alwyn Lombaard's blog]]></title>
-  <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
+  <title><![CDATA[Category: programming | Alwyn Lombaard's blog]]></title>
+  <link href="http://blog.lombaard.co.uk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
   <updated>2014-06-26T17:09:46+01:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
@@ -30,9 +30,9 @@
 
 <h2>Step 1: Install from Nuget</h2>
 
-<div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Install'></script>
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Install'></script>
 <noscript><pre><code>PM&gt; Install-Package ExactTarget.TriggerEmailSender</code></pre></noscript></div>
-
+</p>
 
 <h2>Step 2: Create</h2>
 
@@ -46,7 +46,7 @@
 </ol>
 
 
-<div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
 <noscript><pre><code>var config = new ExactTargetConfiguration
 {
     ApiUserName = &quot;API_User&quot;,
@@ -55,11 +55,11 @@
     EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
     ClientId = 6269485//optional: business unit id you wish to use
 };</code></pre></noscript></div>
-
+</p>
 
 <h3>Create &ldquo;PasteHtml&rdquo; email</h3>
 
-<div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=CreatePasteHtml.cs'></script>
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=CreatePasteHtml.cs'></script>
 <noscript><pre><code>//create and start a transactional Triggered Send (only required to do this once)
 try
 {
@@ -73,11 +73,11 @@ catch(Exception ex)
 {
   //handle
 }</code></pre></noscript></div>
-
+</p>
 
 <h3>Create Templated email</h3>
 
-<div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=CreateTemplate.cs'></script>
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=CreateTemplate.cs'></script>
 <noscript><pre><code>try
 {
   var triggeredEmailCreator = new TriggeredEmailCreator(config);
@@ -93,7 +93,7 @@ catch(Exception ex)
 {
   //you better handle exceptions here
 }</code></pre></noscript></div>
-
+</p>
 
 <h2>Sending an email</h2>
 
@@ -108,7 +108,7 @@ catch(Exception ex)
 </ol>
 
 
-<div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
 <noscript><pre><code>var config = new ExactTargetConfiguration
 {
     ApiUserName = &quot;API_User&quot;,
@@ -117,11 +117,9 @@ catch(Exception ex)
     EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
     ClientId = 6269485//optional: business unit id you wish to use
 };</code></pre></noscript></div>
+</p>
 
-
-
-
-<div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=SendPasteHtml.cs'></script>
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=SendPasteHtml.cs'></script>
 <noscript><pre><code>//trigger an email
 try
 {
@@ -141,7 +139,7 @@ catch(Exception ex)
 {
   //you better handle exceptions here
 }</code></pre></noscript></div>
-
+</p>
 
 <h3>Sending Templated email</h3>
 
@@ -153,7 +151,7 @@ catch(Exception ex)
 </ol>
 
 
-<div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
 <noscript><pre><code>var config = new ExactTargetConfiguration
 {
     ApiUserName = &quot;API_User&quot;,
@@ -162,11 +160,9 @@ catch(Exception ex)
     EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
     ClientId = 6269485//optional: business unit id you wish to use
 };</code></pre></noscript></div>
+</p>
 
-
-
-
-<div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=SendTemplate.cs'></script>
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=SendTemplate.cs'></script>
 <noscript><pre><code>try
 {
   var triggeredEmail = new ExactTargetTriggeredEmail(&quot;order-dispatched&quot;, 
@@ -182,16 +178,7 @@ catch(Exception ex)
 {
   //you better handle exceptions here
 }</code></pre></noscript></div>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Launching my first blogging site]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/06/25/launching-my-first-blogging-site/"/>
-    <updated>2014-06-25T22:55:10+01:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/06/25/launching-my-first-blogging-site</id>
-    <content type="html"><![CDATA[<h3>Hello I&rsquo;m Alwyn</h3>
+</p>
 ]]></content>
   </entry>
   
