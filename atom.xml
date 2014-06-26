@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-06-26T09:50:10+01:00</updated>
+  <updated>2014-06-26T12:28:23+01:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -18,7 +18,7 @@
     <link href="http://blog.lombaard.co.uk/blog/2014/06/25/launching-my-first-blogging-site/"/>
     <updated>2014-06-25T22:55:10+01:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/06/25/launching-my-first-blogging-site</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<h3>Hello I&rsquo;m Alwyn</h3>
 ]]></content>
   </entry>
   
