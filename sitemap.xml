@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.lombaard.co.uk/blog/2014/08/19/pavan-i-by-luis-milan/</loc>
+    <lastmod>2014-08-19T19:00:55+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/08/14/greensleeves-practice-session/</loc>
     <lastmod>2014-08-14T21:21:08+01:00</lastmod>
     <priority>0.8</priority>
@@ -23,14 +29,14 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2014-08-17T12:19:14+01:00</lastmod>
+    <lastmod>2014-08-19T19:05:26+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2014-08-17T12:19:14+01:00</lastmod>
+    <lastmod>2014-08-19T19:05:26+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
