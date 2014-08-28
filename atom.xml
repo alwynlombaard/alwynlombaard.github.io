@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-08-25T22:39:47+01:00</updated>
+  <updated>2014-08-28T19:28:54+01:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Prelude in D Minor - De Visee]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee/"/>
+    <updated>2014-08-28T19:23:56+01:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee</id>
+    <content type="html"><![CDATA[<p>Today I recorded this Prelude by Robert De Visee (1600) while working on it.</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Prelude_De_Visee_20140828_191016.mp3" type="audio/mpeg">
+Your browser does not support the audio element but you can get the recording <a href="http://blog.lombaard.co.uk/music/Prelude_De_Visee_20140828_191016.mp3">here</a>
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Espa&ntilde;oleta]]></title>
