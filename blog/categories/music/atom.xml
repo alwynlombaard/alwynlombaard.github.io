@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-09-01T19:56:10+01:00</updated>
+  <updated>2014-09-03T19:40:37+01:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Still by my side]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/09/03/still-by-my-side/"/>
+    <updated>2014-09-03T19:37:16+01:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/09/03/still-by-my-side</id>
+    <content type="html"><![CDATA[<p>An Irish traditional</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Still_by_my_side_Irish_Traditional_20140903_190251.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Prelude in D Minor - De Visee]]></title>
@@ -65,22 +78,6 @@ Your browser does not support the audio element but you can get the recording <a
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Pavan_20140819_182702.mp3" type="audio/mpeg">
 Your browser does not support the audio element but you can get the recording <a href="/music/Pavan_20140819_182702.mp3">here</a>
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Greensleeves practice session]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/08/14/greensleeves-practice-session/"/>
-    <updated>2014-08-14T21:21:08+01:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/08/14/greensleeves-practice-session</id>
-    <content type="html"><![CDATA[<p>Recording from my practice session today.</p>
-
-<p>I&rsquo;m playing a variation of Greensleeves by <a href="http://en.wikipedia.org/wiki/Francis_Cutting">Francis Cutting (c. 1550-1595/6)</a>.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Greensleeves.mp3" type="audio/mpeg">
-Your browser does not support the audio element but you can get the recording <a href="/music/Greensleeves.mp3">here</a>
 </audio></p>
 ]]></content>
   </entry>
