@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor/</loc>
+    <lastmod>2014-09-17T20:12:46+01:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/09/03/still-by-my-side/</loc>
     <lastmod>2014-09-03T19:37:16+01:00</lastmod>
     <priority>0.8</priority>
@@ -53,21 +59,21 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2014-09-04T14:39:12+01:00</lastmod>
+    <lastmod>2014-09-17T20:21:12+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2014-09-04T14:39:12+01:00</lastmod>
+    <lastmod>2014-09-17T20:21:12+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/</loc>
-    <lastmod>2014-09-04T14:39:12+01:00</lastmod>
+    <lastmod>2014-09-17T20:21:12+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

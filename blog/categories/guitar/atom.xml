@@ -4,7 +4,7 @@
   <title><![CDATA[Category: guitar | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/guitar/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-09-04T14:39:12+01:00</updated>
+  <updated>2014-09-17T20:21:12+01:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tarrega study in E minor]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor/"/>
+    <updated>2014-09-17T20:12:46+01:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor</id>
+    <content type="html"><![CDATA[<p>A quick recording of this study while revisiting it today for the fist time in a long while (with news in the background about the Scottish referendum tomorrow)</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Tarrega_eminor_20140917_195801.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Still by my side]]></title>
@@ -64,20 +77,6 @@ Your browser does not support the audio element but you can get the recording <a
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Aria_20140822.mp3" type="audio/mpeg">
 Your browser does not support the audio element but you can get the recording <a href="/music/Aria_20140822.mp3">here</a>
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Pavan I by Luis Milan]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/08/19/pavan-i-by-luis-milan/"/>
-    <updated>2014-08-19T19:00:55+01:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/08/19/pavan-i-by-luis-milan</id>
-    <content type="html"><![CDATA[<p>Recording from my practice session today. Still a bit rough and unrelaxed, but still early days in studying this piece.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Pavan_20140819_182702.mp3" type="audio/mpeg">
-Your browser does not support the audio element but you can get the recording <a href="/music/Pavan_20140819_182702.mp3">here</a>
 </audio></p>
 ]]></content>
   </entry>
