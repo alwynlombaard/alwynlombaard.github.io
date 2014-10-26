@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3/</loc>
+    <lastmod>2014-10-26T21:25:55+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor/</loc>
     <lastmod>2014-09-17T20:12:46+01:00</lastmod>
     <priority>0.8</priority>
@@ -59,21 +65,21 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/index%20-%20Copy.html</loc>
-    <lastmod>2014-10-18T10:58:01+01:00</lastmod>
+    <lastmod>2014-10-26T21:31:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2014-10-18T10:58:01+01:00</lastmod>
+    <lastmod>2014-10-26T21:31:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2014-10-18T10:58:01+01:00</lastmod>
+    <lastmod>2014-10-26T21:31:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

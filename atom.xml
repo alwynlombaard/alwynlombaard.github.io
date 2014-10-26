@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-10-18T10:58:01+01:00</updated>
+  <updated>2014-10-26T21:31:08+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Carcassi opus 60 no 3]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3/"/>
+    <updated>2014-10-26T21:25:55+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3</id>
+    <content type="html"><![CDATA[<p>A practice session recording ofthis study. Still shaky.</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Carcassi_Etude3_20141026_180555.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tarrega study in E minor]]></title>

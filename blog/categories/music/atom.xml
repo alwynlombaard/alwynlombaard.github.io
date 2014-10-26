@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-10-18T10:58:01+01:00</updated>
+  <updated>2014-10-26T21:31:08+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Carcassi opus 60 no 3]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3/"/>
+    <updated>2014-10-26T21:25:55+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3</id>
+    <content type="html"><![CDATA[<p>A practice session recording ofthis study. Still shaky.</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Carcassi_Etude3_20141026_180555.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tarrega study in E minor]]></title>
@@ -63,20 +76,6 @@ If your browser does not support the audio element you can get the recording <a 
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Espanoleta_20140825_203019.mp3" type="audio/mpeg">
 Your browser does not support the audio element but you can get the recording <a href="/music/Espanoleta_20140825_203019.mp3">here</a>
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Aria by Johann Anton Logy]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/08/22/aria-by-joh-anton-logy/"/>
-    <updated>2014-08-22T18:12:18+01:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/08/22/aria-by-joh-anton-logy</id>
-    <content type="html"><![CDATA[<p>Today&rsquo;s practice session includes an Aria from Partita in A Minor by Johann Anton Logy. I&rsquo;m playing an arrangement by John Mills.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Aria_20140822.mp3" type="audio/mpeg">
-Your browser does not support the audio element but you can get the recording <a href="/music/Aria_20140822.mp3">here</a>
 </audio></p>
 ]]></content>
   </entry>
