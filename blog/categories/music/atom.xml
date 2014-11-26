@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-11-26T20:45:19+00:00</updated>
+  <updated>2014-11-26T22:32:30+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Aguado Lesson]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson/"/>
+    <updated>2014-11-26T22:31:09+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Aguado_Lesson_20141126_221556.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Giuliani Allegro in A Minor]]></title>
@@ -59,20 +70,6 @@
 
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Still_by_my_side_Irish_Traditional_20140903_190251.mp3" type="audio/mpeg">
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Prelude in D Minor - De Visee]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee/"/>
-    <updated>2014-08-28T19:23:56+01:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee</id>
-    <content type="html"><![CDATA[<p>Today I recorded this Prelude by Robert De Visee (1600) while working on it.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Prelude_De_Visee_20140828_191016.mp3" type="audio/mpeg">
-If your browser does not support the audio element you can get the recording <a href="/music/Prelude_De_Visee_20140828_191016.mp3">here</a>
 </audio></p>
 ]]></content>
   </entry>

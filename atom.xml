@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-11-26T20:45:19+00:00</updated>
+  <updated>2014-11-26T22:32:30+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Aguado Lesson]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson/"/>
+    <updated>2014-11-26T22:31:09+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Aguado_Lesson_20141126_221556.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Giuliani Allegro in A Minor]]></title>
