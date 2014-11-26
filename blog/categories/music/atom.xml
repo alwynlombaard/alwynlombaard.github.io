@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-10-26T21:31:08+00:00</updated>
+  <updated>2014-11-26T20:45:19+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -14,11 +14,22 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Giuliani Allegro in A Minor]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor/"/>
+    <updated>2014-11-26T20:08:32+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Giuliani Allegro in A Minor_20141126_192344.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Carcassi opus 60 no 3]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3/"/>
     <updated>2014-10-26T21:25:55+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3</id>
-    <content type="html"><![CDATA[<p>A practice session recording ofthis study. Still shaky.</p>
+    <content type="html"><![CDATA[<p>A practice session recording of this study. Still shaky.</p>
 
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Carcassi_Etude3_20141026_180555.mp3" type="audio/mpeg">
@@ -62,20 +73,6 @@
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Prelude_De_Visee_20140828_191016.mp3" type="audio/mpeg">
 If your browser does not support the audio element you can get the recording <a href="/music/Prelude_De_Visee_20140828_191016.mp3">here</a>
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Espa&ntilde;oleta]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/08/25/espanoleta/"/>
-    <updated>2014-08-25T20:44:56+01:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/08/25/espanoleta</id>
-    <content type="html"><![CDATA[<p>Today I recorded this little piece during my practice session.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Espanoleta_20140825_203019.mp3" type="audio/mpeg">
-Your browser does not support the audio element but you can get the recording <a href="/music/Espanoleta_20140825_203019.mp3">here</a>
 </audio></p>
 ]]></content>
   </entry>
