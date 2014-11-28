@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-11-26T22:32:30+00:00</updated>
+  <updated>2014-11-28T23:27:49+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Carulli Andantino]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino/"/>
+    <updated>2014-11-28T23:22:43+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Carulli_Andantino_20141128_225123.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Aguado Lesson]]></title>
@@ -57,19 +68,6 @@
 
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Tarrega_eminor_20140917_195801.mp3" type="audio/mpeg">
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Still by my side]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/09/03/still-by-my-side/"/>
-    <updated>2014-09-03T19:37:16+01:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/09/03/still-by-my-side</id>
-    <content type="html"><![CDATA[<p>An Irish traditional</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Still_by_my_side_Irish_Traditional_20140903_190251.mp3" type="audio/mpeg">
 </audio></p>
 ]]></content>
   </entry>

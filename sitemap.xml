@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino/</loc>
+    <lastmod>2014-11-28T23:22:43+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson/</loc>
     <lastmod>2014-11-26T22:31:09+00:00</lastmod>
     <priority>0.8</priority>
@@ -77,21 +83,21 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/index%20-%20Copy.html</loc>
-    <lastmod>2014-11-26T22:32:30+00:00</lastmod>
+    <lastmod>2014-11-28T23:27:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2014-11-26T22:32:30+00:00</lastmod>
+    <lastmod>2014-11-28T23:27:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2014-11-26T22:32:30+00:00</lastmod>
+    <lastmod>2014-11-28T23:27:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
