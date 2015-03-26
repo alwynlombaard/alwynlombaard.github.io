@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: athletics | Alwyn Lombaard's blog]]></title>
+  <link href="http://blog.lombaard.co.uk/blog/categories/athletics/atom.xml" rel="self"/>
+  <link href="http://blog.lombaard.co.uk/"/>
+  <updated>2015-03-26T17:06:50+00:00</updated>
+  <id>http://blog.lombaard.co.uk/</id>
+  <author>
+    <name><![CDATA[Alwyn Lombaard]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A jump]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2015/03/26/a-jump/"/>
+    <updated>2015-03-26T16:37:12+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/03/26/a-jump</id>
+    <content type="html"><![CDATA[<p><video width="320" height="240" controls>
+   <source src="http://blog.lombaard.co.uk/video/clearance1.mp4" type="video/mp4">
+</video></p>
+]]></content>
+  </entry>
+  
+</feed>

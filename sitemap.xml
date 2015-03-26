@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.lombaard.co.uk/blog/2015/03/26/a-jump/</loc>
+    <lastmod>2015-03-26T16:37:12+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino/</loc>
     <lastmod>2014-11-28T23:22:43+00:00</lastmod>
     <priority>0.8</priority>
@@ -28,84 +34,84 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor/</loc>
-    <lastmod>2014-09-17T20:12:46+01:00</lastmod>
+    <lastmod>2014-09-17T19:12:46+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/09/03/still-by-my-side/</loc>
-    <lastmod>2014-09-03T19:37:16+01:00</lastmod>
+    <lastmod>2014-09-03T18:37:16+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee/</loc>
-    <lastmod>2014-08-28T19:23:56+01:00</lastmod>
+    <lastmod>2014-08-28T18:23:56+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/08/25/espanoleta/</loc>
-    <lastmod>2014-08-25T20:44:56+01:00</lastmod>
+    <lastmod>2014-08-25T19:44:56+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/08/22/aria-by-joh-anton-logy/</loc>
-    <lastmod>2014-08-22T18:12:18+01:00</lastmod>
+    <lastmod>2014-08-22T17:12:18+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/08/19/pavan-i-by-luis-milan/</loc>
-    <lastmod>2014-08-19T19:00:55+01:00</lastmod>
+    <lastmod>2014-08-19T18:00:55+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/08/14/greensleeves-practice-session/</loc>
-    <lastmod>2014-08-14T21:21:08+01:00</lastmod>
+    <lastmod>2014-08-14T20:21:08+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-the-exacttarget-soap-api-to-setup-and-send-a-transactional-email-in-dot-net-without-logging-into-exacttarget/</loc>
-    <lastmod>2014-06-26T15:07:00+01:00</lastmod>
+    <lastmod>2014-06-26T14:07:00+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/2014/06/25/launching-my-first-blogging-site/</loc>
-    <lastmod>2014-06-25T22:55:10+01:00</lastmod>
+    <lastmod>2014-06-25T21:55:10+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/index%20-%20Copy.html</loc>
-    <lastmod>2014-12-11T10:48:22+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2014-12-11T10:48:22+00:00</lastmod>
+    <lastmod>2015-03-26T17:06:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2014-12-11T10:48:22+00:00</lastmod>
+    <lastmod>2015-03-26T17:06:50+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
+    <lastmod>2015-03-26T17:06:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/index.html</loc>
-    <lastmod>2014-09-25T16:42:1411659768Z</lastmod>
+    <lastmod>2015-03-26T15:43:1427384630Z</lastmod>
     <priority>0.6</priority>
   </url>
   

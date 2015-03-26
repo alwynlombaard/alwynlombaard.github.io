@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2014-12-11T10:48:22+00:00</updated>
+  <updated>2015-03-26T17:06:50+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A jump]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2015/03/26/a-jump/"/>
+    <updated>2015-03-26T16:37:12+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/03/26/a-jump</id>
+    <content type="html"><![CDATA[<p><video width="320" height="240" controls>
+   <source src="http://blog.lombaard.co.uk/video/clearance1.mp4" type="video/mp4">
+</video></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Andantino in G - Carulli]]></title>
@@ -62,7 +73,7 @@
   <entry>
     <title type="html"><![CDATA[Study in E minor - Tarrega]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor/"/>
-    <updated>2014-09-17T20:12:46+01:00</updated>
+    <updated>2014-09-17T19:12:46+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor</id>
     <content type="html"><![CDATA[<p>A quick recording of this study while revisiting it today for the fist time in a long while (with news in the background about the Scottish referendum tomorrow)</p>
 
@@ -75,7 +86,7 @@
   <entry>
     <title type="html"><![CDATA[Still by my side]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/09/03/still-by-my-side/"/>
-    <updated>2014-09-03T19:37:16+01:00</updated>
+    <updated>2014-09-03T18:37:16+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/09/03/still-by-my-side</id>
     <content type="html"><![CDATA[<p>An Irish traditional</p>
 
@@ -88,7 +99,7 @@
   <entry>
     <title type="html"><![CDATA[Prelude in D minor - De Visee]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee/"/>
-    <updated>2014-08-28T19:23:56+01:00</updated>
+    <updated>2014-08-28T18:23:56+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee</id>
     <content type="html"><![CDATA[<p>Today I recorded this Prelude by Robert De Visee (1600) while working on it.</p>
 
@@ -102,7 +113,7 @@ If your browser does not support the audio element you can get the recording <a 
   <entry>
     <title type="html"><![CDATA[Espa&ntilde;oleta]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/08/25/espanoleta/"/>
-    <updated>2014-08-25T20:44:56+01:00</updated>
+    <updated>2014-08-25T19:44:56+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/08/25/espanoleta</id>
     <content type="html"><![CDATA[<p>Today I recorded this little piece during my practice session.</p>
 
@@ -116,7 +127,7 @@ Your browser does not support the audio element but you can get the recording <a
   <entry>
     <title type="html"><![CDATA[Aria by Johann Anton Logy]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/08/22/aria-by-joh-anton-logy/"/>
-    <updated>2014-08-22T18:12:18+01:00</updated>
+    <updated>2014-08-22T17:12:18+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/08/22/aria-by-joh-anton-logy</id>
     <content type="html"><![CDATA[<p>Today&rsquo;s practice session includes an Aria from Partita in A Minor by Johann Anton Logy. I&rsquo;m playing an arrangement by John Mills.</p>
 
@@ -130,7 +141,7 @@ Your browser does not support the audio element but you can get the recording <a
   <entry>
     <title type="html"><![CDATA[Pavan I by Luis Milan]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/08/19/pavan-i-by-luis-milan/"/>
-    <updated>2014-08-19T19:00:55+01:00</updated>
+    <updated>2014-08-19T18:00:55+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/08/19/pavan-i-by-luis-milan</id>
     <content type="html"><![CDATA[<p>Recording from my practice session today. Still a bit rough and unrelaxed, but still early days in studying this piece.</p>
 
@@ -144,7 +155,7 @@ Your browser does not support the audio element but you can get the recording <a
   <entry>
     <title type="html"><![CDATA[Greensleeves practice session]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/08/14/greensleeves-practice-session/"/>
-    <updated>2014-08-14T21:21:08+01:00</updated>
+    <updated>2014-08-14T20:21:08+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/08/14/greensleeves-practice-session</id>
     <content type="html"><![CDATA[<p>Recording from my practice session today.</p>
 
@@ -160,7 +171,7 @@ Your browser does not support the audio element but you can get the recording <a
   <entry>
     <title type="html"><![CDATA[How to use the ExactTarget SOAP API to setup and send a transactional email in .Net without logging into ExactTarget]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-the-exacttarget-soap-api-to-setup-and-send-a-transactional-email-in-dot-net-without-logging-into-exacttarget/"/>
-    <updated>2014-06-26T15:07:00+01:00</updated>
+    <updated>2014-06-26T14:07:00+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-the-exacttarget-soap-api-to-setup-and-send-a-transactional-email-in-dot-net-without-logging-into-exacttarget</id>
     <content type="html"><![CDATA[<p>I recently had to use the ExaxtTarget SOAP API to send transactional emails from a website but setting up a new  one required me to log in to ExactTarget and shaving yaks called &ldquo;Data Extension&rdquo;, &ldquo;Triggered Send&rdquo;, &ldquo;Triggered Send Definition&rdquo;, &ldquo;Delivery Profile&rdquo;, &ldquo;Email Templates&rdquo; etc..</p>
 
@@ -193,11 +204,11 @@ Your browser does not support the audio element but you can get the recording <a
 <div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
 <noscript><pre><code>var config = new ExactTargetConfiguration
 {
-    ApiUserName = &quot;API_User&quot;,
-    ApiPassword = &quot;API_Password&quot;,
-    //use your endpoint given to you by ET
-    EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
-    ClientId = 6269485//optional: business unit id you wish to use
+  ApiUserName = &quot;API_User&quot;,
+  ApiPassword = &quot;API_Password&quot;,
+  //use your endpoint given to you by ET
+  EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
+  ClientId = 6269485//optional: business unit id you wish to use
 };</code></pre></noscript></div>
 
 
@@ -255,11 +266,11 @@ catch(Exception ex)
 <div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
 <noscript><pre><code>var config = new ExactTargetConfiguration
 {
-    ApiUserName = &quot;API_User&quot;,
-    ApiPassword = &quot;API_Password&quot;,
-    //use your endpoint given to you by ET
-    EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
-    ClientId = 6269485//optional: business unit id you wish to use
+  ApiUserName = &quot;API_User&quot;,
+  ApiPassword = &quot;API_Password&quot;,
+  //use your endpoint given to you by ET
+  EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
+  ClientId = 6269485//optional: business unit id you wish to use
 };</code></pre></noscript></div>
 
 
@@ -274,12 +285,12 @@ try
   triggeredEmail.AddReplacementValue(&quot;Subject&quot;,&quot;Thank you for placing your order&quot;);
   triggeredEmail.AddReplacementValue(&quot;Body&quot;,
     &quot;&lt;p&gt;Your order has been processed&lt;/p&gt;&quot; +
-    &quot;&lt;p class=&#39;green&#39;&gt;This is some text in green&lt;/p&gt;&quot;);
+    &quot;&lt;p class='green'&gt;This email is a PasteHtml email&lt;/p&gt;&quot;);
   triggeredEmail.AddReplacementValue(&quot;Head&quot;,&quot;&lt;style&gt;.green{color:green}&lt;/style&gt;&quot;);
 
 
-var emailTrigger = new EmailTrigger(config);
-emailTrigger.Trigger(triggeredEmail);
+  var emailTrigger = new EmailTrigger(config);
+  emailTrigger.Trigger(triggeredEmail);
 }
 catch(Exception ex)
 {
@@ -300,11 +311,11 @@ catch(Exception ex)
 <div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
 <noscript><pre><code>var config = new ExactTargetConfiguration
 {
-    ApiUserName = &quot;API_User&quot;,
-    ApiPassword = &quot;API_Password&quot;,
-    //use your endpoint given to you by ET
-    EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
-    ClientId = 6269485//optional: business unit id you wish to use
+  ApiUserName = &quot;API_User&quot;,
+  ApiPassword = &quot;API_Password&quot;,
+  //use your endpoint given to you by ET
+  EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
+  ClientId = 6269485//optional: business unit id you wish to use
 };</code></pre></noscript></div>
 
 
@@ -317,7 +328,8 @@ catch(Exception ex)
                                           &quot;recipient@temp.uri&quot;);
   triggeredEmail.AddReplacementValue(&quot;Subject&quot;,&quot;Your order has been dispatched&quot;);
   triggeredEmail.AddReplacementValue(&quot;Body&quot;, 
-      &quot;&lt;p&gt;Your order has been dispatched!&lt;/p&gt;&lt;p class=&#39;red&#39;&gt;This is some text in red&lt;/p&gt;&quot;);
+      &quot;&lt;p&gt;Your order has been dispatched!&lt;/p&gt;&quot; + 
+      &quot;&lt;p class='red'&gt;This email is a templated email&lt;/p&gt;&quot;);
   
   var emailTrigger = new EmailTrigger(config);
   emailTrigger.Trigger(triggeredEmail);
@@ -337,7 +349,7 @@ catch(Exception ex)
   <entry>
     <title type="html"><![CDATA[Launching my first blogging site]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2014/06/25/launching-my-first-blogging-site/"/>
-    <updated>2014-06-25T22:55:10+01:00</updated>
+    <updated>2014-06-25T21:55:10+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2014/06/25/launching-my-first-blogging-site</id>
     <content type="html"><![CDATA[<h3>Hello I&rsquo;m Alwyn</h3>
 ]]></content>
