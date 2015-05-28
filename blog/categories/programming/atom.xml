@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: programming | Alwyn Lombaard's blog]]></title>
+  <link href="http://blog.lombaard.co.uk/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://blog.lombaard.co.uk/"/>
+  <updated>2015-03-27T11:55:27+00:00</updated>
+  <id>http://blog.lombaard.co.uk/</id>
+  <author>
+    <name><![CDATA[Alwyn Lombaard]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to use the ExactTarget SOAP API to setup and send a transactional email in .Net without logging into ExactTarget]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-the-exacttarget-soap-api-to-setup-and-send-a-transactional-email-in-dot-net-without-logging-into-exacttarget/"/>
+    <updated>2014-06-26T14:07:00+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/06/26/how-to-use-the-exacttarget-soap-api-to-setup-and-send-a-transactional-email-in-dot-net-without-logging-into-exacttarget</id>
+    <content type="html"><![CDATA[<p>I recently had to use the ExaxtTarget SOAP API to send transactional emails from a website but setting up a new  one required me to log in to ExactTarget and shaving yaks called &ldquo;Data Extension&rdquo;, &ldquo;Triggered Send&rdquo;, &ldquo;Triggered Send Definition&rdquo;, &ldquo;Delivery Profile&rdquo;, &ldquo;Email Templates&rdquo; etc..</p>
+
+<p>I just wanted to be able to send a simple transactional email without first having to perform a number of steps in the cumbersome ExactTarget UI &hellip;.so I created a library to make my life easier when I need to set up a new transactional email. I hope this can help some poor soul out there suffering the same fate I have.</p>
+
+<p>Here is how you can set up a new transactional email by using my library.</p>
+
+<h2>Getting started</h2>
+
+<p>I assume you have received API user credentials from ExactTarget to use with the SOAP API. I also assume you have logged into ExactTarget and have heard about &ldquo;Triggered Sends&rdquo; and &ldquo;Data Extensions&rdquo;.</p>
+
+<h2>Step 1: Install from Nuget</h2>
+
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Install'></script>
+<noscript><pre><code>PM&gt; Install-Package ExactTarget.TriggerEmailSender</code></pre></noscript></div>
+</p>
+
+<h2>Step 2: Create</h2>
+
+<p>You only need to do this once for the type of email you wish to send with tracking. (For example order confirmation emails, welcome after registration emails, order dispatched emails etc)</p>
+
+<p>You have two choices, you can create a &ldquo;Triggered send&rdquo; with a</p>
+
+<ol>
+<li>&ldquo;PasteHtml&rdquo; email or</li>
+<li>Templated email</li>
+</ol>
+
+
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
+<noscript><pre><code>var config = new ExactTargetConfiguration
+{
+  ApiUserName = &quot;API_User&quot;,
+  ApiPassword = &quot;API_Password&quot;,
+  //use your endpoint given to you by ET
+  EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
+  ClientId = 6269485//optional: business unit id you wish to use
+};</code></pre></noscript></div>
+</p>
+
+<h3>Create &ldquo;PasteHtml&rdquo; email</h3>
+
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=CreatePasteHtml.cs'></script>
+<noscript><pre><code>//create and start a transactional Triggered Send (only required to do this once)
+try
+{
+  var triggeredEmailCreator = new TriggeredEmailCreator(config);
+  
+  triggeredEmailCreator.CreateTriggeredSendDefinitionWithPasteHtml(&quot;order-comfirmation&quot;);
+  
+  triggeredEmailCreator.StartTriggeredSend(&quot;order-comfirmation&quot;);
+}
+catch(Exception ex)
+{
+  //you better handle exceptions here
+}</code></pre></noscript></div>
+</p>
+
+<h3>Create Templated email</h3>
+
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=CreateTemplate.cs'></script>
+<noscript><pre><code>try
+{
+  var triggeredEmailCreator = new TriggeredEmailCreator(config);
+  
+  triggeredEmailCreator.CreateTriggeredSendDefinitionWithEmailTemplate(
+                          &quot;order-dispatched&quot;,
+                          &quot;&lt;html&gt;&lt;head&gt;&lt;style&gt;.red{color:red}&lt;/style&gt;&lt;/head&gt;&quot;, 
+                          &quot;&lt;/html&gt;&quot;);
+  
+  triggeredEmailCreator.StartTriggeredSend(&quot;order-dispatched&quot;);
+}
+catch(Exception ex)
+{
+  //you better handle exceptions here
+}</code></pre></noscript></div>
+</p>
+
+<h2>Sending an email</h2>
+
+<h3>Sending &ldquo;PasteHtml&rdquo; email</h3>
+
+<p>If you&rsquo;ve created a &ldquo;PasteHTML&rdquo; email, you supply replacement values to use for the email for:</p>
+
+<ol>
+<li>Subject</li>
+<li>Body</li>
+<li>Head (optional)</li>
+</ol>
+
+
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
+<noscript><pre><code>var config = new ExactTargetConfiguration
+{
+  ApiUserName = &quot;API_User&quot;,
+  ApiPassword = &quot;API_Password&quot;,
+  //use your endpoint given to you by ET
+  EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
+  ClientId = 6269485//optional: business unit id you wish to use
+};</code></pre></noscript></div>
+</p>
+
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=SendPasteHtml.cs'></script>
+<noscript><pre><code>//trigger an email
+try
+{
+  var triggeredEmail = new ExactTargetTriggeredEmail(&quot;order-comfirmation&quot;, 
+                        &quot;recipient@temp.uri&quot;);
+  triggeredEmail.AddReplacementValue(&quot;Subject&quot;,&quot;Thank you for placing your order&quot;);
+  triggeredEmail.AddReplacementValue(&quot;Body&quot;,
+    &quot;&lt;p&gt;Your order has been processed&lt;/p&gt;&quot; +
+    &quot;&lt;p class='green'&gt;This email is a PasteHtml email&lt;/p&gt;&quot;);
+  triggeredEmail.AddReplacementValue(&quot;Head&quot;,&quot;&lt;style&gt;.green{color:green}&lt;/style&gt;&quot;);
+
+
+  var emailTrigger = new EmailTrigger(config);
+  emailTrigger.Trigger(triggeredEmail);
+}
+catch(Exception ex)
+{
+  //you better handle exceptions here
+}</code></pre></noscript></div>
+</p>
+
+<h3>Sending Templated email</h3>
+
+<p>If you&rsquo;ve created a templated email, you supply replacement values to use for the email for:</p>
+
+<ol>
+<li>Subject</li>
+<li>Body</li>
+</ol>
+
+
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs'></script>
+<noscript><pre><code>var config = new ExactTargetConfiguration
+{
+  ApiUserName = &quot;API_User&quot;,
+  ApiPassword = &quot;API_Password&quot;,
+  //use your endpoint given to you by ET
+  EndPoint = &quot;https://webservice.s6.exacttarget.com/Service.asmx&quot;,
+  ClientId = 6269485//optional: business unit id you wish to use
+};</code></pre></noscript></div>
+</p>
+
+<p><div><script src='https://gist.github.com/83bf27007bf84e63ceb9.js?file=SendTemplate.cs'></script>
+<noscript><pre><code>try
+{
+  var triggeredEmail = new ExactTargetTriggeredEmail(&quot;order-dispatched&quot;, 
+                                          &quot;recipient@temp.uri&quot;);
+  triggeredEmail.AddReplacementValue(&quot;Subject&quot;,&quot;Your order has been dispatched&quot;);
+  triggeredEmail.AddReplacementValue(&quot;Body&quot;, 
+      &quot;&lt;p&gt;Your order has been dispatched!&lt;/p&gt;&quot; + 
+      &quot;&lt;p class='red'&gt;This email is a templated email&lt;/p&gt;&quot;);
+  
+  var emailTrigger = new EmailTrigger(config);
+  emailTrigger.Trigger(triggeredEmail);
+}
+catch(Exception ex)
+{
+  //you better handle exceptions here
+}</code></pre></noscript></div>
+</p>
+
+<h2>Links</h2>
+
+<p><a href="http://exacttarget.lombaard.co.uk/">Project site</a></p>
+]]></content>
+  </entry>
+  
+</feed>

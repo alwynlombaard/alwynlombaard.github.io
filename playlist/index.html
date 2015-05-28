@@ -1,0 +1,56 @@
+<html>
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<style>
+		.active{
+			 background-color: #D9D9D9;
+		}
+		
+		.prev {
+			height: 56px;
+			width: 56px;
+			background: url(/images/controls.jpg) -56px -112px;
+		}
+		.next {
+			height: 56px;
+			width: 56px;
+			background: url(/images/controls.jpg) -112px -112px;
+		}
+		.left{
+			float:left;
+		}
+		.clear
+		{
+			clear:both;
+		}
+		.playlist ul{
+			list-style: none;
+			padding: 3px;
+			margin: 3px;
+		}
+		.playlist ul{
+			width: 400px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		<div class="playlist" ng-app="playListApp" ng-controller="playListController">
+			<p>Track: {{selectedTrack().name}}</p>
+			<div class="controls">
+				<div ng-click="previous()" class="prev left"></div>
+				<div ng-click="next()" class="next left"></div>
+			</div>
+			<div class="clear"></div>
+
+			<audio id="playlist-audio" controls="controls" width="300"></audio>
+			
+			<ul ng-repeat="track in tracks">
+				<li ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)">{{track.name}}</li>
+			</ul>
+		</div>
+	</div>
+<script src="/javascripts/playlist.js"></script>
+

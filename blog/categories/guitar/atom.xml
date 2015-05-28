@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: guitar | Alwyn Lombaard's blog]]></title>
+  <link href="http://blog.lombaard.co.uk/blog/categories/guitar/atom.xml" rel="self"/>
+  <link href="http://blog.lombaard.co.uk/"/>
+  <updated>2015-03-27T11:55:27+00:00</updated>
+  <id>http://blog.lombaard.co.uk/</id>
+  <author>
+    <name><![CDATA[Alwyn Lombaard]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Andantino in G - Carulli]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino/"/>
+    <updated>2014-11-28T23:22:43+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Carulli_Andantino_20141128_225123.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Lesson in A minor - Aguado]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson/"/>
+    <updated>2014-11-26T22:31:09+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Aguado_Lesson_20141126_221556.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Allegro in A minor - Giuliani]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor/"/>
+    <updated>2014-11-26T20:08:32+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Giuliani Allegro in A Minor_20141126_192344.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Opus 60 no 3 - Carcassi]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3/"/>
+    <updated>2014-10-26T21:25:55+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3</id>
+    <content type="html"><![CDATA[<p>A practice session recording of this study. Still shaky.</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Carcassi_Etude3_20141026_180555.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Study in E minor - Tarrega]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor/"/>
+    <updated>2014-09-17T19:12:46+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2014/09/17/tarrega-study-in-e-minor</id>
+    <content type="html"><![CDATA[<p>A quick recording of this study while revisiting it today for the fist time in a long while (with news in the background about the Scottish referendum tomorrow)</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Tarrega_eminor_20140917_195801.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
+  
+</feed>

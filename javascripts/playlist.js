@@ -1,0 +1,77 @@
+'use strict';
+
+(function(global) {
+	var app = angular.module('playListApp', []);
+
+	app.factory('audio', function($document) {
+		var audio = $document[0].getElementById('playlist-audio');
+		return audio;
+	});
+
+	global.playListController = function ($scope, audio){
+		$scope.supportsAudio = !!document.createElement("audio").canPlayType;
+		$scope.mediaPath = "/music/";
+		$scope.playing = false;
+		$scope.selectedIndex = 0;
+		$scope.tracks = [
+					{"track":1,"name":"Greensleeves","length":"02:01","file":"Greensleeves.mp3"},
+					{"track":2,"name":"Pavan I by Luis Milan","length":"01:52","file":"Pavan_20140819_182702.mp3"},
+					{"track":3,"name":"Aria by Johann Anton Logy","length":"02:09","file":"Aria_20140822.mp3"},
+					{"track":4,"name":"Espanoleta","length":"00:54","file":"Espanoleta_20140825_203019.mp3"},
+					{"track":5,"name":"Prelude in D Minor - De Visee","length":"00:58","file":"Prelude_De_Visee_20140828_191016.mp3"},
+					{"track":6,"name":"Still by my side - Irish traditional","length":"00:59","file":"Still_by_my_side_Irish_Traditional_20140903_190251.mp3"},
+					{"track":7,"name":"Study in E minor - Tarrega","length":"01:12","file":"Tarrega_eminor_20140917_195801.mp3"}
+				];
+		$scope.trackCount = $scope.tracks.length;
+		$scope.selectedTrack = function(){ return $scope.tracks[$scope.selectedIndex]};
+		$scope.audioSource = function (){return $scope.mediaPath + $scope.selectedTrack().file;};
+		audio.src = $scope.audioSource();
+		$scope.loadTrack = function(index) {
+			$scope.selectedIndex = index;
+			audio.src = $scope.audioSource();
+			if($scope.playing){
+				audio.play();
+			}
+		}
+		$scope.previous = function(){
+			$scope.selectedIndex--;
+			$scope.selectedIndex = ($scope.selectedIndex < 0 ? $scope.tracks.length - 1 : $scope.selectedIndex);
+			audio.src = $scope.audioSource();
+			
+			if($scope.playing){
+				audio.play();
+			}
+		};
+		$scope.next = function(){
+			$scope.selectedIndex++;
+			$scope.selectedIndex = ($scope.selectedIndex >=  $scope.tracks.length ? 0 : $scope.selectedIndex);
+			audio.src = $scope.audioSource();
+			if($scope.playing){
+				audio.play();
+			}
+		};
+		audio.addEventListener('play', function() {
+			$scope.$apply(function(){
+				$scope.playing = true;
+			});
+		}, false);
+		audio.addEventListener('pause', function() {
+			$scope.$apply(function(){
+				$scope.playing = false;
+			});
+		}, false);
+		audio.addEventListener('ended', function() {
+			$scope.$apply(function(){
+				if(($scope.selectedIndex + 1) === $scope.tracks.length){
+					$scope.playing = false;
+					$scope.selectedIndex = 0;
+					audio.src = $scope.audioSource();
+				}
+				else{
+					$scope.playing = true;
+					$scope.next();
+				}
+			});
+		}, false);
+	}
+})(this);
