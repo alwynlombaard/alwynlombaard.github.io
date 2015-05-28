@@ -20,7 +20,11 @@
 					{"track":4,"name":"Espanoleta","length":"00:54","file":"Espanoleta_20140825_203019.mp3"},
 					{"track":5,"name":"Prelude in D Minor - De Visee","length":"00:58","file":"Prelude_De_Visee_20140828_191016.mp3"},
 					{"track":6,"name":"Still by my side - Irish traditional","length":"00:59","file":"Still_by_my_side_Irish_Traditional_20140903_190251.mp3"},
-					{"track":7,"name":"Study in E minor - Tarrega","length":"01:12","file":"Tarrega_eminor_20140917_195801.mp3"}
+					{"track":7,"name":"Study in E minor - Tarrega","length":"01:12","file":"Tarrega_eminor_20140917_195801.mp3"},
+					{"track":8,"name":"Opus 60 no 3 - Carcassi","length":"01:50","file":"Carcassi_Etude3_20141026_180555.mp3"},
+					{"track":9,"name":"Allegro in A minor - Giuliani","length":"01:10","file":"Giuliani Allegro in A Minor_20141126_192344.mp3"},
+					{"track":10,"name":"Lesson in A minor - Aguado","length":"00:37","file":"Aguado_Lesson_20141126_221556.mp3"},
+					{"track":11,"name":"Andantino in G - Carulli","length":"01:02","file":"Carulli_Andantino_20141128_225123.mp3"}
 				];
 		$scope.trackCount = $scope.tracks.length;
 		$scope.selectedTrack = function(){ return $scope.tracks[$scope.selectedIndex]};
