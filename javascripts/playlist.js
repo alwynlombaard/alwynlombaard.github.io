@@ -25,7 +25,7 @@
 					{"track":9,"name":"Allegro in A minor - Giuliani","length":"01:10","file":"Giuliani Allegro in A Minor_20141126_192344.mp3"},
 					{"track":10,"name":"Lesson in A minor - Aguado","length":"00:37","file":"Aguado_Lesson_20141126_221556.mp3"},
 					{"track":11,"name":"Andantino in G - Carulli","length":"01:02","file":"Carulli_Andantino_20141128_225123.mp3"},
-					{"track":11,"name":"Waltz in C - Carcassi","length":"00:59","file":"Carcassi_method_C_Major_Waltz_20150608_184813.mp3"}
+					{"track":12,"name":"Waltz in C - Carcassi","length":"00:59","file":"Carcassi_method_C_Major_Waltz_20150608_184813.mp3"}
 				];
 		$scope.trackCount = $scope.tracks.length;
 		$scope.selectedTrack = function(){ return $scope.tracks[$scope.selectedIndex]};
