@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.lombaard.co.uk/blog/2015/07/05/andantino-carulli/</loc>
+    <lastmod>2015-07-05T18:21:45+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/2015/06/10/carcassi-method-c-major-waltz/</loc>
     <lastmod>2015-06-10T10:15:07+00:00</lastmod>
     <priority>0.8</priority>
@@ -107,21 +113,21 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/index%20-%20Copy.html</loc>
-    <lastmod>2015-06-10T15:02:39+00:00</lastmod>
+    <lastmod>2015-07-05T18:26:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2015-06-10T15:02:39+00:00</lastmod>
+    <lastmod>2015-07-05T18:26:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2015-06-10T15:02:39+00:00</lastmod>
+    <lastmod>2015-07-05T18:26:26+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
