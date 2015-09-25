@@ -26,7 +26,8 @@
 					{"track":10,"name":"Lesson in A minor - Aguado","length":"00:37","file":"Aguado_Lesson_20141126_221556.mp3"},
 					{"track":11,"name":"Andantino in G - Carulli","length":"01:02","file":"Carulli_Andantino_20141128_225123.mp3"},
 					{"track":12,"name":"Waltz in C - Carcassi","length":"00:59","file":"Carcassi_method_C_Major_Waltz_20150608_184813.mp3"},
-					{"track":13,"name":"Andantino","length":"01:24","file":"Carulli_Antantino_20150705_113534.mp3"}
+					{"track":13,"name":"Andantino","length":"01:24","file":"Carulli_Antantino_20150705_113534.mp3"},
+					{"track":13,"name":"Study No 1","length":"01:06","file":"Brouwer_Study_No_1_20150919_182834.mp3"}
 				];
 		$scope.trackCount = $scope.tracks.length;
 		$scope.selectedTrack = function(){ return $scope.tracks[$scope.selectedIndex]};

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: guitar | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/guitar/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-07-05T18:26:26+00:00</updated>
+  <updated>2015-09-25T18:23:20+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Brouwer Study No 1]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2015/09/25/brouwer-study-no-1/"/>
+    <updated>2015-09-25T18:21:24+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/09/25/brouwer-study-no-1</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_1_20150919_182834.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Andantino - Carulli]]></title>
@@ -53,17 +64,6 @@
     <id>http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson</id>
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Aguado_Lesson_20141126_221556.mp3" type="audio/mpeg">
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Allegro in A minor - Giuliani]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor/"/>
-    <updated>2014-11-26T20:08:32+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor</id>
-    <content type="html"><![CDATA[<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Giuliani Allegro in A Minor_20141126_192344.mp3" type="audio/mpeg">
 </audio></p>
 ]]></content>
   </entry>
