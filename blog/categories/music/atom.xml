@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-09-25T18:23:20+00:00</updated>
+  <updated>2015-10-04T17:32:47+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Brouwer Study No 2]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2015/10/04/brouwer-study-no-2/"/>
+    <updated>2015-10-04T17:27:22+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/10/04/brouwer-study-no-2</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_2_20151004_140303.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Brouwer Study No 1]]></title>
@@ -53,17 +64,6 @@
     <id>http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino</id>
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Carulli_Andantino_20141128_225123.mp3" type="audio/mpeg">
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Lesson in A minor - Aguado]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson/"/>
-    <updated>2014-11-26T22:31:09+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson</id>
-    <content type="html"><![CDATA[<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Aguado_Lesson_20141126_221556.mp3" type="audio/mpeg">
 </audio></p>
 ]]></content>
   </entry>
