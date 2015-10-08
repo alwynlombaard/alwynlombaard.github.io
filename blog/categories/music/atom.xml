@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-10-04T17:32:47+00:00</updated>
+  <updated>2015-10-08T11:41:07+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Brouwer Study No 3]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2015/10/08/brouwer-study-no-3/"/>
+    <updated>2015-10-08T11:36:12+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/10/08/brouwer-study-no-3</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_3_20151007_214619.mp3" type="audio/mpeg">
+</audio></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Brouwer Study No 2]]></title>
@@ -53,17 +64,6 @@
     <id>http://blog.lombaard.co.uk/blog/2015/06/10/carcassi-method-c-major-waltz</id>
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Carcassi_method_C_Major_Waltz_20150608_184813.mp3" type="audio/mpeg">
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Andantino in G - Carulli]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino/"/>
-    <updated>2014-11-28T23:22:43+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/11/28/carulli-andantino</id>
-    <content type="html"><![CDATA[<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Carulli_Andantino_20141128_225123.mp3" type="audio/mpeg">
 </audio></p>
 ]]></content>
   </entry>
