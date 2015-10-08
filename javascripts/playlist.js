@@ -29,7 +29,8 @@
 					{"track":13,"name":"Andantino","length":"01:24","file":"Carulli_Antantino_20150705_113534.mp3"},
 					{"track":14,"name":"Brouwer Study No 1","length":"01:06","file":"Brouwer_Study_No_1_20150919_182834.mp3"},
 					{"track":15,"name":"Brouwer Study No 2","length":"01:06","file":"Brouwer_Study_No_2_20151004_140303.mp3"},
-					{"track":16,"name":"Brouwer Study No 3","length":"00:48","file":"Brouwer_Study_No_3_20151007_214619.mp3"}
+					{"track":16,"name":"Brouwer Study No 3","length":"00:48","file":"Brouwer_Study_No_3_20151007_214619.mp3"},
+					{"track":17,"name":"Brouwer Study No 4","length":"00:48","file":"Brouwer_Study_No_4_20151008_212308.mp3"}
 				];
 		$scope.trackCount = $scope.tracks.length;
 		$scope.selectedTrack = function(){ return $scope.tracks[$scope.selectedIndex]};
