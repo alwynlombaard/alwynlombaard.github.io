@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-10-08T21:24:02+00:00</updated>
+  <updated>2015-10-10T14:12:44+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -14,13 +14,30 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Brouwer Study No 6]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2015/10/10/brouwer-study-no-6/"/>
+    <updated>2015-10-10T13:35:32+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/10/10/brouwer-study-no-6</id>
+    <content type="html"><![CDATA[<p>One of my attempts at this study today during practice.</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_6_20151010_132529.mp3" type="audio/mpeg">
+</audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Brouwer Study No 4]]></title>
     <link href="http://blog.lombaard.co.uk/blog/2015/10/08/brouwer-study-no-4/"/>
     <updated>2015-10-08T21:21:47+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2015/10/08/brouwer-study-no-4</id>
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_4_20151008_212308.mp3" type="audio/mpeg">
-</audio></p>
+&lt;/audio</p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
 ]]></content>
   </entry>
   
@@ -32,6 +49,8 @@
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_3_20151007_214619.mp3" type="audio/mpeg">
 </audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
 ]]></content>
   </entry>
   
@@ -43,6 +62,8 @@
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_2_20151004_140303.mp3" type="audio/mpeg">
 </audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
 ]]></content>
   </entry>
   
@@ -54,6 +75,8 @@
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_1_20150919_182834.mp3" type="audio/mpeg">
 </audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
 ]]></content>
   </entry>
   
@@ -65,6 +88,8 @@
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Carulli_Antantino_20150705_113534.mp3" type="audio/mpeg">
 </audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
 ]]></content>
   </entry>
   
@@ -76,6 +101,8 @@
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Carcassi_method_C_Major_Waltz_20150608_184813.mp3" type="audio/mpeg">
 </audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
 ]]></content>
   </entry>
   
@@ -236,22 +263,6 @@ Your browser does not support the audio element but you can get the recording <a
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Pavan_20140819_182702.mp3" type="audio/mpeg">
 Your browser does not support the audio element but you can get the recording <a href="http://blog.lombaard.co.uk/music/Pavan_20140819_182702.mp3">here</a>
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Greensleeves practice session]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/08/14/greensleeves-practice-session/"/>
-    <updated>2014-08-14T20:21:08+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/08/14/greensleeves-practice-session</id>
-    <content type="html"><![CDATA[<p>Recording from my practice session today.</p>
-
-<p>I&rsquo;m playing a variation of Greensleeves by <a href="http://en.wikipedia.org/wiki/Francis_Cutting">Francis Cutting (c. 1550-1595/6)</a>.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Greensleeves.mp3" type="audio/mpeg">
-Your browser does not support the audio element but you can get the recording <a href="http://blog.lombaard.co.uk/music/Greensleeves.mp3">here</a>
 </audio></p>
 ]]></content>
   </entry>
