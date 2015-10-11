@@ -148,29 +148,29 @@
   
   
   <url>
-    <loc>http://blog.lombaard.co.uk/playlist/index%20-%20Copy.html</loc>
-    <lastmod>2015-10-11T15:24:54+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2015-10-11T15:24:54+00:00</lastmod>
+    <lastmod>2015-10-11T15:47:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
+    <loc>http://blog.lombaard.co.uk/playlist/</loc>
+    <lastmod>2015-10-11T15:47:27+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2015-10-11T15:24:54+00:00</lastmod>
+    <lastmod>2015-10-11T15:47:27+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   
   <url>
-    <loc>http://blog.lombaard.co.uk/playlist/index.html</loc>
+    <loc>http://blog.lombaard.co.uk/playlist/index2.html</loc>
     <lastmod>2015-04-13T16:35:1428942924Z</lastmod>
     <priority>0.6</priority>
   </url>
