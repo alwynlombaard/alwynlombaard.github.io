@@ -3,8 +3,14 @@
   
   
   <url>
-    <loc>http://blog.lombaard.co.uk/blog/2015/10/10/brouwer-study-no-6/</loc>
-    <lastmod>2015-10-10T13:35:32+00:00</lastmod>
+    <loc>http://blog.lombaard.co.uk/blog/2015/10/11/brouwer-study-no-6/</loc>
+    <lastmod>2015-10-11T13:35:32+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.lombaard.co.uk/blog/2015/10/10/brouwer-study-no-5/</loc>
+    <lastmod>2015-10-10T14:59:08+00:00</lastmod>
     <priority>0.8</priority>
   </url>
   
@@ -143,21 +149,21 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/index%20-%20Copy.html</loc>
-    <lastmod>2015-10-10T14:12:44+00:00</lastmod>
+    <lastmod>2015-10-11T15:24:54+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2015-10-10T14:12:44+00:00</lastmod>
+    <lastmod>2015-10-11T15:24:54+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2015-10-10T14:12:44+00:00</lastmod>
+    <lastmod>2015-10-11T15:24:54+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

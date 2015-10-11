@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-10-10T14:12:44+00:00</updated>
+  <updated>2015-10-11T15:24:54+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -15,13 +15,28 @@
   
   <entry>
     <title type="html"><![CDATA[Brouwer Study No 6]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2015/10/10/brouwer-study-no-6/"/>
-    <updated>2015-10-10T13:35:32+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2015/10/10/brouwer-study-no-6</id>
+    <link href="http://blog.lombaard.co.uk/blog/2015/10/11/brouwer-study-no-6/"/>
+    <updated>2015-10-11T13:35:32+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/10/11/brouwer-study-no-6</id>
     <content type="html"><![CDATA[<p>One of my attempts at this study today during practice.</p>
 
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_6_20151010_132529.mp3" type="audio/mpeg">
+</audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Brouwer Study No 5]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2015/10/10/brouwer-study-no-5/"/>
+    <updated>2015-10-10T14:59:08+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/10/10/brouwer-study-no-5</id>
+    <content type="html"><![CDATA[<p>One of my attempts at this study today during practice.</p>
+
+<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_5_20151011_150048.mp3" type="audio/mpeg">
 </audio></p>
 
 <blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
@@ -249,20 +264,6 @@ Your browser does not support the audio element but you can get the recording <a
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Aria_20140822.mp3" type="audio/mpeg">
 Your browser does not support the audio element but you can get the recording <a href="http://blog.lombaard.co.uk/music/Aria_20140822.mp3">here</a>
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Pavan I by Luis Milan]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/08/19/pavan-i-by-luis-milan/"/>
-    <updated>2014-08-19T18:00:55+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/08/19/pavan-i-by-luis-milan</id>
-    <content type="html"><![CDATA[<p>Recording from my practice session today. Still a bit rough and unrelaxed, but still early days in studying this piece.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Pavan_20140819_182702.mp3" type="audio/mpeg">
-Your browser does not support the audio element but you can get the recording <a href="http://blog.lombaard.co.uk/music/Pavan_20140819_182702.mp3">here</a>
 </audio></p>
 ]]></content>
   </entry>
