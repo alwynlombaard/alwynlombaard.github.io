@@ -9,7 +9,7 @@
   <meta name="author" content="Alwyn Lombaard">
 
   
-  <meta name="description" content=" Name: Your browser does not support the HTML5 Audio Tag. |&lt;&lt; Prev Track Next Track &gt;&gt;| ">
+  <meta name="description" content=" Track: |&lt;&lt; Prev Track Next Track &gt;&gt;| ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -100,72 +100,40 @@
 		<header><h1 class="entry-title">Playlist</h1></header>
 		<div class="entry-content">
 			
-			<div ng-app="" ng-controller="playListController">
-				Name: 
-				
-			</div>
 			
-			<div id="cwrap">
+			
+			<div class="playlist" ng-app="playListApp" ng-controller="playListController">
+				Track: 
 				
-					<div id="nowPlay">
-						<span id="npAction"></span> <span id="npTitle"></span>
-					</div>
-					<div id="audiowrap">
-						<div id="audio0">
-							<audio id="audio1" controls="controls" width="300">
-								Your browser does not support the HTML5 Audio Tag.
+			
+			
+				<div id="cwrap">
+					
+						
+						
+							<audio id="playlist-audio" controls="controls" width="300">
+								
 							</audio>
+							<div id="extraControls">
+								<button id="btnPrev" class="ctrlbtn" ng-click="previous()">|&lt;&lt; Prev Track</button> <button id="btnNext" class="ctrlbtn" ng-click="next()">Next Track &gt;&gt;|</button>
+							</div>
+							
+							
 						</div>
-						<div id="extraControls">
-							<button id="btnPrev" class="ctrlbtn">|&lt;&lt; Prev Track</button> <button id="btnNext" class="ctrlbtn">Next Track &gt;&gt;|</button>
-						</div>
-					</div>
+						
+						<ul ng-repeat="track in tracks">
+							<li ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)"></li>
+						</ul>
 
+				</div>
 			</div>
 		</div>
 	</article>
 </div>
-<aside class="sidebar">
-  
-    
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  
-  <a href="https://github.com/alwynlombaard">@alwynlombaard</a> on GitHub
-  
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
-
-        github.showRepos({
-            user: 'alwynlombaard',
-            count: 0,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
-<section>
-  <h1>On JustGiving</h1>
-      <script type="text/javascript" id="just-causes-07aa587a-125c-4adb-a224-a43dedc4a57c">(function(){function e(){var e=document.createElement("script");e.type="text/javascript";e.async=true;var t="https://just-causes-widget.azurewebsites.net/just-causes-1.0.0.js?jgaccount=YWx3eW4ubG9tYmFhcmRAeWFob28uY28udWs=";e.src=t+(t.indexOf("?")>=0?"&":"?")+"ref="+encodeURIComponent(window.location.href);var n=document.getElementById("just-causes-07aa587a-125c-4adb-a224-a43dedc4a57c");n.parentNode.insertBefore(e,n)}if(window.attachEvent){window.attachEvent("onload",e)}else{window.addEventListener("load",e,false)}})()</script>
- </section>
-
-  
-</aside>
 
 
 
+<script src="/javascripts/playlist.js"></script>
 
 
     </div>
