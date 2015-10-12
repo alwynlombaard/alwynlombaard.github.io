@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Brouwer Study No 6 - Alwyn Lombaard's blog</title>
+  <title>Playlist - Alwyn Lombaard's blog</title>
   <meta name="author" content="Alwyn Lombaard">
 
   
@@ -42,7 +42,51 @@
     })();
   </script>
 
-
+	<style>
+		.active{
+			 background-color: #b7b7b7;
+		}
+		
+		.prev {
+			height: 56px;
+			width: 56px;
+			background: url(/images/controls.jpg) -56px -112px;
+		}
+		.next {
+			height: 56px;
+			width: 56px;
+			background: url(/images/controls.jpg) -112px -112px;
+		}
+		.left{
+			float:left;
+		}
+		.clear
+		{
+			clear:both;
+		}
+		.playlist ul{
+			list-style: none;
+			padding: 3px;
+			margin: 3px;
+		}
+		.playlist ul{
+			width: 400px;
+		}
+		
+		.playlist ul li.track{
+			cursor:pointer;
+			padding-bottom : 3px;
+			padding-top: 3px;
+		}
+		
+		#extra-controls{
+			width:300px;
+			vertical-align: center;
+			padding-bottom: 30px;
+			//border: 1px solid red;
+		}
+		
+	</style>
 </head>
 
 <body   class="collapse-sidebar sidebar-footer" >
@@ -103,7 +147,7 @@
 			
 			
 			<div class="playlist" ng-app="playListApp" ng-controller="playListController">
-				Track: {{selectedTrack().name}}
+				<h2>Track: {{selectedTrack().name}}</h2>
 				
 			
 			
@@ -114,15 +158,17 @@
 							<audio id="playlist-audio" controls="controls" width="300">
 								
 							</audio>
-							<div id="extraControls">
+							<div id="extra-controls">
 								<button id="btnPrev" class="ctrlbtn" ng-click="previous()">|&lt;&lt; Prev Track</button> <button id="btnNext" class="ctrlbtn" ng-click="next()">Next Track &gt;&gt;|</button>
 							</div>
 							
 							
 						</div>
 						
-						<ul ng-repeat="track in tracks">
-							<li ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)">{{track.name}}</li>
+						<h3>Playlist</h3>
+						
+						<ul>
+							<li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)">{{track.track}}. {{track.name}} - {{track.length}}</li>
 						</ul>
 
 				</div>
