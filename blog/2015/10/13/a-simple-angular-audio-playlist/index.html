@@ -138,7 +138,9 @@
     &lt;/div&gt;
     &lt;h3&gt;Playlist&lt;/h3&gt;
     &lt;ul&gt;
-        &lt;li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)"&gt;{{track.track}}. {{track.name}} - {{track.length}}&lt;/li&gt;
+        &lt;li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)"&gt;
+            {{track.track}}. {{track.name}} - {{track.length}}
+        &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>

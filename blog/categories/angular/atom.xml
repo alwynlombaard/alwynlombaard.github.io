@@ -4,7 +4,7 @@
   <title><![CDATA[Category: angular | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/angular/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-10-14T10:53:48+00:00</updated>
+  <updated>2015-10-14T10:55:32+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -33,7 +33,9 @@
     &lt;/div&gt;
     &lt;h3&gt;Playlist&lt;/h3&gt;
     &lt;ul&gt;
-        &lt;li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)"&gt;{{track.track}}. {{track.name}} - {{track.length}}&lt;/li&gt;
+        &lt;li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)"&gt;
+            {{track.track}}. {{track.name}} - {{track.length}}
+        &lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
