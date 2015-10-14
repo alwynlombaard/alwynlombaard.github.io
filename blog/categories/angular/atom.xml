@@ -4,7 +4,7 @@
   <title><![CDATA[Category: angular | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/angular/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-10-14T10:28:09+00:00</updated>
+  <updated>2015-10-14T10:53:48+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -25,7 +25,7 @@
 <h3>The markup</h3>
 
 <pre><code>&lt;div class="playlist" ng-app="playListApp" ng-controller="playListController"&gt;
-    &lt;h2&gt;Track: &lt;/h2&gt;
+    &lt;h2&gt;Track: {{selectedTrack().name}}&lt;/h2&gt;
     &lt;audio preload="false" id="playlist-audio" controls="controls" width="300"&gt;&lt;/audio&gt;
     &lt;div id="extra-controls"&gt;
         &lt;button id="btnPrev" class="ctrlbtn" ng-click="previous()"&gt;|&amp;lt;&amp;lt; Prev Track&lt;/button&gt; 
@@ -33,7 +33,7 @@
     &lt;/div&gt;
     &lt;h3&gt;Playlist&lt;/h3&gt;
     &lt;ul&gt;
-        &lt;li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)"&gt;.  - &lt;/li&gt;
+        &lt;li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)"&gt;{{track.track}}. {{track.name}} - {{track.length}}&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 </code></pre>
