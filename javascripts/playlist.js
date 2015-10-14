@@ -9,7 +9,6 @@
 	});
 
 	global.playListController = function ($scope, audio){
-		$scope.supportsAudio = !!document.createElement('audio').canPlayType;
 		$scope.mediaPath = '/music/';
 		$scope.playing = false;
 		$scope.selectedIndex = 0;
