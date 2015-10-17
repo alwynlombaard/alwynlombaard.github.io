@@ -136,34 +136,46 @@
   <div id="main">
     <div id="content">
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 
-
+<div>
 	<article class="hentry" role="article">
 		<header><h1 class="entry-title">Playlist</h1></header>
 		<div class="entry-content">
 			
 			<p>Here is a list of some of the recordings I've made during my practice sessions.</p>
-			<div id="cwrap">
-				<div class="playlist" ng-app="playListApp" ng-controller="playListController">
-					<h2>Track: {{selectedTrack().name}}</h2>
-					<audio preload="false" id="playlist-audio" controls="controls" width="300"></audio>
-					<div id="extra-controls">
-						<button id="btnPrev" class="ctrlbtn" ng-click="previous()">|&lt;&lt; Prev Track</button> 
-						<button id="btnNext" class="ctrlbtn" ng-click="next()">Next Track &gt;&gt;|</button>
-					</div>
-					<h3>Playlist</h3>
-					<ul>
-						<li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)">{{track.track}}. {{track.name}} - {{track.length}}</li>
-					</ul>
+			
+			<div class="playlist" ng-app="playListApp" ng-controller="playListController">
+				<h2>Track: {{selectedTrack().name}}</h2>
+				
+			
+			
+				<div id="cwrap">
+					
+						
+						
+							<audio id="playlist-audio" controls="controls" width="300">
+								
+							</audio>
+							<div id="extra-controls">
+								<button id="btnPrev" class="ctrlbtn" ng-click="previous()">|&lt;&lt; Prev Track</button> <button id="btnNext" class="ctrlbtn" ng-click="next()">Next Track &gt;&gt;|</button>
+							</div>
+							
+							
+						</div>
+						
+						<h3>Playlist</h3>
+						
+						<ul>
+							<li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)">{{track.track}}. {{track.name}} - {{track.length}}</li>
+						</ul>
+
 				</div>
 			</div>
 		</div>
 	</article>
-
-
-	</div>
-  </div>
+</div>
 
  <footer role="contentinfo"><p>
   Copyright &copy; 2015 - Alwyn Lombaard -
