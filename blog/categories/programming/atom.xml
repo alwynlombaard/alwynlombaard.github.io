@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-10-21T12:13:17+00:00</updated>
+  <updated>2015-10-21T12:17:11+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Xamarin iOS swipable multiple step process used for onboarding]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2015/10/18/xamarin-ios-swipable-multiple-step-process-used-for-onboarding/"/>
-    <updated>2015-10-18T21:49:01+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2015/10/18/xamarin-ios-swipable-multiple-step-process-used-for-onboarding</id>
+    <link href="http://blog.lombaard.co.uk/blog/2015/10/21/xamarin-ios-swipable-multiple-step-process-used-for-onboarding/"/>
+    <updated>2015-10-21T21:49:01+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/10/21/xamarin-ios-swipable-multiple-step-process-used-for-onboarding</id>
     <content type="html"><![CDATA[<h2>The requirement</h2>
 
 <p>I recently had to build an onboarding process in the JustGiving iOS app that consists
