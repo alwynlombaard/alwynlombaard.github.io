@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.lombaard.co.uk/blog/2015/10/18/xamarin-ios-swipable-multiple-step-process-used-for-onboarding/</loc>
+    <lastmod>2015-10-18T21:49:01+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/2015/10/13/a-simple-angular-audio-playlist/</loc>
     <lastmod>2015-10-13T20:34:45+00:00</lastmod>
     <priority>0.8</priority>
@@ -155,14 +161,14 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2015-10-17T14:17:41+00:00</lastmod>
+    <lastmod>2015-10-21T12:13:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2015-10-17T14:17:41+00:00</lastmod>
+    <lastmod>2015-10-21T12:13:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -170,13 +176,13 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/index.html</loc>
-    <lastmod>2015-10-17T14:21:1445091663Z</lastmod>
+    <lastmod>2015-10-18T13:15:1445174124Z</lastmod>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/playlist/index2.html</loc>
-    <lastmod>2015-10-17T13:45:1445089530Z</lastmod>
+    <lastmod>2015-10-18T13:15:1445174124Z</lastmod>
     <priority>0.6</priority>
   </url>
   
