@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-10-24T13:33:13+00:00</updated>
+  <updated>2015-10-24T18:03:46+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[An Irish Air]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2015/10/24/an-irish-air/"/>
+    <updated>2015-10-24T17:46:58+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2015/10/24/an-irish-air</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/An_Irish_Air_20151024_174705.mp3" type="audio/mpeg">
+</audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Brouwer Study No 11]]></title>
@@ -344,20 +357,6 @@
 
 <p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Still_by_my_side_Irish_Traditional_20140903_190251.mp3" type="audio/mpeg">
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Prelude in D minor - De Visee]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee/"/>
-    <updated>2014-08-28T18:23:56+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/08/28/prelude-de-visee</id>
-    <content type="html"><![CDATA[<p>Today I recorded this Prelude by Robert De Visee (1600) while working on it.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Prelude_De_Visee_20140828_191016.mp3" type="audio/mpeg">
-If your browser does not support the audio element you can get the recording <a href="http://blog.lombaard.co.uk/music/Prelude_De_Visee_20140828_191016.mp3">here</a>
 </audio></p>
 ]]></content>
   </entry>

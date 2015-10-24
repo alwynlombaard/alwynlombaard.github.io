@@ -155,7 +155,7 @@
 				<h3>Playlist</h3>
 				<ul>
 					<li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)">
-						{{track.track}}. {{track.name}} - {{track.length}}
+						{{$index + 1}}. {{track.name}} - {{track.length}}
 					</li>
 				</ul>
 			</div>
