@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://blog.lombaard.co.uk/blog/2015/10/24/brouwer-study-no-11/</loc>
+    <lastmod>2015-10-24T13:29:12+00:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.lombaard.co.uk/blog/2015/10/13/a-simple-angular-audio-playlist/</loc>
     <lastmod>2015-10-13T20:34:45+00:00</lastmod>
     <priority>0.8</priority>
@@ -155,14 +161,14 @@
   
   <url>
     <loc>http://blog.lombaard.co.uk/blog/archives/</loc>
-    <lastmod>2015-10-21T12:19:48+00:00</lastmod>
+    <lastmod>2015-10-24T13:33:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://blog.lombaard.co.uk/</loc>
-    <lastmod>2015-10-21T12:19:48+00:00</lastmod>
+    <lastmod>2015-10-24T13:33:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
