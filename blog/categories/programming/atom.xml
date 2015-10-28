@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-10-27T19:00:12+00:00</updated>
+  <updated>2015-10-28T07:55:36+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -18,9 +18,7 @@
     <link href="http://blog.lombaard.co.uk/blog/2015/10/27/xamarin-ios-swipable-multiple-step-process-used-for-onboarding/"/>
     <updated>2015-10-27T21:49:01+00:00</updated>
     <id>http://blog.lombaard.co.uk/blog/2015/10/27/xamarin-ios-swipable-multiple-step-process-used-for-onboarding</id>
-    <content type="html"><![CDATA[<h2>Table of contents</h2>
-
-<ul>
+    <content type="html"><![CDATA[<ul>
 <li><a href="#the-requirement">The requirement</a></li>
 <li><a href="#the-solution">The solution</a></li>
 <li><a href="#endresult">The end result</a></li>
