@@ -14,7 +14,6 @@
 		$scope.playing = false;
 		$scope.selectedIndex = 0;
 		$scope.tracks = [
-					{'name':'An Irish Air','length':'01:46','file':'An_Irish_Air_20151024_174705.mp3'},
 					{'name':'Brouwer Study No 1','length':'01:06','file':'Brouwer_Study_No_1_20150919_182834.mp3'},
 					{'name':'Brouwer Study No 2','length':'01:10','file':'Brouwer_Study_No_2_20151004_140303.mp3'},
 					{'name':'Brouwer Study No 3','length':'00:48','file':'Brouwer_Study_No_3_20151007_214619.mp3'},
@@ -35,6 +34,7 @@
 					{'name':'Andantino in G - Carulli','length':'01:02','file':'Carulli_Andantino_20141128_225123.mp3'},
 					{'name':'Waltz in C - Carcassi','length':'00:59','file':'Carcassi_method_C_Major_Waltz_20150608_184813.mp3'},
 					{'name':'Andantino in A minor - Carulli','length':'01:24','file':'Carulli_Antantino_20150705_113534.mp3'},
+					{'name':'An Irish Air','length':'01:46','file':'An_Irish_Air_20151024_174705.mp3'},
 					{'name':'Opus 60 No 1 - Sor','length':'01:05','file':'Sor_Opus_60_no_1_20151122_131513.mp3'},
 					{'name':'Opus 60 No 22 - Sor','length':'02:31','file':'Sor_Opus_60_No_22_20151031_214715.mp3'}
 					
