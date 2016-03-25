@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2016-03-25T19:07:26+00:00</updated>
+  <updated>2016-03-25T19:13:48+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -20,7 +20,7 @@
     <id>http://blog.lombaard.co.uk/blog/2016/03/25/how-to-serialize-and-deserialize-an-ios-device-token-from-nsdata-to-string-and-back-in-xamarin-dot-ios</id>
     <content type="html"><![CDATA[<p>Obtain the device token as usual when the user opts in to receive remote push notifications. Then convert it to a base64 string that can be stored and used later.</p>
 
-<p>Here&rsquo;s how to to it. In your app delegate:</p>
+<p>Here&rsquo;s how to do it. In your app delegate:</p>
 
 <pre><code>public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
 {
