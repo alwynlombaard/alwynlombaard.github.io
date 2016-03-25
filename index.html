@@ -9,8 +9,7 @@
   <meta name="author" content="Alwyn Lombaard">
 
   
-  <meta name="description" content="The requirement I recently had to build an onboarding process in the JustGiving iOS app that consists
-of a series of screens that can be navigated by &hellip;">
+  <meta name="description" content="Obtain the device token as usual when the user opts in to receive remote push notifications. Then convert it to a base64 string that can be stored &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,6 +95,60 @@ of a series of screens that can be navigated by &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2016/03/25/how-to-serialize-and-deserialize-an-ios-device-token-from-nsdata-to-string-and-back-in-xamarin-dot-ios/">How to serialize and deserialize an iOS device token from NSData to String and back in Xamarin.iOS</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-03-25T18:28:08+00:00" pubdate data-updated="true">Mar 25<sup>th</sup>, 2016</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Obtain the device token as usual when the user opts in to receive remote push notifications. Then convert it to a base64 string that can be stored and used later.</p>
+
+<p>Here&rsquo;s how to to it. In your app delegate:</p>
+
+<pre><code>public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
+{
+    var tokenStringBase64 = deviceToken.GetBase64EncodedString(NSDataBase64EncodingOptions.None);
+    //now you can store it for later use in local storage
+}
+</code></pre>
+
+<p>To convert it back into an NSData object that you can send to third parties (like MixPanel and ExactTarget) that require  the token as NSData:</p>
+
+<pre><code>var deviceToken = new NSData(tokenStringBase64, NSDataBase64DecodingOptions.None);
+
+Mixpanel.SharedInstance.People.AddPushDeviceToken(deviceToken);
+
+ETPush.PushManager.RegisterDeviceToken(deviceToken);
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -596,48 +649,6 @@ public override void LoadView()
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/10/11/brouwer-study-no-6/">Brouwer Study No 6</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-10-11T13:35:32+00:00" pubdate data-updated="true">Oct 11<sup>th</sup>, 2015</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>One of my attempts at this study today during practice.</p>
-
-<p><audio controls>
-  <source src="/music/Brouwer_Study_No_6_20151010_132529.mp3" type="audio/mpeg">
-</audio></p>
-
-<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/posts/2">&larr; Older</a>
@@ -688,7 +699,7 @@ public override void LoadView()
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2015 - Alwyn Lombaard -
+  Copyright &copy; 2016 - Alwyn Lombaard -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a> | Themed with <a href="https://github.com/lucaslew/whitespace">Whitespace</a></span>
 </p>
 

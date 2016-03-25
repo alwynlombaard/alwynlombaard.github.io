@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2015-11-22T13:28:22+00:00</updated>
+  <updated>2016-03-25T19:07:26+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to serialize and deserialize an iOS device token from NSData to String and back in Xamarin.iOS]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2016/03/25/how-to-serialize-and-deserialize-an-ios-device-token-from-nsdata-to-string-and-back-in-xamarin-dot-ios/"/>
+    <updated>2016-03-25T18:28:08+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2016/03/25/how-to-serialize-and-deserialize-an-ios-device-token-from-nsdata-to-string-and-back-in-xamarin-dot-ios</id>
+    <content type="html"><![CDATA[<p>Obtain the device token as usual when the user opts in to receive remote push notifications. Then convert it to a base64 string that can be stored and used later.</p>
+
+<p>Here&rsquo;s how to to it. In your app delegate:</p>
+
+<pre><code>public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
+{
+    var tokenStringBase64 = deviceToken.GetBase64EncodedString(NSDataBase64EncodingOptions.None);
+    //now you can store it for later use in local storage
+}
+</code></pre>
+
+<p>To convert it back into an NSData object that you can send to third parties (like MixPanel and ExactTarget) that require  the token as NSData:</p>
+
+<pre><code>var deviceToken = new NSData(tokenStringBase64, NSDataBase64DecodingOptions.None);
+
+Mixpanel.SharedInstance.People.AddPushDeviceToken(deviceToken);
+
+ETPush.PushManager.RegisterDeviceToken(deviceToken);
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Xamarin iOS swipable multiple step process used for onboarding]]></title>
