@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2016-03-25T19:13:48+00:00</updated>
+  <updated>2016-10-27T10:19:51+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My 15 seconds of Xamarin fame]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2016/04/27/my-15-seconds-of-xamarin-fame/"/>
+    <updated>2016-04-27T09:52:22+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2016/04/27/my-15-seconds-of-xamarin-fame</id>
+    <content type="html"><![CDATA[<p>I got my 15 seconds of fame in the video that Xamarin made for the 2016 Xammy Award nominations.</p>
+
+<p><a href="https://www.xamarin.com/customers/social-good">It is also featured on the Xamarin customer pages.</a></p>
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/b5D7Bv1N7lc" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to serialize and deserialize an iOS device token from NSData to String and back in Xamarin.iOS]]></title>
@@ -601,19 +615,6 @@ public override void LoadView()
     <id>http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor</id>
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Giuliani Allegro in A Minor_20141126_192344.mp3" type="audio/mpeg">
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Opus 60 no 3 - Carcassi]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3/"/>
-    <updated>2014-10-26T21:25:55+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/10/26/carcassi-opus-60-no-3</id>
-    <content type="html"><![CDATA[<p>A practice session recording of this study. Still shaky.</p>
-
-<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Carcassi_Etude3_20141026_180555.mp3" type="audio/mpeg">
 </audio></p>
 ]]></content>
   </entry>
