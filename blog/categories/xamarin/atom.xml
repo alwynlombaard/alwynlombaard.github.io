@@ -4,7 +4,7 @@
   <title><![CDATA[Category: xamarin | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/xamarin/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2016-10-29T11:51:31+00:00</updated>
+  <updated>2016-11-09T11:58:28+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -75,6 +75,8 @@ of a series of screens that can be navigated by swiping forward and backward.</p
 
 <p>I used a <code>UIPageViewController</code> with a <code>UIPageViewControllerDataSource</code> for navigating through steps
 and a <code>UIPageControl</code> for the progress indicator.</p>
+
+<p><a href="https://github.com/alwynlombaard/xamarin-ios-horizontal-swipe-sample">The working sample solution can be found on GitHub</a></p>
 
 <h3 id="endresult">The end result</h3>
 
