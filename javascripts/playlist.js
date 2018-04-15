@@ -14,6 +14,7 @@
 		$scope.playing = false;
 		$scope.selectedIndex = 0;
 		$scope.tracks = [
+					{'name':'Bach Prelude for Lute BWV 999','length':'02:10','file':'Bach_Prelude_for_Lute_BWV999_20180415_150053.mp3'},
 					{'name':'An Irish Air','length':'01:46','file':'An_Irish_Air_20151024_174705.mp3'},
 					{'name':'Brouwer Study No 1','length':'01:06','file':'Brouwer_Study_No_1_20150919_182834.mp3'},
 					{'name':'Brouwer Study No 2','length':'01:10','file':'Brouwer_Study_No_2_20151004_140303.mp3'},

@@ -4,7 +4,7 @@
   <title><![CDATA[Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2016-11-09T11:58:28+00:00</updated>
+  <updated>2018-04-15T15:25:58+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My humble attempt at Bach Prelude for Lute BWV999]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999/"/>
+    <updated>2018-04-15T15:17:08+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Bach_Prelude_for_Lute_BWV999_20180415_150053.mp3" type="audio/mpeg">
+</audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[My 15 seconds of Xamarin fame]]></title>
@@ -608,17 +621,6 @@ public override void LoadView()
     <id>http://blog.lombaard.co.uk/blog/2014/11/26/aguado-lesson</id>
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Aguado_Lesson_20141126_221556.mp3" type="audio/mpeg">
-</audio></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Allegro in A minor - Giuliani]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor/"/>
-    <updated>2014-11-26T20:08:32+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2014/11/26/giuliani-allegro-in-a-minor</id>
-    <content type="html"><![CDATA[<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Giuliani Allegro in A Minor_20141126_192344.mp3" type="audio/mpeg">
 </audio></p>
 ]]></content>
   </entry>

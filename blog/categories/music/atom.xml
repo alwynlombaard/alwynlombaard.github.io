@@ -4,7 +4,7 @@
   <title><![CDATA[Category: music | Alwyn Lombaard's blog]]></title>
   <link href="http://blog.lombaard.co.uk/blog/categories/music/atom.xml" rel="self"/>
   <link href="http://blog.lombaard.co.uk/"/>
-  <updated>2016-11-09T11:58:28+00:00</updated>
+  <updated>2018-04-15T15:25:58+00:00</updated>
   <id>http://blog.lombaard.co.uk/</id>
   <author>
     <name><![CDATA[Alwyn Lombaard]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[My humble attempt at Bach Prelude for Lute BWV999]]></title>
+    <link href="http://blog.lombaard.co.uk/blog/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999/"/>
+    <updated>2018-04-15T15:17:08+00:00</updated>
+    <id>http://blog.lombaard.co.uk/blog/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999</id>
+    <content type="html"><![CDATA[<p><audio controls>
+  <source src="http://blog.lombaard.co.uk/music/Bach_Prelude_for_Lute_BWV999_20180415_150053.mp3" type="audio/mpeg">
+</audio></p>
+
+<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[An Irish Air]]></title>
@@ -64,19 +77,6 @@
     <content type="html"><![CDATA[<p><audio controls>
   <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_4_20151008_212308.mp3" type="audio/mpeg">
 &lt;/audio</p>
-
-<blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Brouwer Study No 3]]></title>
-    <link href="http://blog.lombaard.co.uk/blog/2015/10/08/brouwer-study-no-3/"/>
-    <updated>2015-10-08T11:36:12+00:00</updated>
-    <id>http://blog.lombaard.co.uk/blog/2015/10/08/brouwer-study-no-3</id>
-    <content type="html"><![CDATA[<p><audio controls>
-  <source src="http://blog.lombaard.co.uk/music/Brouwer_Study_No_3_20151007_214619.mp3" type="audio/mpeg">
-</audio></p>
 
 <blockquote><p>Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.</p></blockquote>
 ]]></content>
