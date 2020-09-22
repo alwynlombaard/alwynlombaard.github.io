@@ -28,7 +28,7 @@ and a `UIPageControl` for the progress indicator.
 
 <h3 id="endresult">The end result</h3>
 
-<video controls preload="false" width="300">
+<video controls preload="false" width="100%">
    <source src="/video/onboarding.mp4" type="video/mp4">
 </video> 
 
