@@ -14,15 +14,15 @@ I just wanted to be able to send a simple transactional email without first havi
 
 Here is how you can set up a new transactional email by using my library.
 
-##Getting started##
+## Getting started ##
 
 I assume you have received API user credentials from ExactTarget to use with the SOAP API. I also assume you have logged into ExactTarget and have heard about "Triggered Sends" and "Data Extensions".
 
-##Step 1: Install from Nuget##
+## Step 1: Install from Nuget ##
 
 {% gist 83bf27007bf84e63ceb9 Install %}
 
-##Step 2: Create##
+## Step 2: Create ##
 
 You only need to do this once for the type of email you wish to send with tracking. (For example order confirmation emails, welcome after registration emails, order dispatched emails etc)
 
@@ -33,18 +33,18 @@ You have two choices, you can create a "Triggered send" with a
 
 {% gist 83bf27007bf84e63ceb9 Config.cs %}
 
-###Create "PasteHtml" email###
+### Create "PasteHtml" email ###
 
 {% gist 83bf27007bf84e63ceb9 CreatePasteHtml.cs %}
 
-###Create Templated email###
+### Create Templated email ###
 
 {% gist 83bf27007bf84e63ceb9 CreateTemplate.cs %}
 
 
-##Sending an email##
+## Sending an email ##
 
-###Sending "PasteHtml" email###
+### Sending "PasteHtml" email ###
 
 If you've created a "PasteHTML" email, you supply replacement values to use for the email for:
 
@@ -56,7 +56,7 @@ If you've created a "PasteHTML" email, you supply replacement values to use for 
 
 {% gist 83bf27007bf84e63ceb9 SendPasteHtml.cs %}
 
-###Sending Templated email###
+### Sending Templated email ###
 
 If you've created a templated email, you supply replacement values to use for the email for:
 
@@ -67,5 +67,5 @@ If you've created a templated email, you supply replacement values to use for th
 
 {% gist 83bf27007bf84e63ceb9 SendTemplate.cs %}
 
-##Links##
+## Links ##
 [Project site](http://exacttarget.lombaard.co.uk/)

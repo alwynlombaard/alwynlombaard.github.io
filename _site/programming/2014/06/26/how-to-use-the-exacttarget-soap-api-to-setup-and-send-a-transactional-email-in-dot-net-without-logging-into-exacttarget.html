@@ -52,15 +52,15 @@
 
 <p>Here is how you can set up a new transactional email by using my library.</p>
 
-<p>##Getting started##</p>
+<h2 id="getting-started">Getting started</h2>
 
 <p>I assume you have received API user credentials from ExactTarget to use with the SOAP API. I also assume you have logged into ExactTarget and have heard about “Triggered Sends” and “Data Extensions”.</p>
 
-<p>##Step 1: Install from Nuget##</p>
+<h2 id="step-1-install-from-nuget">Step 1: Install from Nuget</h2>
 
 <script src="https://gist.github.com/83bf27007bf84e63ceb9.js?file=Install"> </script>
 
-<p>##Step 2: Create##</p>
+<h2 id="step-2-create">Step 2: Create</h2>
 
 <p>You only need to do this once for the type of email you wish to send with tracking. (For example order confirmation emails, welcome after registration emails, order dispatched emails etc)</p>
 
@@ -73,17 +73,17 @@
 
 <script src="https://gist.github.com/83bf27007bf84e63ceb9.js?file=Config.cs"> </script>
 
-<p>###Create “PasteHtml” email###</p>
+<h3 id="create-pastehtml-email">Create “PasteHtml” email</h3>
 
 <script src="https://gist.github.com/83bf27007bf84e63ceb9.js?file=CreatePasteHtml.cs"> </script>
 
-<p>###Create Templated email###</p>
+<h3 id="create-templated-email">Create Templated email</h3>
 
 <script src="https://gist.github.com/83bf27007bf84e63ceb9.js?file=CreateTemplate.cs"> </script>
 
-<p>##Sending an email##</p>
+<h2 id="sending-an-email">Sending an email</h2>
 
-<p>###Sending “PasteHtml” email###</p>
+<h3 id="sending-pastehtml-email">Sending “PasteHtml” email</h3>
 
 <p>If you’ve created a “PasteHTML” email, you supply replacement values to use for the email for:</p>
 
@@ -97,7 +97,7 @@
 
 <script src="https://gist.github.com/83bf27007bf84e63ceb9.js?file=SendPasteHtml.cs"> </script>
 
-<p>###Sending Templated email###</p>
+<h3 id="sending-templated-email">Sending Templated email</h3>
 
 <p>If you’ve created a templated email, you supply replacement values to use for the email for:</p>
 
@@ -110,8 +110,8 @@
 
 <script src="https://gist.github.com/83bf27007bf84e63ceb9.js?file=SendTemplate.cs"> </script>
 
-<p>##Links##
-<a href="http://exacttarget.lombaard.co.uk/">Project site</a></p>
+<h2 id="links">Links</h2>
+<p><a href="http://exacttarget.lombaard.co.uk/">Project site</a></p>
 
   </div><a class="u-url" href="/programming/2014/06/26/how-to-use-the-exacttarget-soap-api-to-setup-and-send-a-transactional-email-in-dot-net-without-logging-into-exacttarget.html" hidden></a>
 </article>
