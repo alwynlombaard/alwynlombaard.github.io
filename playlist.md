@@ -52,25 +52,24 @@ permalink: /playlist/
 	
 </style>
 
-<article class="hentry" role="article">
-	<header><h1 class="entry-title">Playlist</h1></header>
-	<div class="entry-content">
-		<p>Here is a list of some of the recordings I've made during my practice sessions.</p>
-		<div class="playlist" ng-app="playListApp" ng-controller="playListController">
-			<h2>Track: {% raw %}{{selectedTrack().name}}{% endraw %}</h2>
-			<audio preload="false" id="playlist-audio" controls="controls" width="300"></audio>
-			<div id="extra-controls">
-				<button id="btnPrev" class="ctrlbtn" ng-click="previous()">|&lt;&lt; Prev Track</button> 
-				<button id="btnNext" class="ctrlbtn" ng-click="next()">Next Track &gt;&gt;|</button>
-			</div>
-			<h3>Playlist</h3>
-			<ul>
-				<li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)">
-					{% raw %}{{$index + 1}}. {{track.name}} - {{track.length}}{% endraw %}
-				</li>
-			</ul>
-		</div>
+<header><h1 class="entry-title">Playlist</h1></header>
+<p>I developed this playlist for my recordings while playing around with Angular. Read about it <a href="{% post_url 2015-10-13-a-simple-angular-audio-playlist%}">here</a>.
+</p>
+
+<p>Here is a list of some of the recordings I've made during my practice sessions.</p>
+<div class="playlist" ng-app="playListApp" ng-controller="playListController">
+	<h2>Track: {% raw %}{{selectedTrack().name}}{% endraw %}</h2>
+	<audio preload="false" id="playlist-audio" controls="controls" width="300"></audio>
+	<div id="extra-controls">
+		<button id="btnPrev" class="ctrlbtn" ng-click="previous()">|&lt;&lt; Prev Track</button> 
+		<button id="btnNext" class="ctrlbtn" ng-click="next()">Next Track &gt;&gt;|</button>
 	</div>
-</article>
+	<h3>Playlist</h3>
+	<ul>
+		<li class="track" ng-repeat="track in tracks" ng-class="{active:selectedIndex == $index}" ng-click="loadTrack($index)">
+			{% raw %}{{$index + 1}}. {{track.name}} - {{track.length}}{% endraw %}
+		</li>
+	</ul>
+</div>
 
 
