@@ -7,8 +7,9 @@ categories: guitar
 author: Alwyn Lombaard
 ---
 
-A quick recording of this study while revisiting it today for the fist time in a long while (with news in the background about the Scottish referendum tomorrow)
-
 <audio controls>
   <source src="/music/Tarrega_eminor_20140917_195801.mp3" type="audio/mpeg">
 </audio>
+
+A quick recording of this study while revisiting it today for the fist time in a long while (with news in the background about the Scottish referendum tomorrow)
+

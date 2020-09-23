@@ -7,11 +7,12 @@ categories: guitar
 author: Alwyn Lombaard
 ---
 
-
-A practice session recording of this study. Still shaky.
-
 <audio controls>
   <source src="/music/Carcassi_Etude3_20141026_180555.mp3" type="audio/mpeg">
 </audio>
+
+A practice session recording of this study. Still shaky.
+
+
 
 
