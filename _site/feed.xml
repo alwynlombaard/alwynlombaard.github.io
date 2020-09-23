@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-23T10:50:09+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">My humble attempt at Bach Prelude for Lute BWV999</title><link href="http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999.html" rel="alternate" type="text/html" title="My humble attempt at Bach Prelude for Lute BWV999" /><published>2018-04-15T16:17:08+01:00</published><updated>2018-04-15T16:17:08+01:00</updated><id>http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999</id><content type="html" xml:base="http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999.html">&lt;audio controls=&quot;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-23T10:54:09+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">My humble attempt at Bach Prelude for Lute BWV999</title><link href="http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999.html" rel="alternate" type="text/html" title="My humble attempt at Bach Prelude for Lute BWV999" /><published>2018-04-15T16:17:08+01:00</published><updated>2018-04-15T16:17:08+01:00</updated><id>http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999</id><content type="html" xml:base="http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999.html">&lt;audio controls=&quot;&quot;&gt;
   &lt;source src=&quot;/music/Bach_Prelude_for_Lute_BWV999_20180415_150053.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 &lt;/audio&gt;
 
@@ -281,7 +281,7 @@ public override void LoadView()
 
 &lt;p&gt;You can play with it &lt;a href=&quot;/playlist&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;###The markup&lt;/p&gt;
+&lt;h3 id=&quot;the-markup&quot;&gt;The markup&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;playlist&quot; ng-app=&quot;playListApp&quot; ng-controller=&quot;playListController&quot;&amp;gt;
 	&amp;lt;h2&amp;gt;Track: {{selectedTrack().name}}&amp;lt;/h2&amp;gt;
@@ -299,7 +299,7 @@ public override void LoadView()
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;###The JavaScript&lt;/p&gt;
+&lt;h3 id=&quot;the-javascript&quot;&gt;The JavaScript&lt;/h3&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'use strict';
 

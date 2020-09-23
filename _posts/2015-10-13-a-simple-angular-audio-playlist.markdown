@@ -11,7 +11,7 @@ I recently knocked out this Angular.js app to put my recordings in a playlist.
 
 You can play with it [here](/playlist).
 
-###The markup
+### The markup
 
 	<div class="playlist" ng-app="playListApp" ng-controller="playListController">
 		<h2>Track: {{"{{selectedTrack().name"}}}}</h2>
@@ -29,7 +29,7 @@ You can play with it [here](/playlist).
 	</div>
 
 
-###The JavaScript
+### The JavaScript
 
 	'use strict';
 
