@@ -14,25 +14,49 @@ layout: default
   {%- for cat in categories -%}
     <h2 class="post-list-heading">{{ cat[0] }}</h2> 
     <ul class="post-list">
-      {%- for post in cat[1] -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <div>
-            {%- for cat in post.categories -%}
-              <span class="post-list">{{ cat }} {%- if post.categories.size > 1 -%} &nbsp;|&nbsp;{%- endif -%} </span> 
-            {%- endfor -%}
-        </div>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-       
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+      {%- assign posts = cat[1] -%}
+      {%- assign pinned = posts | where: "is_pinned", "true" -%}
+      {%- for pin in pinned -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ pin.date | date: date_format }}</span>
+          <div>
+              {%- for cat in pin.categories -%}
+                <span class="post-list">{{ cat }} {%- if pin.categories.size > 1 -%} &nbsp;|&nbsp;{%- endif -%} </span> 
+              {%- endfor -%}
+          </div>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ pin.title | escape }}
+            </a>
+          </h3>
+        
+          {%- if site.show_excerpts -%}
+            {{ pin.excerpt }}
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+      {%- for post in posts -%}
+        {%- if post.is_pinned != true -%}
+          <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <div>
+                {%- for cat in post.categories -%}
+                  <span class="post-list">{{ cat }} {%- if post.categories.size > 1 -%} &nbsp;|&nbsp;{%- endif -%} </span> 
+                {%- endfor -%}
+            </div>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+          
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </li>
         {%- endif -%}
-      </li>
       {%- endfor -%}
     </ul>
   {%- endfor -%}
