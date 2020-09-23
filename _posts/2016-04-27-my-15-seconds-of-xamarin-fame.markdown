@@ -3,7 +3,7 @@ layout: post
 title: "My 15 seconds of Xamarin fame"
 date: 2016-04-27 09:52:22 +0000
 comments: false
-categories: xamarin
+categories: Xamarin
 author: Alwyn Lombaard
 ---
 I got my 15 seconds of fame in the video that Xamarin made for the 2016 Xammy Award nominations. 

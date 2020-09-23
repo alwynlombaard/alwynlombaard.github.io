@@ -3,7 +3,7 @@ layout: post
 title: "How to use the ExactTarget SOAP API to setup and send a transactional email in .Net without logging into ExactTarget"
 date: 2014-06-26 15:07:00 +0100
 comments: true
-categories: [Programming]
+categories: [programming]
 tags: [ExactTarget, transactional email, C#, .Net]
 author: Alwyn Lombaard
 ---

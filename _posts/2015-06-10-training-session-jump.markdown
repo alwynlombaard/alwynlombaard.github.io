@@ -7,6 +7,6 @@ categories: athletics
 author: Alwyn Lombaard
 ---
 
-<video width="320" height="240" controls>
+<video width="100%" controls>
    <source src="/video/9-June-2015.mp4" type="video/mp4">
 </video> 
