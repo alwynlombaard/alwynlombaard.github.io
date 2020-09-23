@@ -3,7 +3,7 @@ layout: post
 title: "Greensleeves practice session"
 date: 2014-08-14 21:21:08 +0100
 comments: false
-categories: music guitar
+categories: guitar
 published: true
 author: Alwyn Lombaard
 ---

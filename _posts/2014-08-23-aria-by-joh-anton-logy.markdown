@@ -3,7 +3,7 @@ layout: post
 title: "Aria by Johann Anton Logy"
 date: 2014-08-22 18:12:18 +0100
 comments: false
-categories: music guitar 
+categories: guitar 
 author: Alwyn Lombaard
 ---
 

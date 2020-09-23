@@ -3,7 +3,7 @@ layout: post
 title: "Study in E minor - Tarrega"
 date: 2014-09-17 20:12:46 +0100
 comments: false
-categories: music guitar
+categories: guitar
 author: Alwyn Lombaard
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: "Andantino in G - Carulli"
 date: 2014-11-28 23:22:43 +0000
 comments: false
-categories: music guitar
+categories: guitar
 author: Alwyn Lombaard
 ---
 

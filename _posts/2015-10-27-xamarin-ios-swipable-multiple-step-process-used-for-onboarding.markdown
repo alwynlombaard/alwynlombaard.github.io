@@ -3,7 +3,8 @@ layout: post
 title: "Xamarin iOS swipable multiple step process used for onboarding"
 date: 2015-10-27rak 21:49:01 +0000
 comments: true
-categories: Xamarin iOS programming C#
+categories: Xamarin
+tags: Xamarin iOS programming C#
 published: true
 author: Alwyn Lombaard
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Still by my side"
 date: 2014-09-03 19:37:16 +0100
 comments: false
-categories: music guitar
+categories: guitar
 author: Alwyn Lombaard
 ---
 
