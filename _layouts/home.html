@@ -20,7 +20,7 @@ layout: default
         <li>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">{{ pin.date | date: date_format }}</span>
-          <div>
+          <div> Pinned post in&nbsp;
               {%- for cat in pin.categories -%}
                 <span class="post-list">{{ cat }} {%- if pin.categories.size > 1 -%} &nbsp;|&nbsp;{%- endif -%} </span> 
               {%- endfor -%}

@@ -5,7 +5,7 @@ date: 2016-04-27 09:52:22 +0000
 comments: false
 categories: Xamarin
 author: Alwyn Lombaard
-is_pinned: false
+is_pinned: true
 ---
 
 
