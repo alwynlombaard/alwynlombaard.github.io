@@ -13,7 +13,6 @@ published: true
    <source src="/video/guitarnotes1.mov" type="video/mp4">
 </video> 
 
-
 I played around with the new [Shapes](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/shapes/) feature in Xamarin.Forms for drawing shapes without having to use SkiaSharp.
 
 So I developed a screen using a [Grid](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/grid) as the canvas to draw a musical staff with treble clef and note. The range is for notes on a guitar in standard tuning up the the 12th fret on the first (bottom on the guitar) string. 
@@ -49,7 +48,7 @@ Here is the layout
             StrokeThickness="2"
             X2="{Binding CanvasWidth}" />
 
-            <!--Bar line-->
+        <!--Bar line-->
         <Line Grid.Row="12" Grid.RowSpan="8" Stroke="Black"
             StrokeThickness="2"
             X1="{Binding CanvasWidth}"
