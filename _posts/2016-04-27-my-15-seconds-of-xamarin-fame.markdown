@@ -9,7 +9,7 @@ is_pinned: true
 ---
 
 
-<iframe width="834" height="390" src="https://www.youtube.com/embed/b5D7Bv1N7lc?start=30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="390" src="https://www.youtube.com/embed/b5D7Bv1N7lc?start=30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I got my 15 seconds of fame in the video that Xamarin made for the 2016 Xammy Award nominations. 
 
