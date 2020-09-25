@@ -9,9 +9,12 @@ author: Alwyn Lombaard
 published: true
 ---
 
+>screen recording on an iPhone 6s
 <video width="300" controls>
    <source src="/video/guitarnotes1.mov" type="video/mp4">
 </video> 
+
+
 
 I played around with the new [Shapes](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/shapes/) feature in Xamarin.Forms for drawing shapes without having to use SkiaSharp.
 
