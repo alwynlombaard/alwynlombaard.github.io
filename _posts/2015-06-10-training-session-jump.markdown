@@ -6,7 +6,7 @@ comments: false
 categories: athletics
 author: Alwyn Lombaard
 ---
-
+Screwed up the most important part of the runup. The curve and the last 3 strides.
 <video width="100%" controls>
    <source src="/video/9-June-2015.mp4" type="video/mp4">
 </video> 
