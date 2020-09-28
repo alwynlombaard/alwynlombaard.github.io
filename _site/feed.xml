@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-28T12:36:17+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">Using Xamarin.Forms Shapes to notate notes on the treble clef</title><link href="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes.html" rel="alternate" type="text/html" title="Using Xamarin.Forms Shapes to notate notes on the treble clef" /><published>2020-09-25T01:00:00+01:00</published><updated>2020-09-25T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-28T17:07:19+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">Xamarin.Forms AppThemeBinding markup extension</title><link href="http://localhost:4000/xamarin/2020/09/28/xamarinforms-appthemebinding.html" rel="alternate" type="text/html" title="Xamarin.Forms AppThemeBinding markup extension" /><published>2020-09-28T01:00:00+01:00</published><updated>2020-09-28T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/09/28/xamarinforms-appthemebinding</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/09/28/xamarinforms-appthemebinding.html">&lt;p&gt;I really like the new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AppThemeBinding&lt;/code&gt; markup extension in Xamarin.Forms to easily handle Dark and Light modes on the mobile device. It can be used in combination with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StaticResource&lt;/code&gt; markup extension.&lt;/p&gt;
+
+&lt;p&gt;Below is an example:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;BackgroundColor=&quot;{AppThemeBinding
+                Light={StaticResource LightBackgroundColor},
+                Dark={StaticResource DarkBackgroundColor}}&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;!-- --&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;ContentPage.Resources&amp;gt;
+    &amp;lt;Color x:Key=&quot;LightBackgroundColor&quot;&amp;gt;WhiteSmoke&amp;lt;/Color&amp;gt;
+    &amp;lt;Color x:Key=&quot;DarkBackgroundColor&quot;&amp;gt;Black&amp;lt;/Color&amp;gt;
+&amp;lt;/ContentPage.Resources&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;screen recording on iPhone Simulator&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;video width=&quot;300&quot; controls=&quot;&quot;&gt;
+   &lt;source src=&quot;/video/appthemebinding.mov&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><summary type="html">I really like the new AppThemeBinding markup extension in Xamarin.Forms to easily handle Dark and Light modes on the mobile device. It can be used in combination with the StaticResource markup extension.</summary></entry><entry><title type="html">Using Xamarin.Forms Shapes to notate notes on the treble clef</title><link href="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes-copy.html" rel="alternate" type="text/html" title="Using Xamarin.Forms Shapes to notate notes on the treble clef" /><published>2020-09-25T01:00:00+01:00</published><updated>2020-09-25T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes%20copy</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes-copy.html">&lt;blockquote&gt;
   &lt;p&gt;screen recording on an iPhone 6s&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;video width=&quot;300&quot; controls=&quot;&quot;&gt;
@@ -524,14 +546,6 @@ public override void LoadView()
 })(this);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alwyn Lombaard</name></author><summary type="html">I recently knocked out this Angular.js app to put my recordings in a playlist.</summary></entry><entry><title type="html">Brouwer Study No 6</title><link href="http://localhost:4000/guitar/2015/10/11/brouwer-study-no-6.html" rel="alternate" type="text/html" title="Brouwer Study No 6" /><published>2015-10-11T14:35:32+01:00</published><updated>2015-10-11T14:35:32+01:00</updated><id>http://localhost:4000/guitar/2015/10/11/brouwer-study-no-6</id><content type="html" xml:base="http://localhost:4000/guitar/2015/10/11/brouwer-study-no-6.html">&lt;audio controls=&quot;&quot;&gt;
   &lt;source src=&quot;/music/Brouwer_Study_No_6_20151010_132529.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-&lt;/audio&gt;
-
-&lt;p&gt;One of my attempts at this study today during practice.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Alwyn Lombaard</name></author><summary type="html"></summary></entry><entry><title type="html">Brouwer Study No 5</title><link href="http://localhost:4000/guitar/2015/10/10/brouwer-study-no-5.html" rel="alternate" type="text/html" title="Brouwer Study No 5" /><published>2015-10-10T15:59:08+01:00</published><updated>2015-10-10T15:59:08+01:00</updated><id>http://localhost:4000/guitar/2015/10/10/brouwer-study-no-5</id><content type="html" xml:base="http://localhost:4000/guitar/2015/10/10/brouwer-study-no-5.html">&lt;audio controls=&quot;&quot;&gt;
-  &lt;source src=&quot;/music/Brouwer_Study_No_5_20151011_150048.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 &lt;/audio&gt;
 
 &lt;p&gt;One of my attempts at this study today during practice.&lt;/p&gt;
