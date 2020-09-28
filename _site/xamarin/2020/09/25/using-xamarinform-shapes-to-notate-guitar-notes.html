@@ -73,28 +73,43 @@
     &lt;BoxView Grid.RowSpan="32"/&gt;
 
     &lt;!--Staff--&gt;
-    &lt;Line Grid.Row="12" Stroke="Black"
+    &lt;Path Grid.Row="11" Stroke="Black"
+        Aspect="Uniform"
+        Grid.RowSpan="2"
         StrokeThickness="2"
-        X2="{Binding CanvasWidth}" /&gt;
-    &lt;Line Grid.Row="14" Stroke="Black"
+        Data="M 0,0 L60,0" /&gt;
+
+    &lt;Path Grid.Row="13" Stroke="Black"
+        Aspect="Uniform"
+        Grid.RowSpan="2"
         StrokeThickness="2"
-        X2="{Binding CanvasWidth}" /&gt;
-    &lt;Line Grid.Row="16" Stroke="Black"
+        Data="M 0,0 L60,0" /&gt;
+
+    &lt;Path Grid.Row="15" Stroke="Black"
+        Aspect="Uniform"
+        Grid.RowSpan="2"
         StrokeThickness="2"
-        X2="{Binding CanvasWidth}" /&gt;
-    &lt;Line Grid.Row="18" Stroke="Black"
+        Data="M 0,0 L60,0" /&gt;
+
+    &lt;Path Grid.Row="17" Stroke="Black"
+        Aspect="Uniform"
+        Grid.RowSpan="2"
         StrokeThickness="2"
-        X2="{Binding CanvasWidth}" /&gt;
-    &lt;Line Grid.Row="20" Stroke="Black"
+        Data="M 0,0 L60,0" /&gt;
+
+    &lt;Path Grid.Row="19" Stroke="Black"
+        Aspect="Uniform"
+        Grid.RowSpan="2"
         StrokeThickness="2"
-        X2="{Binding CanvasWidth}" /&gt;
+        Data="M 0,0 L60,0" /&gt;
 
     &lt;!--Bar line--&gt;
-    &lt;Line Grid.Row="12" Grid.RowSpan="8" Stroke="Black"
+    &lt;Path Grid.Row="12" Stroke="Black"
+        Aspect="Uniform"
+        Grid.RowSpan="8"
+        HorizontalOptions="EndAndExpand"
         StrokeThickness="2"
-        X1="{Binding CanvasWidth}"
-        X2="{Binding CanvasWidth}"
-        Y2="{Binding CanvasHeight}"/&gt;
+        Data="M 3,0 L 3,60" /&gt;
 
     &lt;!--Top ledger lines--&gt;
     &lt;Path WidthRequest="{Binding LedgerLineWidth}"

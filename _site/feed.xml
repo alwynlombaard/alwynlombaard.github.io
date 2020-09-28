@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-27T17:58:50+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">Using Xamarin.Forms Shapes to notate notes on the treble clef</title><link href="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes.html" rel="alternate" type="text/html" title="Using Xamarin.Forms Shapes to notate notes on the treble clef" /><published>2020-09-25T01:00:00+01:00</published><updated>2020-09-25T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-28T12:36:17+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">Using Xamarin.Forms Shapes to notate notes on the treble clef</title><link href="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes.html" rel="alternate" type="text/html" title="Using Xamarin.Forms Shapes to notate notes on the treble clef" /><published>2020-09-25T01:00:00+01:00</published><updated>2020-09-25T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes.html">&lt;blockquote&gt;
   &lt;p&gt;screen recording on an iPhone 6s&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;video width=&quot;300&quot; controls=&quot;&quot;&gt;
@@ -24,28 +24,43 @@
     &amp;lt;BoxView Grid.RowSpan=&quot;32&quot;/&amp;gt;
 
     &amp;lt;!--Staff--&amp;gt;
-    &amp;lt;Line Grid.Row=&quot;12&quot; Stroke=&quot;Black&quot;
+    &amp;lt;Path Grid.Row=&quot;11&quot; Stroke=&quot;Black&quot;
+        Aspect=&quot;Uniform&quot;
+        Grid.RowSpan=&quot;2&quot;
         StrokeThickness=&quot;2&quot;
-        X2=&quot;{Binding CanvasWidth}&quot; /&amp;gt;
-    &amp;lt;Line Grid.Row=&quot;14&quot; Stroke=&quot;Black&quot;
+        Data=&quot;M 0,0 L60,0&quot; /&amp;gt;
+
+    &amp;lt;Path Grid.Row=&quot;13&quot; Stroke=&quot;Black&quot;
+        Aspect=&quot;Uniform&quot;
+        Grid.RowSpan=&quot;2&quot;
         StrokeThickness=&quot;2&quot;
-        X2=&quot;{Binding CanvasWidth}&quot; /&amp;gt;
-    &amp;lt;Line Grid.Row=&quot;16&quot; Stroke=&quot;Black&quot;
+        Data=&quot;M 0,0 L60,0&quot; /&amp;gt;
+
+    &amp;lt;Path Grid.Row=&quot;15&quot; Stroke=&quot;Black&quot;
+        Aspect=&quot;Uniform&quot;
+        Grid.RowSpan=&quot;2&quot;
         StrokeThickness=&quot;2&quot;
-        X2=&quot;{Binding CanvasWidth}&quot; /&amp;gt;
-    &amp;lt;Line Grid.Row=&quot;18&quot; Stroke=&quot;Black&quot;
+        Data=&quot;M 0,0 L60,0&quot; /&amp;gt;
+
+    &amp;lt;Path Grid.Row=&quot;17&quot; Stroke=&quot;Black&quot;
+        Aspect=&quot;Uniform&quot;
+        Grid.RowSpan=&quot;2&quot;
         StrokeThickness=&quot;2&quot;
-        X2=&quot;{Binding CanvasWidth}&quot; /&amp;gt;
-    &amp;lt;Line Grid.Row=&quot;20&quot; Stroke=&quot;Black&quot;
+        Data=&quot;M 0,0 L60,0&quot; /&amp;gt;
+
+    &amp;lt;Path Grid.Row=&quot;19&quot; Stroke=&quot;Black&quot;
+        Aspect=&quot;Uniform&quot;
+        Grid.RowSpan=&quot;2&quot;
         StrokeThickness=&quot;2&quot;
-        X2=&quot;{Binding CanvasWidth}&quot; /&amp;gt;
+        Data=&quot;M 0,0 L60,0&quot; /&amp;gt;
 
     &amp;lt;!--Bar line--&amp;gt;
-    &amp;lt;Line Grid.Row=&quot;12&quot; Grid.RowSpan=&quot;8&quot; Stroke=&quot;Black&quot;
+    &amp;lt;Path Grid.Row=&quot;12&quot; Stroke=&quot;Black&quot;
+        Aspect=&quot;Uniform&quot;
+        Grid.RowSpan=&quot;8&quot;
+        HorizontalOptions=&quot;EndAndExpand&quot;
         StrokeThickness=&quot;2&quot;
-        X1=&quot;{Binding CanvasWidth}&quot;
-        X2=&quot;{Binding CanvasWidth}&quot;
-        Y2=&quot;{Binding CanvasHeight}&quot;/&amp;gt;
+        Data=&quot;M 3,0 L 3,60&quot; /&amp;gt;
 
     &amp;lt;!--Top ledger lines--&amp;gt;
     &amp;lt;Path WidthRequest=&quot;{Binding LedgerLineWidth}&quot;

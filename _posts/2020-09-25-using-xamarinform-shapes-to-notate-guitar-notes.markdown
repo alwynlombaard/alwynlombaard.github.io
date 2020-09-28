@@ -35,28 +35,43 @@ Here is the layout
         <BoxView Grid.RowSpan="32"/>
 
         <!--Staff-->
-        <Line Grid.Row="12" Stroke="Black"
+        <Path Grid.Row="11" Stroke="Black"
+            Aspect="Uniform"
+            Grid.RowSpan="2"
             StrokeThickness="2"
-            X2="{Binding CanvasWidth}" />
-        <Line Grid.Row="14" Stroke="Black"
+            Data="M 0,0 L60,0" />
+
+        <Path Grid.Row="13" Stroke="Black"
+            Aspect="Uniform"
+            Grid.RowSpan="2"
             StrokeThickness="2"
-            X2="{Binding CanvasWidth}" />
-        <Line Grid.Row="16" Stroke="Black"
+            Data="M 0,0 L60,0" />
+
+        <Path Grid.Row="15" Stroke="Black"
+            Aspect="Uniform"
+            Grid.RowSpan="2"
             StrokeThickness="2"
-            X2="{Binding CanvasWidth}" />
-        <Line Grid.Row="18" Stroke="Black"
+            Data="M 0,0 L60,0" />
+
+        <Path Grid.Row="17" Stroke="Black"
+            Aspect="Uniform"
+            Grid.RowSpan="2"
             StrokeThickness="2"
-            X2="{Binding CanvasWidth}" />
-        <Line Grid.Row="20" Stroke="Black"
+            Data="M 0,0 L60,0" />
+
+        <Path Grid.Row="19" Stroke="Black"
+            Aspect="Uniform"
+            Grid.RowSpan="2"
             StrokeThickness="2"
-            X2="{Binding CanvasWidth}" />
+            Data="M 0,0 L60,0" />
 
         <!--Bar line-->
-        <Line Grid.Row="12" Grid.RowSpan="8" Stroke="Black"
+        <Path Grid.Row="12" Stroke="Black"
+            Aspect="Uniform"
+            Grid.RowSpan="8"
+            HorizontalOptions="EndAndExpand"
             StrokeThickness="2"
-            X1="{Binding CanvasWidth}"
-            X2="{Binding CanvasWidth}"
-            Y2="{Binding CanvasHeight}"/>
+            Data="M 3,0 L 3,60" />
 
         <!--Top ledger lines-->
         <Path WidthRequest="{Binding LedgerLineWidth}"
