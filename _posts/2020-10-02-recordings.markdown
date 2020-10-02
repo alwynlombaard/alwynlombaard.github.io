@@ -10,4 +10,4 @@ published: true
 is_pinned: true
 ---
 
-[Listen to some of my recordings I make during my practice sessions here](/playlist).
+[Listen to some of my recordings I've made during my practice sessions](/playlist).
