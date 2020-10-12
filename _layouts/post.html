@@ -31,24 +31,27 @@ layout: default
         {%-break;-%}
       {% endif %}
     {%- endfor -%}
-      
+     
+    <ul>
     {%- if next_index != post_index -%}
-    <div>
+
+    <li><div>
     Next post:
       <a class="page-link" href="{{ cat_posts[next_index].url | relative_url }}">
         {{ cat_posts[next_index].title | escape }}
       </a>
-    </div>
+    </div></li>
     {%- endif -%}
 
     {%- if prev_index != post_index -%}
-      <div>
+      <li><div>
       Previous post:
         <a class="page-link" href="{{ cat_posts[prev_index].url | relative_url }}">
           {{ cat_posts[prev_index].title | escape }}
         </a>
-      </div>
+      </div></li>
     {%- endif -%}
+  </ul>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
