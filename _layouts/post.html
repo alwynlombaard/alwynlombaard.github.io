@@ -18,6 +18,37 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+   
+    {%- assign cat_posts = site.categories[page.categories.first]%}
+    
+    {%- for cat_post in cat_posts -%}
+      {%- if cat_post.id == page.id -%}
+        {%- assign lower_limit = 0 -%}
+        {%- assign upper_limit = cat_posts.size | minus:1 -%}
+        {%- assign post_index =  forloop.index0 -%}
+        {%- assign prev_index =  post_index | plus:1 | at_most:upper_limit -%}
+        {%- assign next_index =  post_index | minus:1 | at_least:lower_limit -%}
+        {%-break;-%}
+      {% endif %}
+    {%- endfor -%}
+      
+    {%- if next_index != post_index -%}
+    <div>
+    Next post:
+      <a class="page-link" href="{{ cat_posts[next_index].url | relative_url }}">
+        {{ cat_posts[next_index].title | escape }}
+      </a>
+    </div>
+    {%- endif -%}
+
+    {%- if prev_index != post_index -%}
+      <div>
+      Previous post:
+        <a class="page-link" href="{{ cat_posts[prev_index].url | relative_url }}">
+          {{ cat_posts[prev_index].title | escape }}
+        </a>
+      </div>
+    {%- endif -%}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
