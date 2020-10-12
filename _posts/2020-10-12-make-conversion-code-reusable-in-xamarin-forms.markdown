@@ -20,60 +20,64 @@ Here's how to do it:
 
 ### Step 1
 Create a value converter
-    
-    public class StringPathToGeometryConverter : IValueConverter
+{% highlight csharp %}
+public class StringPathToGeometryConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        if (value is string stringValue)
         {
-            if (value is string stringValue)
+            try
             {
-                try
-                {
-                    return (Geometry)new PathGeometryConverter()
-                    .ConvertFromInvariantString(stringValue);
-                }
-                catch
-                {
-                    return stringValue;
-                }
+                return (Geometry)new PathGeometryConverter()
+                .ConvertFromInvariantString(stringValue);
             }
-
-            return null;
-            
+            catch
+            {
+                return stringValue;
+            }
         }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+        return null;
     }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+{% endhighlight %}
 
 ### Step 2
 Instantiate the converter in the resource dictionary. 
 
 Register a namespace where the converter is located, for example:
 
-    ...
-    xmlns:converters="clr-namespace:Musictheory.Converters"
-    ...
+{% highlight csharp %}
+...
+xmlns:converters="clr-namespace:Musictheory.Converters"
+...
+{% endhighlight %}
 
 Instantiate:
-
-    <ResourceDictionary>
-        <converters:StringPathToGeometryConverter
-            x:Key="StringPathToGeometryConverter" />
-    </ResourceDictionary>
+{% highlight xml%}
+<ResourceDictionary>
+    <converters:StringPathToGeometryConverter
+        x:Key="StringPathToGeometryConverter" />
+</ResourceDictionary>
+{% endhighlight %}
 
 ### Step 3
 Reference the converter with the `StaticResource` markup extension
-
-    <Path
-     Data="{Binding IconSvgPath, 
-        Converter={StaticResource StringPathToGeometryConverter}}"
-     Stroke="White"
-     Fill="White"
-     StrokeThickness="1"
-     Aspect="Uniform"
-     VerticalOptions="Center"
-     HorizontalOptions="Center"/>
+    
+{% highlight xml%}
+<Path
+    Data="{Binding IconSvgPath, 
+    Converter={StaticResource StringPathToGeometryConverter}}"
+    Stroke="White"
+    Fill="White"
+    StrokeThickness="1"
+    Aspect="Uniform"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"/>
+{% endhighlight %}
 

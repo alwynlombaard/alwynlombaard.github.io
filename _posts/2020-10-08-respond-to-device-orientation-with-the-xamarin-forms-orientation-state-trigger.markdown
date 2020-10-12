@@ -21,28 +21,30 @@ published: true
 
 Below is an example of using it to set a `StackLayout` orientation based on the orientation of the device:
 
-      <StackLayout x:Name="mainStack">
-         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup Name="OrientationStates">
-                  <VisualState Name="Portrait">
-                     <VisualState.StateTriggers>
-                        <OrientationStateTrigger Orientation="Portrait"/>
-                     </VisualState.StateTriggers>
-                     <VisualState.Setters>
-                        <Setter Property="Orientation" Value="Vertical" />
-                     </VisualState.Setters>
-                  </VisualState>
-                  <VisualState Name="Landscape">
-                     <VisualState.StateTriggers>
-                        <OrientationStateTrigger Orientation="Landscape"/>
-                     </VisualState.StateTriggers>
-                     <VisualState.Setters>
-                        <Setter Property="Orientation" Value="Horizontal" />
-                     </VisualState.Setters>
-                  </VisualState>
-            </VisualStateGroup>
-         </VisualStateManager.VisualStateGroups>
-         ...
-      </StackLayout>
+{% highlight xml%}
+<StackLayout x:Name="mainStack">
+    <VisualStateManager.VisualStateGroups>
+    <VisualStateGroup Name="OrientationStates">
+            <VisualState Name="Portrait">
+                <VisualState.StateTriggers>
+                <OrientationStateTrigger Orientation="Portrait"/>
+                </VisualState.StateTriggers>
+                <VisualState.Setters>
+                <Setter Property="Orientation" Value="Vertical" />
+                </VisualState.Setters>
+            </VisualState>
+            <VisualState Name="Landscape">
+                <VisualState.StateTriggers>
+                <OrientationStateTrigger Orientation="Landscape"/>
+                </VisualState.StateTriggers>
+                <VisualState.Setters>
+                <Setter Property="Orientation" Value="Horizontal" />
+                </VisualState.Setters>
+            </VisualState>
+    </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+    ...
+</StackLayout>
+{% endhighlight%}
  
 

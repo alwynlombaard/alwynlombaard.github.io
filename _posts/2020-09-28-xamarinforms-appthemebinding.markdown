@@ -12,16 +12,18 @@ I really like the new `AppThemeBinding` markup extension in Xamarin.Forms to eas
 
 Below is an example:
 
-    BackgroundColor="{AppThemeBinding
-                    Light={StaticResource LightBackgroundColor},
-                    Dark={StaticResource DarkBackgroundColor}}"
+{% highlight xml%}
+BackgroundColor="{AppThemeBinding
+        Light={StaticResource LightBackgroundColor},
+        Dark={StaticResource DarkBackgroundColor}}"
+{% endhighlight%}
 
- <!-- -->
-
-    <ContentPage.Resources>
-        <Color x:Key="LightBackgroundColor">WhiteSmoke</Color>
-        <Color x:Key="DarkBackgroundColor">Black</Color>
-    </ContentPage.Resources>
+{% highlight xml%}
+<ContentPage.Resources>
+    <Color x:Key="LightBackgroundColor">WhiteSmoke</Color>
+    <Color x:Key="DarkBackgroundColor">Black</Color>
+</ContentPage.Resources>
+{% endhighlight%}
 
 >screen recording on iPhone Simulator
 <video width="300" controls>

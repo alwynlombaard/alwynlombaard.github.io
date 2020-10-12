@@ -61,65 +61,59 @@
 <h3 id="step-1">Step 1</h3>
 <p>Create a value converter</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class StringPathToGeometryConverter : IValueConverter
-{
-    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-    {
-        if (value is string stringValue)
-        {
-            try
-            {
-                return (Geometry)new PathGeometryConverter()
-                .ConvertFromInvariantString(stringValue);
-            }
-            catch
-            {
-                return stringValue;
-            }
-        }
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">StringPathToGeometryConverter</span> <span class="p">:</span> <span class="n">IValueConverter</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">object</span> <span class="nf">Convert</span><span class="p">(</span><span class="kt">object</span> <span class="k">value</span><span class="p">,</span> <span class="n">Type</span> <span class="n">targetType</span><span class="p">,</span> <span class="kt">object</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">CultureInfo</span> <span class="n">culture</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">value</span> <span class="k">is</span> <span class="kt">string</span> <span class="n">stringValue</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">try</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="p">(</span><span class="n">Geometry</span><span class="p">)</span><span class="k">new</span> <span class="nf">PathGeometryConverter</span><span class="p">()</span>
+                <span class="p">.</span><span class="nf">ConvertFromInvariantString</span><span class="p">(</span><span class="n">stringValue</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="k">catch</span>
+            <span class="p">{</span>
+                <span class="k">return</span> <span class="n">stringValue</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="k">null</span><span class="p">;</span>
+    <span class="p">}</span>
 
-        return null;
-        
-    }
-
-    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-    {
-        throw new NotImplementedException();
-    }
-}
-</code></pre></div></div>
+    <span class="k">public</span> <span class="kt">object</span> <span class="nf">ConvertBack</span><span class="p">(</span><span class="kt">object</span> <span class="k">value</span><span class="p">,</span> <span class="n">Type</span> <span class="n">targetType</span><span class="p">,</span> <span class="kt">object</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">CultureInfo</span> <span class="n">culture</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="nf">NotImplementedException</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
 
 <h3 id="step-2">Step 2</h3>
 <p>Instantiate the converter in the resource dictionary.</p>
 
 <p>Register a namespace where the converter is located, for example:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
-xmlns:converters="clr-namespace:Musictheory.Converters"
-...
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="p">...</span>
+<span class="n">xmlns</span><span class="p">:</span><span class="n">converters</span><span class="p">=</span><span class="s">"clr-namespace:Musictheory.Converters"</span>
+<span class="p">...</span></code></pre></figure>
 
 <p>Instantiate:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;ResourceDictionary&gt;
-    &lt;converters:StringPathToGeometryConverter
-        x:Key="StringPathToGeometryConverter" /&gt;
-&lt;/ResourceDictionary&gt;
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;ResourceDictionary&gt;</span>
+    <span class="nt">&lt;converters:StringPathToGeometryConverter</span>
+        <span class="na">x:Key=</span><span class="s">"StringPathToGeometryConverter"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/ResourceDictionary&gt;</span></code></pre></figure>
 
 <h3 id="step-3">Step 3</h3>
 <p>Reference the converter with the <code class="language-plaintext highlighter-rouge">StaticResource</code> markup extension</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Path
- Data="{Binding IconSvgPath, 
-    Converter={StaticResource StringPathToGeometryConverter}}"
- Stroke="White"
- Fill="White"
- StrokeThickness="1"
- Aspect="Uniform"
- VerticalOptions="Center"
- HorizontalOptions="Center"/&gt;
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;Path</span>
+    <span class="na">Data=</span><span class="s">"{Binding IconSvgPath, 
+    Converter={StaticResource StringPathToGeometryConverter}}"</span>
+    <span class="na">Stroke=</span><span class="s">"White"</span>
+    <span class="na">Fill=</span><span class="s">"White"</span>
+    <span class="na">StrokeThickness=</span><span class="s">"1"</span>
+    <span class="na">Aspect=</span><span class="s">"Uniform"</span>
+    <span class="na">VerticalOptions=</span><span class="s">"Center"</span>
+    <span class="na">HorizontalOptions=</span><span class="s">"Center"</span><span class="nt">/&gt;</span></code></pre></figure>
 
 
   </div><ul><li><div>

@@ -59,30 +59,29 @@
 
 <p>Below is an example of using it to set a <code class="language-plaintext highlighter-rouge">StackLayout</code> orientation based on the orientation of the device:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;StackLayout x:Name="mainStack"&gt;
-     &lt;VisualStateManager.VisualStateGroups&gt;
-        &lt;VisualStateGroup Name="OrientationStates"&gt;
-              &lt;VisualState Name="Portrait"&gt;
-                 &lt;VisualState.StateTriggers&gt;
-                    &lt;OrientationStateTrigger Orientation="Portrait"/&gt;
-                 &lt;/VisualState.StateTriggers&gt;
-                 &lt;VisualState.Setters&gt;
-                    &lt;Setter Property="Orientation" Value="Vertical" /&gt;
-                 &lt;/VisualState.Setters&gt;
-              &lt;/VisualState&gt;
-              &lt;VisualState Name="Landscape"&gt;
-                 &lt;VisualState.StateTriggers&gt;
-                    &lt;OrientationStateTrigger Orientation="Landscape"/&gt;
-                 &lt;/VisualState.StateTriggers&gt;
-                 &lt;VisualState.Setters&gt;
-                    &lt;Setter Property="Orientation" Value="Horizontal" /&gt;
-                 &lt;/VisualState.Setters&gt;
-              &lt;/VisualState&gt;
-        &lt;/VisualStateGroup&gt;
-     &lt;/VisualStateManager.VisualStateGroups&gt;
-     ...
-  &lt;/StackLayout&gt;
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;StackLayout</span> <span class="na">x:Name=</span><span class="s">"mainStack"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;VisualStateManager.VisualStateGroups&gt;</span>
+    <span class="nt">&lt;VisualStateGroup</span> <span class="na">Name=</span><span class="s">"OrientationStates"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;VisualState</span> <span class="na">Name=</span><span class="s">"Portrait"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;VisualState.StateTriggers&gt;</span>
+                <span class="nt">&lt;OrientationStateTrigger</span> <span class="na">Orientation=</span><span class="s">"Portrait"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/VisualState.StateTriggers&gt;</span>
+                <span class="nt">&lt;VisualState.Setters&gt;</span>
+                <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">"Orientation"</span> <span class="na">Value=</span><span class="s">"Vertical"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;/VisualState.Setters&gt;</span>
+            <span class="nt">&lt;/VisualState&gt;</span>
+            <span class="nt">&lt;VisualState</span> <span class="na">Name=</span><span class="s">"Landscape"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;VisualState.StateTriggers&gt;</span>
+                <span class="nt">&lt;OrientationStateTrigger</span> <span class="na">Orientation=</span><span class="s">"Landscape"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/VisualState.StateTriggers&gt;</span>
+                <span class="nt">&lt;VisualState.Setters&gt;</span>
+                <span class="nt">&lt;Setter</span> <span class="na">Property=</span><span class="s">"Orientation"</span> <span class="na">Value=</span><span class="s">"Horizontal"</span> <span class="nt">/&gt;</span>
+                <span class="nt">&lt;/VisualState.Setters&gt;</span>
+            <span class="nt">&lt;/VisualState&gt;</span>
+    <span class="nt">&lt;/VisualStateGroup&gt;</span>
+    <span class="nt">&lt;/VisualStateManager.VisualStateGroups&gt;</span>
+    ...
+<span class="nt">&lt;/StackLayout&gt;</span></code></pre></figure>
 
 
   </div><ul><li><div>
