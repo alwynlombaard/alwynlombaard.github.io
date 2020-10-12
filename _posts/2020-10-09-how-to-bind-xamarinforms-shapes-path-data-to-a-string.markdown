@@ -47,6 +47,9 @@ For example:
          }
       }
 
+### Step 3
+Make the conversion code reusable.
 
+See how to [Make conversion code reusable in Xamarin.Forms]({% post_url 2020-10-12-make-conversion-code-reusable-in-xamarin-forms %})
  
 

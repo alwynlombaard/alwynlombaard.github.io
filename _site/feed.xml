@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://blog.lombaard.co.uk/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.lombaard.co.uk/" rel="alternate" type="text/html" /><updated>2020-10-09T17:28:04+01:00</updated><id>http://blog.lombaard.co.uk/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">How to bind Xamarin.Forms Shapes Path Data to a string</title><link href="http://blog.lombaard.co.uk/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string.html" rel="alternate" type="text/html" title="How to bind Xamarin.Forms Shapes Path Data to a string" /><published>2020-10-09T01:00:00+01:00</published><updated>2020-10-09T01:00:00+01:00</updated><id>http://blog.lombaard.co.uk/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string</id><content type="html" xml:base="http://blog.lombaard.co.uk/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string.html">&lt;p&gt;&lt;a href=&quot;/images/pathicons.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/pathicons.png&quot; alt=&quot;Step 1&quot; width=&quot;160&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://blog.lombaard.co.uk/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.lombaard.co.uk/" rel="alternate" type="text/html" /><updated>2020-10-12T13:46:10+01:00</updated><id>http://blog.lombaard.co.uk/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">Make conversion code reusable in Xamarin.Forms</title><link href="http://blog.lombaard.co.uk/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html" rel="alternate" type="text/html" title="Make conversion code reusable in Xamarin.Forms" /><published>2020-10-12T01:00:00+01:00</published><updated>2020-10-12T01:00:00+01:00</updated><id>http://blog.lombaard.co.uk/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms</id><content type="html" xml:base="http://blog.lombaard.co.uk/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html">&lt;p&gt;In &lt;a href=&quot;/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string.html&quot;&gt;How to bind Xamarin.Forms Shapes Path Data to a string&lt;/a&gt; I expain how to convert an SVG path (stored in a resource file in this case) to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; property of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Path&lt;/code&gt; view.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/images/pathicons.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/pathicons.png&quot; alt=&quot;Step 1&quot; width=&quot;160&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;example of SVG string data rendered in a Path&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Now it would be useful to make the conversion code reusable across multiple views in the application.&lt;/p&gt;
+
+&lt;p&gt;Here’s how to do it:&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+&lt;p&gt;Create a value converter&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class StringPathToGeometryConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        if (value is string stringValue)
+        {
+            try
+            {
+                return (Geometry)new PathGeometryConverter()
+                .ConvertFromInvariantString(stringValue);
+            }
+            catch
+            {
+                return stringValue;
+            }
+        }
+
+        return null;
+        
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;Instantiate the converter in the resource dictionary.&lt;/p&gt;
+
+&lt;p&gt;Register a namespace where the converter is located, for example:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;...
+xmlns:converters=&quot;clr-namespace:Musictheory.Converters&quot;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Instantiate:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;ResourceDictionary&amp;gt;
+    &amp;lt;converters:StringPathToGeometryConverter
+        x:Key=&quot;StringPathToGeometryConverter&quot; /&amp;gt;
+&amp;lt;/ResourceDictionary&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;Reference the converter with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StaticResource&lt;/code&gt; markup extension&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Path
+ Data=&quot;{Binding IconSvgPath, 
+    Converter={StaticResource StringPathToGeometryConverter}}&quot;
+ Stroke=&quot;White&quot;
+ Fill=&quot;White&quot;
+ StrokeThickness=&quot;1&quot;
+ Aspect=&quot;Uniform&quot;
+ VerticalOptions=&quot;Center&quot;
+ HorizontalOptions=&quot;Center&quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><summary type="html">In How to bind Xamarin.Forms Shapes Path Data to a string I expain how to convert an SVG path (stored in a resource file in this case) to the Data property of a Path view.</summary></entry><entry><title type="html">How to bind Xamarin.Forms Shapes Path Data to a string</title><link href="http://blog.lombaard.co.uk/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string.html" rel="alternate" type="text/html" title="How to bind Xamarin.Forms Shapes Path Data to a string" /><published>2020-10-09T01:00:00+01:00</published><updated>2020-10-09T01:00:00+01:00</updated><id>http://blog.lombaard.co.uk/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string</id><content type="html" xml:base="http://blog.lombaard.co.uk/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string.html">&lt;p&gt;&lt;a href=&quot;/images/pathicons.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/pathicons.png&quot; alt=&quot;Step 1&quot; width=&quot;160&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;simulator screenshot&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -38,7 +110,12 @@
            .ConvertFromInvariantString(Resources.TrebleClefPath);
      }
   }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><summary type="html">simulator screenshot</summary></entry><entry><title type="html">Respond to device orientation with the Xamarin.Forms Orientation State Trigger</title><link href="http://blog.lombaard.co.uk/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger.html" rel="alternate" type="text/html" title="Respond to device orientation with the Xamarin.Forms Orientation State Trigger" /><published>2020-10-08T01:00:00+01:00</published><updated>2020-10-08T01:00:00+01:00</updated><id>http://blog.lombaard.co.uk/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger</id><content type="html" xml:base="http://blog.lombaard.co.uk/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger.html">&lt;p&gt;&lt;span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+&lt;p&gt;Make the conversion code reusable.&lt;/p&gt;
+
+&lt;p&gt;See how to &lt;a href=&quot;/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html&quot;&gt;Make conversion code reusable in Xamarin.Forms&lt;/a&gt;&lt;/p&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><summary type="html">simulator screenshot</summary></entry><entry><title type="html">Respond to device orientation with the Xamarin.Forms Orientation State Trigger</title><link href="http://blog.lombaard.co.uk/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger.html" rel="alternate" type="text/html" title="Respond to device orientation with the Xamarin.Forms Orientation State Trigger" /><published>2020-10-08T01:00:00+01:00</published><updated>2020-10-08T01:00:00+01:00</updated><id>http://blog.lombaard.co.uk/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger</id><content type="html" xml:base="http://blog.lombaard.co.uk/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger.html">&lt;p&gt;&lt;span&gt;
 &lt;a href=&quot;/images/notefinder_portrait.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/notefinder_portrait.png&quot; alt=&quot;Step 1&quot; width=&quot;160&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;/images/notefinder_landscape.png&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;margin-left:20px&quot; src=&quot;/images/notefinder_landscape.png&quot; alt=&quot;Step 1&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;
 &lt;/span&gt;&lt;/p&gt;
 
@@ -507,12 +584,4 @@ public override void LoadView()
   &lt;li&gt;&lt;a href=&quot;#UIPageViewController&quot;&gt;UIPageViewController&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#UIPageControl&quot;&gt;UIPageControl&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#putting-it-all-together&quot;&gt;Putting it all together in the OnBoardingViewController&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="iOS" /><category term="programming" /><category term="C#" /><summary type="html">The requirement</summary></entry><entry><title type="html">Brouwer Study No 11</title><link href="http://blog.lombaard.co.uk/guitar/2015/10/24/brouwer-study-no-11.html" rel="alternate" type="text/html" title="Brouwer Study No 11" /><published>2015-10-24T14:29:12+01:00</published><updated>2015-10-24T14:29:12+01:00</updated><id>http://blog.lombaard.co.uk/guitar/2015/10/24/brouwer-study-no-11</id><content type="html" xml:base="http://blog.lombaard.co.uk/guitar/2015/10/24/brouwer-study-no-11.html">&lt;audio controls=&quot;&quot;&gt;
-  &lt;source src=&quot;/music/Brouwer_Study_No_11_20151024_125532.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
-&lt;/audio&gt;
-
-&lt;p&gt;One of my attempts at this study today during practice.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Alwyn Lombaard</name></author><summary type="html"></summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="iOS" /><category term="programming" /><category term="C#" /><summary type="html">The requirement</summary></entry></feed>
