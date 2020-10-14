@@ -47,7 +47,11 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>In <a href="/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html">Make conversion code reusable in Xamarin.Forms</a> I expain how to convert an SVG path (stored in a resource file in this case) to the <code class="language-plaintext highlighter-rouge">Data</code> property of a <code class="language-plaintext highlighter-rouge">Path</code> view. Now I want to be able to use the <code class="language-plaintext highlighter-rouge">IValueConverter</code> to convert a value even if it is not a property on the viewmodel. In this example the value is an SVG path stored as a string in a resource file.</p>
+    <p>In <a href="/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html">Make conversion code reusable in Xamarin.Forms</a> I expain how to convert an SVG path (stored in a resource file in this case) to the <code class="language-plaintext highlighter-rouge">Data</code> property of a <code class="language-plaintext highlighter-rouge">Path</code> view.</p>
+
+<p>Now I want to be able to use the <code class="language-plaintext highlighter-rouge">IValueConverter</code> to convert a value even if it is not a property on the viewmodel. In this example the value is an SVG path stored as a string in a resource file.</p>
+
+<!--more-->
 
 <p>The fundamental requirement still remains that <code class="language-plaintext highlighter-rouge">Data</code> is of type <code class="language-plaintext highlighter-rouge">Geometry</code> and requires a convertion from <code class="language-plaintext highlighter-rouge">string</code> to <code class="language-plaintext highlighter-rouge">Geometry</code> to be able to use a resource value stored as string.</p>
 

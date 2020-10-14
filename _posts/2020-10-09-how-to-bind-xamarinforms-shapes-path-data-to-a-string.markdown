@@ -7,12 +7,15 @@ categories: Xamarin
 tags: Xamarin
 author: Alwyn Lombaard
 published: true
+excerpt_separator: <!--more-->
 ---
 
 I wanted to store an icon SVG path in a resource file as a string and then bind it to the `Data` property of a `Path` view in Xamarin.Forms `Shapes`. 
 
 <a href="/images/pathicons.png" target="_blank"><img src="/images/pathicons.png" alt="Step 1" width="160"/></a>
 >simulator screenshot
+
+ <!--more-->
 
 `Data` is of type `Geometry` so a conversion is required in order to be able to bind to it.
 {% highlight xml %}
