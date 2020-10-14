@@ -8,6 +8,6 @@ published: true
 author: Alwyn Lombaard
 ---
 
-<video width="100%" controls>
+<video width="100%" controls muted>
    <source src="/video/clearance1.mp4" type="video/mp4">
 </video> 
