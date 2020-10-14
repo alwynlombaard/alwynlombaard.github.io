@@ -9,12 +9,10 @@ author: Alwyn Lombaard
 published: true
 ---
 
-In [How to bind Xamarin.Forms Shapes Path Data to a string]({% post_url 2020-10-09-how-to-bind-xamarinforms-shapes-path-data-to-a-string %}) I expain how to convert an SVG path (stored in a resource file in this case) to the `Data` property of a `Path` view.
+In [How to bind Xamarin.Forms Shapes Path Data to a string]({% post_url 2020-10-09-how-to-bind-xamarinforms-shapes-path-data-to-a-string %}) I expain how to convert an SVG path (stored in a resource file in this case) to the `Data` property of a `Path` view. Now it would be useful to make the conversion code reusable across multiple views in the application.
 
 <a href="/images/pathicons.png" target="_blank"><img src="/images/pathicons.png" alt="Step 1" width="160"/></a>
 >example of SVG string data rendered in a Path
-
-Now it would be useful to make the conversion code reusable across multiple views in the application.
 
 Here's how to do it:
 

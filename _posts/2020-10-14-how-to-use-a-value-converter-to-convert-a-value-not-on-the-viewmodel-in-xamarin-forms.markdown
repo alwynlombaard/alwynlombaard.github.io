@@ -9,9 +9,7 @@ author: Alwyn Lombaard
 published: true
 ---
 
-In [Make conversion code reusable in Xamarin.Forms]({% post_url 2020-10-12-make-conversion-code-reusable-in-xamarin-forms %}) I expain how to convert an SVG path (stored in a resource file in this case) to the `Data` property of a `Path` view.
-
-Now I want to be able to use the `IValueConverter` to convert a value even if it is not a property on the viewmodel. In this example the value is an SVG path stored as a string in a resource file.
+In [Make conversion code reusable in Xamarin.Forms]({% post_url 2020-10-12-make-conversion-code-reusable-in-xamarin-forms %}) I expain how to convert an SVG path (stored in a resource file in this case) to the `Data` property of a `Path` view. Now I want to be able to use the `IValueConverter` to convert a value even if it is not a property on the viewmodel. In this example the value is an SVG path stored as a string in a resource file.
 
 The fundamental requirement still remains that `Data` is of type `Geometry` and requires a convertion from `string` to `Geometry` to be able to use a resource value stored as string. 
 
