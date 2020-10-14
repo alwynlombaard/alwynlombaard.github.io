@@ -10,7 +10,7 @@ published: true
 ---
 
 <span>
-<a href="/images/notefinder_portrait.png" target="_blank"><img src="/images/notefinder_portrait.png" alt="Step 1" width="160"/></a><a href="/images/notefinder_landscape.png" target="_blank"><img style="margin-left:20px" src="/images/notefinder_landscape.png" alt="Step 1" height="160" /></a>
+<a href="/images/notefinder_portrait.png" target="_blank"><img src="/images/notefinder_portrait.png" alt="Step 1" width="160"/></a><a href="/images/notefinder_landscape.png" target="_blank"><img style="margin:20px" src="/images/notefinder_landscape.png" alt="Step 1" height="160" /></a>
 </span>
 
 >screenshots on iPhone 6s device
