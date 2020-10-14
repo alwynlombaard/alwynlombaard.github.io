@@ -75,7 +75,7 @@ Reference the converter with the `StaticResource` markup extension
 {% highlight xml%}
 <Path
     Data="{Binding IconSvgPath, 
-    Converter={StaticResource StringPathToGeometryConverter}}"
+        Converter={StaticResource StringPathToGeometryConverter}}"
     Stroke="White"
     Fill="White"
     StrokeThickness="1"
