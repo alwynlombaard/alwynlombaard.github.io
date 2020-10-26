@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-14T22:34:24+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">How to use an IValueConverter to convert a value not on the view model</title><link href="http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms.html" rel="alternate" type="text/html" title="How to use an IValueConverter to convert a value not on the view model" /><published>2020-10-14T01:00:00+01:00</published><updated>2020-10-14T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms.html">&lt;p&gt;In &lt;a href=&quot;/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html&quot;&gt;Make conversion code reusable in Xamarin.Forms&lt;/a&gt; I expain how to convert an SVG path (stored in a resource file in this case) to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; property of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Path&lt;/code&gt; view.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-10-26T18:51:19+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">Reversing an IEnumerable with a binding converter in Xamarin.Forms</title><link href="http://localhost:4000/xamarin/2020/10/26/reversing-a-generic-enumerator-with-a-binding-converter-in-xamarin-forms.html" rel="alternate" type="text/html" title="Reversing an IEnumerable&lt;T&gt; with a binding converter in Xamarin.Forms" /><published>2020-10-26T00:00:00+00:00</published><updated>2020-10-26T00:00:00+00:00</updated><id>http://localhost:4000/xamarin/2020/10/26/reversing-a-generic-enumerator-with-a-binding-converter-in-xamarin-forms</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/10/26/reversing-a-generic-enumerator-with-a-binding-converter-in-xamarin-forms.html">&lt;p&gt;I wanted to bind a property on the viewmodel of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEnumerable&amp;lt;T&amp;gt;&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ItemsSource&lt;/code&gt; property of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CollectionView&lt;/code&gt; and be able to reverse the order of the items displayed without having to reverse them in the viewmodel or code behind code.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Here’s how I did it:&lt;/p&gt;
+
+&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+
+&lt;p&gt;Define an  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IValueConverter&lt;/code&gt; with generic type (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T&lt;/code&gt;). &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T&lt;/code&gt; is the type of the items in the Enumerable (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int32&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Object&lt;/code&gt; etc)&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ReverseEnumerableConverter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IValueConverter&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Convert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CultureInfo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;culture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IEnumerable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enumerable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ConvertBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CultureInfo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;culture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;NotImplementedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+&lt;p&gt;The generic type of the IEnumerable&lt;T&gt; must be supplied to the converter.&lt;/T&gt;&lt;/p&gt;
+
+&lt;p&gt;Use Binding markup to supply the generic type argument using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x:TypeArguments&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this example the Notes property on the viewmodel is of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List&amp;lt;string&amp;gt;&lt;/code&gt; but it could be any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEnumerable&amp;lt;String&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView.ItemsSource&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Path=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Notes&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding.Converter&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;converters:ReverseEnumerableConverter&lt;/span&gt; 
+                  &lt;span class=&quot;na&quot;&gt;x:TypeArguments=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x:String&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding.Converter&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView.ItemsSource&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView.ItemTemplate&amp;gt;&lt;/span&gt;
+       ...
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView.ItemTemplate&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If the property was of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEnumerable&amp;lt;int&amp;gt;&lt;/code&gt; for example &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List&amp;lt;int&amp;gt;&lt;/code&gt;:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView.ItemsSource&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Path=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Notes&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding.Converter&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;converters:ReverseEnumerableConverter&lt;/span&gt; 
+                  &lt;span class=&quot;na&quot;&gt;x:TypeArguments=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x:Int32&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding.Converter&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView.ItemsSource&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView.ItemTemplate&amp;gt;&lt;/span&gt;
+       ...
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView.ItemTemplate&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><summary type="html">I wanted to bind a property on the viewmodel of type IEnumerable&amp;lt;T&amp;gt; to the ItemsSource property of a CollectionView and be able to reverse the order of the items displayed without having to reverse them in the viewmodel or code behind code.</summary></entry><entry><title type="html">How to use an IValueConverter to convert a value not on the view model</title><link href="http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms.html" rel="alternate" type="text/html" title="How to use an IValueConverter to convert a value not on the view model" /><published>2020-10-14T01:00:00+01:00</published><updated>2020-10-14T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms.html">&lt;p&gt;In &lt;a href=&quot;/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html&quot;&gt;Make conversion code reusable in Xamarin.Forms&lt;/a&gt; I expain how to convert an SVG path (stored in a resource file in this case) to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; property of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Path&lt;/code&gt; view.&lt;/p&gt;
 
 &lt;p&gt;Now I want to be able to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IValueConverter&lt;/code&gt; to convert a value even if it is not a property on the viewmodel. In this example the value is an SVG path stored as a string in a resource file.&lt;/p&gt;
 
@@ -384,22 +447,4 @@
 
 &lt;p&gt;I got my 15 seconds of fame in the video that Xamarin made for the 2016 Xammy Award nominations.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.xamarin.com/customers/social-good&quot;&gt;It is also featured on the Xamarin customer pages.&lt;/a&gt;&lt;/p&gt;</content><author><name>Alwyn Lombaard</name></author><summary type="html"></summary></entry><entry><title type="html">How to serialize and deserialize an iOS device token from NSData to String and back in Xamarin.iOS</title><link href="http://localhost:4000/xamarin/2016/03/25/how-to-serialize-and-deserialize-an-ios-device-token-from-nsdata-to-string-and-back-in-xamarin-dot-ios.html" rel="alternate" type="text/html" title="How to serialize and deserialize an iOS device token from NSData to String and back in Xamarin.iOS" /><published>2016-03-25T18:28:08+00:00</published><updated>2016-03-25T18:28:08+00:00</updated><id>http://localhost:4000/xamarin/2016/03/25/how-to-serialize-and-deserialize-an-ios-device-token-from-nsdata-to-string-and-back-in-xamarin-dot-ios</id><content type="html" xml:base="http://localhost:4000/xamarin/2016/03/25/how-to-serialize-and-deserialize-an-ios-device-token-from-nsdata-to-string-and-back-in-xamarin-dot-ios.html">&lt;p&gt;Obtain the device token as usual when the user opts in to receive remote push notifications. Then convert it to a base64 string that can be stored and used later.&lt;/p&gt;
-
-&lt;p&gt;Here’s how to do it. In your app delegate:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
-{
-	var tokenStringBase64 = deviceToken.GetBase64EncodedString(NSDataBase64EncodingOptions.None);
-	//now you can store it for later use in local storage
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To convert it back into an NSData object that you can send to third parties (like MixPanel and ExactTarget) that require  the token as NSData:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var deviceToken = new NSData(tokenStringBase64, NSDataBase64DecodingOptions.None);
-
-Mixpanel.SharedInstance.People.AddPushDeviceToken(deviceToken);
-
-ETPush.PushManager.RegisterDeviceToken(deviceToken);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="iOS" /><category term="programming" /><category term="C#" /><summary type="html">Obtain the device token as usual when the user opts in to receive remote push notifications. Then convert it to a base64 string that can be stored and used later.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://www.xamarin.com/customers/social-good&quot;&gt;It is also featured on the Xamarin customer pages.&lt;/a&gt;&lt;/p&gt;</content><author><name>Alwyn Lombaard</name></author><summary type="html"></summary></entry></feed>
