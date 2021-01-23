@@ -1,0 +1,186 @@
+---
+layout: post
+title: "Xamarin stuff"
+date: 2015-01-01 00:00:00 +0000
+comments: true
+categories: Xamarin
+tags: Xamarin
+author: Alwyn Lombaard
+published: true
+excerpt_separator: <!--more-->
+---
+
+<!--more-->
+
+## Xamarin.Forms
+
+### Xamarin.Forms Fundamentals
+#### **Templates**
+- **ControlTemplate**
+    - Defines the visual structure of `ContentView` derived custom controls, and `ContentPage` derived pages. Control templates separate the user interface (UI) for a custom control, or page, from the logic that implements the control or page.
+        - Create control template with single parent in Resource Dictionary. 
+            - Set `BindingContext="{Binding Source={RelativeSource TemplatedParent}}"` on root view to bind to properties of custom control or  use `TemplateBinding` markup extension.
+        - Set `ControlTemplate` attribute of custom control resource in XAML
+        - A `ContentPresenter` can be placed in a control template to mark where content to be displayed
+- **DataTemplate**
+    - Defines the presentation of data on supported controls.
+        - DataTemplate creation
+            - A common usage scenario for a `DataTemplate` is displaying data from a collection of objects in a `CollectionView`. The appearance of the data for each cell in the `CollectionView` can be managed by setting the `CollectionView.ItemTemplate` property.
+
+            - Data templates can be created inline, in a `ResourceDictionary`, or from a custom type. 
+                - Creating Inline DataTemplate
+                
+                    ```
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                            ...  
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    ```
+                - Creating DataTemplate with a Type
+
+                    ```
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <local:MyContentView />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    ```
+                - Creating `DataTemplate` as a `Resource`
+
+                    ```
+                    <ContentPage.Resources>
+                        <ResourceDictionary>
+                            <DataTemplate x:Key="myTemplate">
+                                    <Grid>
+                                        ...
+                                    </Grid>
+                            </DataTemplate>
+                        </ResourceDictionary>
+                    </ContentPage.Resources>
+                    ...
+                    <CollectionView ItemTemplate="{StaticResource myTemplate}" />
+                    ```
+
+            
+        - DataTemplate selection
+            - A `DataTemplateSelector` can be used to choose a DataTemplate at runtime based on the value of a data-bound property.
+                - A data template selector is implemented by creating a class that inherits from `DataTemplateSelector`. The `OnSelectTemplate` method is then overridden to return a particular DataTemplate 
+
+                Example
+                ```
+                    public class MyDataTemplateSelector : DataTemplateSelector
+                    {
+                        public DataTemplate ValidTemplate { get; set; }
+                        public DataTemplate InvalidTemplate { get; set; }
+
+                        protected override DataTemplate OnSelectTemplate (object item, BindableObject container)
+                        {
+                            return ((MyItem)item).DateOfBirth.Year >= 1980 ? ValidTemplate : InvalidTemplate;
+                        }
+                    } 
+                ```
+                ```
+                    <ResourceDictionary>
+                        <DataTemplate x:Key="validItemTemplate">
+                            <Grid>
+                            ...
+                            </Grid>
+                        </DataTemplate>
+                        <DataTemplate x:Key="invalidItemTemplate">
+                            <Grid>
+                            ...
+                            </Grid>
+                        </DataTemplate>
+                        <local:MyDataTemplateSelector x:Key="myDataTemplateSelector"
+                            ValidTemplate="{StaticResource validItemTemplate}"
+                            InvalidTemplate="{StaticResource invalidItemTemplate}" />
+                    </ResourceDictionary>  
+                ```
+                ```
+                    <CollectionView 
+                    ItemTemplate="{StaticResource myDataTemplateSelector}" />
+                ```
+
+                - Limitations
+                    - The DataTemplateSelector subclass must always return the same template for the same data if queried multiple times.
+                    - The DataTemplateSelector subclass must not return another DataTemplateSelector subclass.
+                    - The DataTemplateSelector subclass must not return new instances of a DataTemplate on each call. Instead, the same instance must be returned. Failure to do so will create a memory leak and will disable virtualization.
+                    - On Android, there can be no more than 20 different data templates per ListView.
+
+#### Triggers
+- Property
+- Data
+- Event
+- Multi
+- State
+- Adaptive
+- CompareState
+- DeviceState
+- OrientationState
+
+#### Behaviors
+Adds functionality to a control without the need to subclass
+- Attached Behaviors
+- Xamarin.Forms Behaviors
+- Reusable EffectsBehavior
+
+#### Data Binding
+
+#### Effects
+Simplifies customisation, is reusable and paramaterised. Is appropriate for property changes on platform specific control
+
+Steps:
+1. 1
+2. 2
+3. 3
+
+#### Custom Renderers
+Customise appearance and/or behavior. Required to override a method on a platform specific control or when there is a need to replace the platform specific control that implements a Xamarin.Forms control.
+
+Steps:
+1. 1
+2. 2
+3. 3
+
+#### Gestures
+- Tap
+- Pinch
+- Pan
+- Swipe
+- Drag & Drop
+
+#### Navigation
+- TabbedPage
+- CarouselPage
+- FlyoutPage
+- ModalPage
+
+
+#### Shell
+- Flyout
+- Tabs
+- Navigation
+
+
+`text`
+
+
+
+
+
+{% highlight csharp %}
+
+public class SomeCSharpCode
+{
+
+}
+
+{% endhighlight %}
+
+{% highlight xml%}
+<SomeXml>
+</SomeXml>
+{% endhighlight %}
