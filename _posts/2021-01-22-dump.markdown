@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Xamarin stuff"
+title: "Xamarin Summary"
 date: 2015-01-01 00:00:00 +0000
 comments: true
 categories: Xamarin
@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-## Xamarin.Forms
+## Xamarin.Forms Summary
 
 ### Xamarin.Forms Fundamentals
 #### **Templates**
@@ -130,7 +130,7 @@ excerpt_separator: <!--more-->
     ```
 
 
-- PropertyTrigger
+- **PropertyTrigger**
     ```
     <Entry>
         <Entry.Triggers>
@@ -143,7 +143,7 @@ excerpt_separator: <!--more-->
         </Entry.Triggers>
     </Entry>
     ```
-- DataTrigger
+- **DataTrigger**
     - Data triggers use data binding to monitor another control to cause the Setters to get called.
 
 
@@ -158,7 +158,7 @@ excerpt_separator: <!--more-->
     </Button.Triggers>
     ```
 
-- EventTrigger
+- **EventTrigger**
     - Implement the generic `TriggerAction<T>` class where T is the type of the control such as Entry, or use base class such as `VisualElement` to target groups of controls. 
     - Override `Invoke` method.
 
@@ -179,7 +179,7 @@ excerpt_separator: <!--more-->
     }
     ```
 
-- MultiTrigger
+- **MultiTrigger**
     - Can have more than one condition. All the conditions must be true before the Setters are triggered.
     - Conditions include `BindingCondition` and `ProperyCondition`
 
@@ -201,7 +201,7 @@ excerpt_separator: <!--more-->
     <PropertyCondition Property="Text" Value="OK" />
     ```
 
-- State
+- **State**
     - State triggers are a specialized group of triggers that define the conditions under which a `VisualState` should be applied.
 
         ```
@@ -232,7 +232,7 @@ excerpt_separator: <!--more-->
         </Style>
         ```
 
-        - StateTrigger
+        - **StateTrigger**
             - The `StateTrigger` class, which derives from the `StateTriggerBase` class, has an `IsActive` bindable property. A `StateTrigger` triggers a `VisualState` change when the `IsActive` property changes value.
 
             ```
@@ -240,27 +240,27 @@ excerpt_separator: <!--more-->
                 IsActiveChanged="OnCheckedStateIsActiveChanged" />
             ```
 
-        - AdaptiveTrigger
+        - **AdaptiveTrigger**
             - An `AdaptiveTrigger` triggers a VisualState change when the window is a specified height or width. This trigger has two bindable properties: `MinWindowHeight` and `MinWindowWidth`   
 
             ```
             <AdaptiveTrigger MinWindowWidth="0" />
             ```
 
-        - CompareState
+        - **CompareStateTrigger**
             ```
             <CompareStateTrigger Property="{Binding Source={x:Reference checkBox}, 
               Path=IsChecked}"
                 Value="True" />
             ```
-        - DeviceState
+        - **DeviceStateTrigger**
             ```
             <DeviceStateTrigger Device="iOS" />
             ```
             ```
             <DeviceStateTrigger Device="Android" />
             ```
-        - OrientationState
+        - **OrientationStateTrigger**
             ```
             <OrientationStateTrigger Orientation="Portrait" />
             ```
@@ -269,13 +269,78 @@ excerpt_separator: <!--more-->
             <OrientationStateTrigger Orientation="Landscape" />
             ```
 
-#### Behaviors
+#### **Behaviors**
 Adds functionality to a control without the need to subclass
 - Attached Behaviors
+    - Attached behaviors are static classes with one or more attached properties. 
+    - An attached property is a special type of bindable property. They are defined in one class but attached to other objects, and they are recognizable in XAML as attributes that contain a class and a property name separated by a period.
+    - Xamarin.Forms behaviors have replaced attached behaviors as the preferred approach to behavior construction.
 - Xamarin.Forms Behaviors
-- Reusable EffectsBehavior
+    1. Create a class that inherits from the `Behavior` or `Behavior<T>` class, where T is the type of the control to which the behavior should apply.
+    2. Override the `OnAttachedTo` method to perform any required setup.
+    3. Override the `OnDetachingFrom` method to perform any required cleanup.
+    4. Implement the core functionality of the behavior.
 
-#### Data Binding
+    ```
+    <Entry>
+        <Entry.Behaviors>
+            <local:MyBehavior />
+        </Entry.Behaviors>
+    </Entry>
+    ```
+
+#### **Data Binding**
+- Data binding is the technique of linking properties of two objects so that changes in one property are automatically reflected in the other property. Data binding is an integral part of the Model-View-ViewModel (MVVM) application architecture.
+    - The target is the object (and property) on which the data binding is set.
+    - The source is the object (and property) referenced by the data binding.
+    - The target property must be backed by a bindable property.
+    - The target object must be an instance of a class that derives from `BindableObject`
+
+- Use `Binding` Markup Extension or `SetBinding()`
+
+    ```
+    Scale="{Binding Source={x:Reference slider}, Path=Value}" />
+    ```
+
+    ```
+    Scale="{Binding Value, Source={x:Reference slider}}" />
+    ```
+
+- Other Markup Extensions
+    - x:Static: Used when we want to access static properties, fields, or Enum members in XAML elements.
+    - x:Reference: Used when we want to declare the reference of some named element into some other element of the same XAML Page.
+    - x:Type: Used when we want to set the type of some attribute to System.Type object.
+    - x:Array: Used when we want to construct the array of objects of some specific type.
+    - x:Null: Used when we want to set the value of some attribute to a null.
+
+
+
+- **Bindable Properties**
+
+- **Binding Mode**
+The binding mode is specified with a member of the BindingMode enumeration:
+
+    - Default (OneWay)
+    - TwoWay – data goes both ways between source and target
+    - OneWay – data goes from source to target
+    - OneWayToSource – data goes from target to source
+    - OneTime – data goes from source to target, but only when the BindingContext changes 
+
+- **String Formatting**
+
+- **Binding Path**
+
+- **Binding Value Converters**
+
+- **Relative Bindings**
+
+- **Binding Fallbacks**
+
+- **Multi-Bindings**
+
+- **Command Interface**
+
+- **Compiled Bindings**
 
 #### Effects
 Simplifies customisation, is reusable and paramaterised. Is appropriate for property changes on platform specific control
