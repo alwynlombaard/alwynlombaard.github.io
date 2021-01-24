@@ -181,17 +181,169 @@
   </li>
 </ul>
 
-<h4 id="triggers">Triggers</h4>
+<h4 id="triggers"><strong>Triggers</strong></h4>
 <ul>
-  <li>Property</li>
-  <li>Data</li>
-  <li>Event</li>
-  <li>Multi</li>
-  <li>State</li>
-  <li>Adaptive</li>
-  <li>CompareState</li>
-  <li>DeviceState</li>
-  <li>OrientationState</li>
+  <li>Some Triggers (Except EventTrigger for example) can have a collecion of <code class="language-plaintext highlighter-rouge">EnterActions</code> and <code class="language-plaintext highlighter-rouge">ExitActions</code> that is <code class="language-plaintext highlighter-rouge">IList</code> of type <code class="language-plaintext highlighter-rouge">TriggerAction&lt;T&gt;</code>. EnterActions are executed when the trigger conditions are met and ExitActions are executed when the trigger conditions are no longer met.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;Entry&gt;
+      &lt;Entry.Triggers&gt;
+          &lt;Trigger TargetType="Entry"
+                  Property="IsFocused" Value="True"&gt;
+              &lt;Trigger.EnterActions&gt;
+                  &lt;local:MyTriggerAction1 /&gt;
+              &lt;/Trigger.EnterActions&gt;
+
+              &lt;Trigger.ExitActions&gt;
+                  &lt;local:MyTriggerAction2 /&gt;
+              &lt;/Trigger.ExitActions&gt;
+          &lt;/Trigger&gt;
+      &lt;/Entry.Triggers&gt;
+  &lt;/Entry&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>PropertyTrigger
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;Entry&gt;
+      &lt;Entry.Triggers&gt;
+          &lt;Trigger TargetType="Entry"
+                  Property="IsFocused" 
+                  Value="True"&gt;
+              &lt;Setter Property="BackgroundColor" 
+                  Value="Yellow" /&gt;
+          &lt;/Trigger&gt;
+      &lt;/Entry.Triggers&gt;
+  &lt;/Entry&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>DataTrigger
+    <ul>
+      <li>Data triggers use data binding to monitor another control to cause the Setters to get called.</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;Button.Triggers&gt;
+      &lt;DataTrigger TargetType="Button"
+                  Binding="{Binding Source={x:Reference entry},
+                                  Path=Text.Length}"
+                  Value="0"&gt;
+          &lt;Setter Property="IsEnabled" Value="False" /&gt;
+      &lt;/DataTrigger&gt;
+  &lt;/Button.Triggers&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>EventTrigger
+    <ul>
+      <li>Implement the generic <code class="language-plaintext highlighter-rouge">TriggerAction&lt;T&gt;</code> class where T is the type of the control such as Entry, or use base class such as <code class="language-plaintext highlighter-rouge">VisualElement</code> to target groups of controls.</li>
+      <li>Override <code class="language-plaintext highlighter-rouge">Invoke</code> method.</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;EventTrigger Event="Clicked"&gt;
+      &lt;local:MyTriggerAction /&gt;
+  &lt;/EventTrigger&gt;
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  public class MyTriggerAction : TriggerAction&lt;Entry&gt;
+  {
+      protected override void Invoke (Entry entry)
+      {
+          double result;
+          bool isValid = Double.TryParse (entry.Text, out result);
+          entry.TextColor = isValid ? Color.Default : Color.Red;
+      }
+  }
+</code></pre></div>    </div>
+  </li>
+  <li>MultiTrigger
+    <ul>
+      <li>Can have more than one condition. All the conditions must be true before the Setters are triggered.</li>
+      <li>Conditions include <code class="language-plaintext highlighter-rouge">BindingCondition</code> and <code class="language-plaintext highlighter-rouge">ProperyCondition</code></li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;MultiTrigger TargetType="Button"&gt;
+      &lt;MultiTrigger.Conditions&gt;
+          &lt;BindingCondition 
+              Binding="{Binding Source={x:Reference email},
+                                  Path=Text.Length}"
+                              Value="0" /&gt;
+          &lt;BindingCondition Binding="{Binding Source={x:Reference phone},
+                                  Path=Text.Length}"
+                              Value="0" /&gt;
+      &lt;/MultiTrigger.Conditions&gt;
+      &lt;Setter Property="IsEnabled" Value="False" /&gt;
+  &lt;/MultiTrigger&gt;
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;PropertyCondition Property="Text" Value="OK" /&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>State
+    <ul>
+      <li>
+        <p>State triggers are a specialized group of triggers that define the conditions under which a <code class="language-plaintext highlighter-rouge">VisualState</code> should be applied.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;Style TargetType="Grid"&gt;
+      &lt;Setter Property="VisualStateManager.VisualStateGroups"&gt;
+          &lt;VisualStateGroupList&gt;
+              &lt;VisualStateGroup&gt;
+                  &lt;VisualState x:Name="Checked"&gt;
+                      &lt;VisualState.StateTriggers&gt;
+                          &lt;!-- Add State Triggers here --&gt;
+                      &lt;VisualState.Setters&gt;
+                          &lt;Setter Property="BackgroundColor"
+                                  Value="Black" /&gt;
+                      &lt;/VisualState.Setters&gt;
+                  &lt;/VisualState&gt;
+                  &lt;VisualState x:Name="Unchecked"&gt;
+                      &lt;VisualState.StateTriggers&gt;
+                          &lt;!-- Add State Triggers here --&gt;
+                      &lt;/VisualState.StateTriggers&gt;
+                      &lt;VisualState.Setters&gt;
+                          &lt;Setter Property="BackgroundColor"
+                                  Value="White" /&gt;
+                      &lt;/VisualState.Setters&gt;
+                  &lt;/VisualState&gt;
+              &lt;/VisualStateGroup&gt;
+          &lt;/VisualStateGroupList&gt;
+      &lt;/Setter&gt;
+  &lt;/Style&gt;
+</code></pre></div>        </div>
+
+        <ul>
+          <li>StateTrigger
+            <ul>
+              <li>The <code class="language-plaintext highlighter-rouge">StateTrigger</code> class, which derives from the <code class="language-plaintext highlighter-rouge">StateTriggerBase</code> class, has an <code class="language-plaintext highlighter-rouge">IsActive</code> bindable property. A <code class="language-plaintext highlighter-rouge">StateTrigger</code> triggers a <code class="language-plaintext highlighter-rouge">VisualState</code> change when the <code class="language-plaintext highlighter-rouge">IsActive</code> property changes value.</li>
+            </ul>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;StateTrigger IsActive="{Binding IsToggled}"
+      IsActiveChanged="OnCheckedStateIsActiveChanged" /&gt;
+</code></pre></div>            </div>
+          </li>
+          <li>AdaptiveTrigger
+            <ul>
+              <li>An <code class="language-plaintext highlighter-rouge">AdaptiveTrigger</code> triggers a VisualState change when the window is a specified height or width. This trigger has two bindable properties: <code class="language-plaintext highlighter-rouge">MinWindowHeight</code> and <code class="language-plaintext highlighter-rouge">MinWindowWidth</code></li>
+            </ul>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;AdaptiveTrigger MinWindowWidth="0" /&gt;
+</code></pre></div>            </div>
+          </li>
+          <li>CompareState
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;CompareStateTrigger Property="{Binding Source={x:Reference checkBox}, 
+    Path=IsChecked}"
+      Value="True" /&gt;
+</code></pre></div>            </div>
+          </li>
+          <li>DeviceState
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;DeviceStateTrigger Device="iOS" /&gt;
+</code></pre></div>            </div>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;DeviceStateTrigger Device="Android" /&gt;
+</code></pre></div>            </div>
+          </li>
+          <li>OrientationState
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;OrientationStateTrigger Orientation="Portrait" /&gt;
+</code></pre></div>            </div>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;OrientationStateTrigger Orientation="Landscape" /&gt;
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 <h4 id="behaviors">Behaviors</h4>

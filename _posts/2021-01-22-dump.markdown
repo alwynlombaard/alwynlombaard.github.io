@@ -110,16 +110,164 @@ excerpt_separator: <!--more-->
                     - The DataTemplateSelector subclass must not return new instances of a DataTemplate on each call. Instead, the same instance must be returned. Failure to do so will create a memory leak and will disable virtualization.
                     - On Android, there can be no more than 20 different data templates per ListView.
 
-#### Triggers
-- Property
-- Data
-- Event
-- Multi
+#### **Triggers**
+- Some Triggers (Except EventTrigger for example) can have a collecion of `EnterActions` and `ExitActions` that is `IList` of type `TriggerAction<T>`. EnterActions are executed when the trigger conditions are met and ExitActions are executed when the trigger conditions are no longer met.
+    ```
+    <Entry>
+        <Entry.Triggers>
+            <Trigger TargetType="Entry"
+                    Property="IsFocused" Value="True">
+                <Trigger.EnterActions>
+                    <local:MyTriggerAction1 />
+                </Trigger.EnterActions>
+
+                <Trigger.ExitActions>
+                    <local:MyTriggerAction2 />
+                </Trigger.ExitActions>
+            </Trigger>
+        </Entry.Triggers>
+    </Entry>
+    ```
+
+
+- PropertyTrigger
+    ```
+    <Entry>
+        <Entry.Triggers>
+            <Trigger TargetType="Entry"
+                    Property="IsFocused" 
+                    Value="True">
+                <Setter Property="BackgroundColor" 
+                    Value="Yellow" />
+            </Trigger>
+        </Entry.Triggers>
+    </Entry>
+    ```
+- DataTrigger
+    - Data triggers use data binding to monitor another control to cause the Setters to get called.
+
+
+    ```
+    <Button.Triggers>
+        <DataTrigger TargetType="Button"
+                    Binding="{Binding Source={x:Reference entry},
+                                    Path=Text.Length}"
+                    Value="0">
+            <Setter Property="IsEnabled" Value="False" />
+        </DataTrigger>
+    </Button.Triggers>
+    ```
+
+- EventTrigger
+    - Implement the generic `TriggerAction<T>` class where T is the type of the control such as Entry, or use base class such as `VisualElement` to target groups of controls. 
+    - Override `Invoke` method.
+
+    ```
+    <EventTrigger Event="Clicked">
+        <local:MyTriggerAction />
+    </EventTrigger>
+    ```
+    ```
+    public class MyTriggerAction : TriggerAction<Entry>
+    {
+        protected override void Invoke (Entry entry)
+        {
+            double result;
+            bool isValid = Double.TryParse (entry.Text, out result);
+            entry.TextColor = isValid ? Color.Default : Color.Red;
+        }
+    }
+    ```
+
+- MultiTrigger
+    - Can have more than one condition. All the conditions must be true before the Setters are triggered.
+    - Conditions include `BindingCondition` and `ProperyCondition`
+
+    ```
+    <MultiTrigger TargetType="Button">
+        <MultiTrigger.Conditions>
+            <BindingCondition 
+                Binding="{Binding Source={x:Reference email},
+                                    Path=Text.Length}"
+                                Value="0" />
+            <BindingCondition Binding="{Binding Source={x:Reference phone},
+                                    Path=Text.Length}"
+                                Value="0" />
+        </MultiTrigger.Conditions>
+        <Setter Property="IsEnabled" Value="False" />
+    </MultiTrigger>
+    ```
+    ```
+    <PropertyCondition Property="Text" Value="OK" />
+    ```
+
 - State
-- Adaptive
-- CompareState
-- DeviceState
-- OrientationState
+    - State triggers are a specialized group of triggers that define the conditions under which a `VisualState` should be applied.
+
+        ```
+        <Style TargetType="Grid">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup>
+                        <VisualState x:Name="Checked">
+                            <VisualState.StateTriggers>
+                                <!-- Add State Triggers here -->
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="Black" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Unchecked">
+                            <VisualState.StateTriggers>
+                                <!-- Add State Triggers here -->
+                            </VisualState.StateTriggers>
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="White" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+        ```
+
+        - StateTrigger
+            - The `StateTrigger` class, which derives from the `StateTriggerBase` class, has an `IsActive` bindable property. A `StateTrigger` triggers a `VisualState` change when the `IsActive` property changes value.
+
+            ```
+            <StateTrigger IsActive="{Binding IsToggled}"
+                IsActiveChanged="OnCheckedStateIsActiveChanged" />
+            ```
+
+        - AdaptiveTrigger
+            - An `AdaptiveTrigger` triggers a VisualState change when the window is a specified height or width. This trigger has two bindable properties: `MinWindowHeight` and `MinWindowWidth`   
+
+            ```
+            <AdaptiveTrigger MinWindowWidth="0" />
+            ```
+
+        - CompareState
+            ```
+            <CompareStateTrigger Property="{Binding Source={x:Reference checkBox}, 
+              Path=IsChecked}"
+                Value="True" />
+            ```
+        - DeviceState
+            ```
+            <DeviceStateTrigger Device="iOS" />
+            ```
+            ```
+            <DeviceStateTrigger Device="Android" />
+            ```
+        - OrientationState
+            ```
+            <OrientationStateTrigger Orientation="Portrait" />
+            ```
+
+            ```
+            <OrientationStateTrigger Orientation="Landscape" />
+            ```
 
 #### Behaviors
 Adds functionality to a control without the need to subclass
