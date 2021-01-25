@@ -49,7 +49,7 @@
   <div class="post-content e-content" itemprop="articleBody">
     <!--more-->
 
-<h2 id="xamarinforms-summary">Xamarin.Forms Summary</h2>
+<h2 id="xamarin-summary">Xamarin Summary</h2>
 
 <h3 id="xamarinforms-fundamentals">Xamarin.Forms Fundamentals</h3>
 <h4 id="templates"><strong>Templates</strong></h4>
@@ -673,6 +673,252 @@ The binding mode is specified with a member of the BindingMode enumeration:</p>
     </ul>
   </li>
 </ul>
+
+<h3 id="xamarinandroid-fundamentals">Xamarin.Android Fundamentals</h3>
+
+<ul>
+  <li><strong>Activity LifeCycle</strong>
+    <ul>
+      <li>States
+        <ul>
+          <li>Active or Running</li>
+          <li>Paused</li>
+          <li>Stopped / Backgrounded</li>
+          <li>Restarted</li>
+        </ul>
+      </li>
+      <li>Methods
+        <ul>
+          <li>OnCreate()</li>
+          <li>OnStart()</li>
+          <li>OnResume()</li>
+          <li>OnPause()</li>
+          <li>OnStop()</li>
+          <li>OnRestart()</li>
+          <li>OnDestroy()</li>
+        </ul>
+      </li>
+      <li>Bundle State
+        <ul>
+          <li>OnSaveInstanceState()
+            <ul>
+              <li>The default implementation of OnSaveInstanceState will take care of saving transient data in the UI for every view, so long as each view has an ID assigned.</li>
+            </ul>
+          </li>
+          <li>OnRestoreInstanceState()</li>
+        </ul>
+      </li>
+      <li>Persisteing complex data
+        <ul>
+          <li>override Java.Lang.Object OnRetainNonConfigurationInstance ()</li>
+          <li>read LastNonConfigurationInstance</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Android Services</strong>
+    <ul>
+      <li>Android applications are made up of at least one of the following four primary components: Activities, Broadcast Receivers, Content Providers, and Services.</li>
+      <li>An Android service is a component that is designed to do some work without a user interface.</li>
+      <li>
+        <p>Background work can be broken down into two broad classifications:</p>
+
+        <ol>
+          <li>
+            <p>Long Running Task – This is work that is ongoing until explicitly stopped. An example of a long running task is an app that streams music or that must monitor data collected from a sensor. These tasks must run even though the application has no visible user interface.</p>
+          </li>
+          <li>
+            <p>Periodic Tasks – (sometimes referred to as a job) A periodic task is one that is of relatively short in duration (several seconds) and is run on a schedule (i.e. once a day for a week or perhaps just once in the next 60 seconds). An example of this is downloading a file from the internet or generating a thumbnail for an image.</p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>There are four different types of Android services:</p>
+
+        <ul>
+          <li>
+            <p>Bound Service – A bound service is a service that has some other component (typically an Activity) bound to it. A bound service provides an interface that allows the bound component and the service to interact with each other. Once there are no more clients bound to the service, Android will shut the service down.</p>
+          </li>
+          <li>
+            <p>IntentService – An IntentService is a specialized subclass of the Service class that simplifies service creation and usage. An IntentService is meant to handle individual autonomous calls. Unlike a service, which can concurrently handle multiple calls, an IntentService is more like a work queue processor – work is queued up and an IntentService processes each job one at a time on a single worker thread. Typically, anIntentService is not bound to an Activity or a Fragment.</p>
+          </li>
+          <li>
+            <p>Started Service – A started service is a service that has been started by some other Android component (such as an Activity) and is run continuously in the background until something explicitly tells the service to stop. Unlike a bound service, a started service does not have any clients directly bound to it. For this reason, it is important to design started services so that they may be gracefully restarted as necessary.</p>
+          </li>
+          <li>
+            <p>Hybrid Service – A hybrid service is a service that has the characteristics of a started service and a bound service. A hybrid service can be started by when a component binds to it or it may be started by some event. A client component may or may not be bound to the hybrid service. A hybrid service will keep running until it is explicitly told to stop, or until there are no more clients bound to it.
+_</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Broadcast Receivers</strong>
+    <ul>
+      <li>A broadcast receiver is an Android component that allows an application to respond to messages (an Android Intent) that are broadcast by the Android operating system or by an application. Broadcasts follow a publish-subscribe model – an event causes a broadcast to be published and received by those components that are interested in the event.</li>
+      <li>Android identifies two types of broadcasts:
+        <ul>
+          <li>Explicit broadcast – These types of broadcasts target a specific application. The most common use of an explicit broadcast is to start an Activity. An example of an explicit broadcast when an app needs to dial a phone number; it will dispatch an Intent that targets the Phone app on Android and pass along the phone number to be dialed. Android will then route the intent to the Phone app.</li>
+          <li>Implicit broadcast – These broadcasts are dispatched to all apps on the device. An example of an implicit broadcast is the ACTION_POWER_CONNECTED intent. This intent is published each time Android detects that the battery on the device is charging. Android will route this intent to all apps that have registered for this event.</li>
+        </ul>
+      </li>
+      <li>The broadcast receiver is a subclass of the BroadcastReceiver type and it must override the OnReceive method. Android will execute OnReceive on the main thread,</li>
+      <li>Publishing a Broadcast
+        <ul>
+          <li>A broadcast may be published to all apps installed on the device creating an Intent object and dispatching it with the SendBroadcast or the SendOrderedBroadcast method.
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Intent message = new Intent("com.xamarin.example.TEST");
+  // If desired, pass some values to the broadcast receiver.
+  message.PutExtra("key", "value");
+  SendBroadcast(message);
+</code></pre></div>            </div>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Intent intent = new Intent();
+  intent.SetAction("com.xamarin.example.TEST");
+  intent.PutExtra("key", "value");
+  SendBroadcast(intent);
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Permissions</strong>
+    <ul>
+      <li>Declare in manifest
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /&gt;
+  &lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>Runtime check
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.Camera) == (int)Permission.Granted) 
+  {
+      // We have permission, go ahead and use the camera.
+  } 
+  else 
+  {
+      // Camera permission is not granted. If necessary display rationale &amp; request.
+  }
+</code></pre></div>        </div>
+      </li>
+      <li>ActivityCompat.ShouldShowRequestPermissionRationale method is used to determine if the rationale should be shown to the user</li>
+      <li>If the user grants the permission, the ActivityCompat.RequestPermissions(Activity activity, string[] permissions, int requestCode) method should be called.</li>
+    </ul>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+  {
+        
+  }
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Drawable</strong>
+    <ul>
+      <li>ShapeDrawable</li>
+      <li>StateListDrawable</li>
+      <li>LayerDrawable</li>
+      <li>TransitionDrawable</li>
+      <li>LevelListDrawable</li>
+      <li>ScaleDrawable/ClipDrawable</li>
+      <li>InsetDrawable</li>
+      <li>BitmapDrawable</li>
+    </ul>
+  </li>
+  <li><strong>Animation</strong>
+    <ul>
+      <li>View Animations</li>
+      <li>Property Animations
+        <ul>
+          <li>ValueAnimator
+            <ul>
+              <li>ValueAnimator.OfInt</li>
+              <li>ValueAnimator.OfFloat</li>
+              <li>ValueAnimator.OfObject</li>
+            </ul>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  MyCustomObject myObj = new MyCustomObject();
+  myObj.SomeIntegerValue = -1;
+
+  animator.Update += (object sender, ValueAnimator.AnimatorUpdateEventArgs e) =&gt;
+  {
+      int newValue = (int) e.Animation.AnimatedValue;
+      // Apply this new value to the object being animated.
+      myObj.SomeIntegerValue = newValue;
+  };
+</code></pre></div>            </div>
+          </li>
+          <li>ObjectAnimator
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  MyCustomObject myObj = new MyCustomObject();
+  myObj.SomeIntegerValue = -1;
+
+  ObjectAnimator animator = ObjectAnimator.OfFloat(myObj, "SomeIntegerValue", 0, 100);
+  animator.SetDuration(1000);
+  animator.Start();
+</code></pre></div>            </div>
+          </li>
+          <li>AnimationSet</li>
+          <li>Evaluators used by animators
+            <ul>
+              <li>IntEvaluator – Calculates values for integer properties.</li>
+              <li>FloatEvaluator – Calculates values for float properties.</li>
+              <li>ArgbEvaluator – Calculates values for colour properties.</li>
+              <li>or implementing custom ITypeEvaluator</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Notifications</strong></p>
+  </li>
+  <li><strong>User Interface</strong>
+    <ul>
+      <li>Layouts
+        <ul>
+          <li>LinearLayout</li>
+          <li>RelativeLayout</li>
+          <li>TableLayout</li>
+          <li>RecyclerView</li>
+          <li>ListView</li>
+          <li>GridView</li>
+          <li>GridLayout</li>
+          <li>Tabbed Layouts</li>
+        </ul>
+      </li>
+      <li>Controls (Widgets)
+        <ul>
+          <li>ActionBar</li>
+          <li>AutoCompleteTextView</li>
+          <li>Button</li>
+          <li>Calendar</li>
+          <li>CardView</li>
+          <li>EditText</li>
+          <li>Gallery</li>
+          <li>Navigatin Bar</li>
+          <li>Pickers
+            <ul>
+              <li>Date</li>
+              <li>Time</li>
+            </ul>
+          </li>
+          <li>PopupMenu</li>
+          <li>RatingBar</li>
+          <li>Spinner</li>
+          <li>Switch</li>
+          <li>TextureView</li>
+          <li>ToolBar</li>
+          <li>ViewPager
+            <ul>
+              <li>With Views</li>
+              <li>With Fragments</li>
+            </ul>
+          </li>
+          <li>WebView</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
 
 <p><code class="language-plaintext highlighter-rouge">text</code></p>
 

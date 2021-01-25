@@ -12,7 +12,7 @@ excerpt_separator: <!--more-->
 
 <!--more-->
 
-## Xamarin.Forms Summary
+## Xamarin Summary
 
 ### Xamarin.Forms Fundamentals
 #### **Templates**
@@ -390,6 +390,7 @@ Steps:
 
 
 
+
 ## SOLID
 - Single-responsibility principle
 
@@ -464,14 +465,184 @@ Steps:
     - Visitor
         - The Visitor pattern allows to apply one or more operation to a set of objects at run-time without having the operations tightly coupled with the object structure. This let’s you implement double dispatch where a function call to different concrete functions is depending on the run-time type of two objects.
 
+### Xamarin.Android Fundamentals
+
+- **Activity LifeCycle**
+    - States
+        - Active or Running
+        - Paused
+        - Stopped / Backgrounded
+        - Restarted
+    - Methods
+        - OnCreate()
+        - OnStart()
+        - OnResume()
+        - OnPause()
+        - OnStop()
+        - OnRestart()
+        - OnDestroy()
+    - Bundle State
+        - OnSaveInstanceState()
+            - The default implementation of OnSaveInstanceState will take care of saving transient data in the UI for every view, so long as each view has an ID assigned.
+        - OnRestoreInstanceState()
+    - Persisteing complex data
+        - override Java.Lang.Object OnRetainNonConfigurationInstance ()
+        - read LastNonConfigurationInstance
+
+- **Android Services**
+    - Android applications are made up of at least one of the following four primary components: Activities, Broadcast Receivers, Content Providers, and Services.
+    - An Android service is a component that is designed to do some work without a user interface.
+    - Background work can be broken down into two broad classifications:
+
+        1. Long Running Task – This is work that is ongoing until explicitly stopped. An example of a long running task is an app that streams music or that must monitor data collected from a sensor. These tasks must run even though the application has no visible user interface.
+
+        2. Periodic Tasks – (sometimes referred to as a job) A periodic task is one that is of relatively short in duration (several seconds) and is run on a schedule (i.e. once a day for a week or perhaps just once in the next 60 seconds). An example of this is downloading a file from the internet or generating a thumbnail for an image.
+
+    - There are four different types of Android services:
+
+        - Bound Service – A bound service is a service that has some other component (typically an Activity) bound to it. A bound service provides an interface that allows the bound component and the service to interact with each other. Once there are no more clients bound to the service, Android will shut the service down.
+
+        - IntentService – An IntentService is a specialized subclass of the Service class that simplifies service creation and usage. An IntentService is meant to handle individual autonomous calls. Unlike a service, which can concurrently handle multiple calls, an IntentService is more like a work queue processor – work is queued up and an IntentService processes each job one at a time on a single worker thread. Typically, anIntentService is not bound to an Activity or a Fragment.
+
+        - Started Service – A started service is a service that has been started by some other Android component (such as an Activity) and is run continuously in the background until something explicitly tells the service to stop. Unlike a bound service, a started service does not have any clients directly bound to it. For this reason, it is important to design started services so that they may be gracefully restarted as necessary.
+
+        - Hybrid Service – A hybrid service is a service that has the characteristics of a started service and a bound service. A hybrid service can be started by when a component binds to it or it may be started by some event. A client component may or may not be bound to the hybrid service. A hybrid service will keep running until it is explicitly told to stop, or until there are no more clients bound to it.
+_ 
+- **Broadcast Receivers**
+    - A broadcast receiver is an Android component that allows an application to respond to messages (an Android Intent) that are broadcast by the Android operating system or by an application. Broadcasts follow a publish-subscribe model – an event causes a broadcast to be published and received by those components that are interested in the event.
+    - Android identifies two types of broadcasts:
+        - Explicit broadcast – These types of broadcasts target a specific application. The most common use of an explicit broadcast is to start an Activity. An example of an explicit broadcast when an app needs to dial a phone number; it will dispatch an Intent that targets the Phone app on Android and pass along the phone number to be dialed. Android will then route the intent to the Phone app.
+        - Implicit broadcast – These broadcasts are dispatched to all apps on the device. An example of an implicit broadcast is the ACTION_POWER_CONNECTED intent. This intent is published each time Android detects that the battery on the device is charging. Android will route this intent to all apps that have registered for this event.
+    - The broadcast receiver is a subclass of the BroadcastReceiver type and it must override the OnReceive method. Android will execute OnReceive on the main thread,
+    - Publishing a Broadcast
+        - A broadcast may be published to all apps installed on the device creating an Intent object and dispatching it with the SendBroadcast or the SendOrderedBroadcast method.
+        ```
+        Intent message = new Intent("com.xamarin.example.TEST");
+        // If desired, pass some values to the broadcast receiver.
+        message.PutExtra("key", "value");
+        SendBroadcast(message);
+        ```
+        ```
+        Intent intent = new Intent();
+        intent.SetAction("com.xamarin.example.TEST");
+        intent.PutExtra("key", "value");
+        SendBroadcast(intent);
+        ```
+- **Permissions**
+    - Declare in manifest
+        ```
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        ```     
+    - Runtime check
+        ```
+        if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.Camera) == (int)Permission.Granted) 
+        {
+            // We have permission, go ahead and use the camera.
+        } 
+        else 
+        {
+            // Camera permission is not granted. If necessary display rationale & request.
+        }
+        ```
+    - ActivityCompat.ShouldShowRequestPermissionRationale method is used to determine if the rationale should be shown to the user
+    - If the user grants the permission, the ActivityCompat.RequestPermissions(Activity activity, string[] permissions, int requestCode) method should be called.
+
+    ```
+    public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+    {
+        
+    }
+    ```
+- **Drawable**
+    - ShapeDrawable 
+    - StateListDrawable
+    - LayerDrawable
+    - TransitionDrawable
+    - LevelListDrawable
+    - ScaleDrawable/ClipDrawable
+    - InsetDrawable 
+    - BitmapDrawable 
 
 
+
+- **Animation**
+    - View Animations
+    - Property Animations
+        - ValueAnimator
+            - ValueAnimator.OfInt
+            - ValueAnimator.OfFloat
+            - ValueAnimator.OfObject
+
+            ```
+            MyCustomObject myObj = new MyCustomObject();
+            myObj.SomeIntegerValue = -1;
+
+            animator.Update += (object sender, ValueAnimator.AnimatorUpdateEventArgs e) =>
+            {
+                int newValue = (int) e.Animation.AnimatedValue;
+                // Apply this new value to the object being animated.
+                myObj.SomeIntegerValue = newValue;
+            };
+            ```
+
+        - ObjectAnimator
+            ```
+            MyCustomObject myObj = new MyCustomObject();
+            myObj.SomeIntegerValue = -1;
+
+            ObjectAnimator animator = ObjectAnimator.OfFloat(myObj, "SomeIntegerValue", 0, 100);
+            animator.SetDuration(1000);
+            animator.Start();
+            ```
+
+        - AnimationSet
+        - Evaluators used by animators
+            - IntEvaluator – Calculates values for integer properties.
+            - FloatEvaluator – Calculates values for float properties.
+            - ArgbEvaluator – Calculates values for colour properties.
+            - or implementing custom ITypeEvaluator 
+
+- **Notifications**
+
+
+- **User Interface**
+    - Layouts
+        - LinearLayout
+        - RelativeLayout
+        - TableLayout
+        - RecyclerView
+        - ListView
+        - GridView
+        - GridLayout
+        - Tabbed Layouts
+    - Controls (Widgets)
+        - ActionBar
+        - AutoCompleteTextView
+        - Button
+        - Calendar
+        - CardView
+        - EditText
+        - Gallery
+        - Navigatin Bar
+        - Pickers
+            - Date
+            - Time
+        - PopupMenu
+        - RatingBar
+        - Spinner
+        - Switch
+        - TextureView
+        - ToolBar
+        - ViewPager
+            - With Views
+            - With Fragments
+        - WebView
+
+        
+---
 
 `text`
-
-
-
-
 
 {% highlight csharp %}
 
