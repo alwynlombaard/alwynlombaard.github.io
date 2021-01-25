@@ -471,17 +471,207 @@ The binding mode is specified with a member of the BindingMode enumeration:</p>
 
 <h4 id="navigation">Navigation</h4>
 <ul>
-  <li>TabbedPage</li>
-  <li>CarouselPage</li>
-  <li>FlyoutPage</li>
-  <li>ModalPage</li>
+  <li>Hierarchical Navigation
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">NavigationPage</code> class provides a hierarchical navigation experience where the user is able to navigate through pages, forwards and backwards, as desired. The class implements navigation as a last-in, first-out (LIFO) stack of Page objects.</li>
+    </ul>
+  </li>
+  <li>TabbedPage
+    <ul>
+      <li>The Xamarin.Forms <code class="language-plaintext highlighter-rouge">TabbedPage</code> consists of a list of tabs and a larger detail area, with each tab loading content into the detail area.</li>
+    </ul>
+  </li>
+  <li>CarouselPage
+    <ul>
+      <li>The Xamarin.Forms <code class="language-plaintext highlighter-rouge">CarouselPage</code> is a page that users can swipe from side to side to navigate through pages of content, like a gallery.</li>
+    </ul>
+  </li>
+  <li>FlyoutPage
+    <ul>
+      <li>The Xamarin.Forms <code class="language-plaintext highlighter-rouge">FlyoutPage</code> is a page that manages two pages of related information – a flyout page that presents items, and a detail page that presents details about items on the flyout page.</li>
+    </ul>
+  </li>
+  <li>ModalPage
+    <ul>
+      <li>Xamarin.Forms also provides support for modal pages. A modal page encourages users to complete a self-contained task that cannot be navigated away from until the task is completed or cancelled.</li>
+    </ul>
+  </li>
 </ul>
 
 <h4 id="shell">Shell</h4>
 <ul>
+  <li>Xamarin.Forms Shell reduces the complexity of mobile application development by providing the fundamental features that most mobile applications require, including:
+    <ul>
+      <li>A single place to describe the visual hierarchy of an application.</li>
+      <li>A common navigation user experience.</li>
+      <li>A URI-based navigation scheme that permits navigation to any page in the application.</li>
+      <li>An integrated search handler.</li>
+    </ul>
+  </li>
   <li>Flyout</li>
   <li>Tabs</li>
   <li>Navigation</li>
+</ul>
+
+<h2 id="solid">SOLID</h2>
+<ul>
+  <li>
+    <p>Single-responsibility principle</p>
+
+    <p>A class should only have a single responsibility, that is, only changes to one part of the software’s specification should be able to affect the specification of the class.</p>
+  </li>
+  <li>
+    <p>Open–closed principle</p>
+
+    <p>“Software entities … should be open for extension, but closed for modification.”</p>
+  </li>
+  <li>
+    <p>Liskov substitution principle</p>
+
+    <p>“Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.”</p>
+  </li>
+  <li>
+    <p>Interface segregation principle</p>
+
+    <p>“Many client-specific interfaces are better than one general-purpose interface.”</p>
+  </li>
+  <li>
+    <p>Dependency inversion principle</p>
+
+    <p>One should “depend upon abstractions, not concretions.”</p>
+  </li>
+</ul>
+
+<h2 id="ood-paterns">OOD Paterns</h2>
+<p><a href="https://ronnieschaniel.medium.com/object-oriented-design-patterns-explained-using-practical-examples-84807445b092">ref</a></p>
+<ul>
+  <li><strong>Creational</strong>
+    <ul>
+      <li>Abstract Factory
+        <ul>
+          <li>The Abstract Factory provides an interface for creating families of related or dependent objects without the need to specify their concrete classes.</li>
+        </ul>
+      </li>
+      <li>Factory Method
+        <ul>
+          <li>The Factory Method defines an interface for object creation but let’s the subclass decide which object to create.</li>
+        </ul>
+      </li>
+      <li>Builder
+        <ul>
+          <li>The Builder pattern enables a more readable object creation and let’s you specify the fields that are actually needed.</li>
+        </ul>
+      </li>
+      <li>Prototype
+        <ul>
+          <li>The prototype pattern helps if objects are expensive to create and new objects will be similar to existing objects. It uses the clone method to duplicate existing instances to be used as a prototype for new instances.</li>
+        </ul>
+      </li>
+      <li>Singleton
+        <ul>
+          <li>A Singleton ensures that only one instance of an object is created and that this instance is globally accessible. There are not many occasions where it is acceptable to use a Singleton as it introduces global state. Logging is one meaningful example for the Singleton</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Structural</strong>
+    <ul>
+      <li>Adapter
+        <ul>
+          <li>The Adapter Pattern works between two independent or incompatible interfaces.</li>
+        </ul>
+      </li>
+      <li>Bridge
+        <ul>
+          <li>The Bridge pattern is used to decouple interfaces from implementations, if there are hierarchies in interfaces as well as implementations.</li>
+        </ul>
+      </li>
+      <li>Composite
+        <ul>
+          <li>The composite pattern allows to treat a group of objects the same way as a single object. This is for example used in tree-like object structures where a parent node’s operation influences or is dependent on child nodes.</li>
+        </ul>
+      </li>
+      <li>Decorator
+        <ul>
+          <li>The decorator pattern allows to add functionality to an object at run-time without altering its structure.</li>
+        </ul>
+      </li>
+      <li>Facade
+        <ul>
+          <li>A Facade simplifies the interface to an object or a group of objects “behind” this facade.</li>
+        </ul>
+      </li>
+      <li>Flyweight
+        <ul>
+          <li>The Flyweight pattern is applied if lots of objects from one class need to be constructed.</li>
+        </ul>
+      </li>
+      <li>Proxy
+        <ul>
+          <li>In this pattern an object is a proxy to something else and can control the creation and access of it.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Behavioural</strong>
+    <ul>
+      <li>Chain of responsibility
+        <ul>
+          <li>This pattern creates a chain of receiver objects for a request. It avoids coupling the sender of a request to the receiver and gives multiple objects the chance to handle the request.</li>
+        </ul>
+      </li>
+      <li>Command
+        <ul>
+          <li>In the command pattern an object is used to encapsulate all information needed to perform an action or trigger an event at a later time.</li>
+        </ul>
+      </li>
+      <li>Interpreter
+        <ul>
+          <li>The Interpreter pattern defines a representation for the grammar of a language and provides the ability to interpret sentences of that language</li>
+        </ul>
+      </li>
+      <li>Iterator
+        <ul>
+          <li>The Iterator is used to traverse a container of data to access the container’s elements without the need to know the underlying structure.</li>
+        </ul>
+      </li>
+      <li>Mediator
+        <ul>
+          <li>If two or more objects need to cooperate, the Mediator pattern might be applied. Especially if the objects do not know each other, if they should not be tightly coupled, or their interaction is complex, this pattern can help.</li>
+        </ul>
+      </li>
+      <li>Memento
+        <ul>
+          <li>The Memento pattern is useful if a certain state of an object should be saved for later usage.</li>
+        </ul>
+      </li>
+      <li>Observer
+        <ul>
+          <li>In the observer pattern observer objects subscribe to an observable object to be notified every time the observable changes its data. Observers are loosely coupled and can be added and removed at run-time. With regard to how the observer finally gets the data from the observable, there are two variants: push and pull.</li>
+        </ul>
+      </li>
+      <li>State
+        <ul>
+          <li>The State pattern lets an object alter its behaviour when its internal state changes. This pattern is similar to the strategy pattern, but in this case it is decided internally how the objects behaves.</li>
+        </ul>
+      </li>
+      <li>Strategy
+        <ul>
+          <li>In the context of the Strategy pattern there exist multiple variants for one algorithm where one variant is chosen to be executed at runtime.</li>
+        </ul>
+      </li>
+      <li>Template
+        <ul>
+          <li>The Template pattern defines a structure for sub classes in which steps of an algorithm and their order are defined. This ensures that the sub classes follow the exact same steps, providing better overview and consistency. It also allows to define default implementations for steps that can be overridden by subclasses.</li>
+        </ul>
+      </li>
+      <li>Visitor
+        <ul>
+          <li>The Visitor pattern allows to apply one or more operation to a set of objects at run-time without having the operations tightly coupled with the object structure. This let’s you implement double dispatch where a function call to different concrete functions is depending on the run-time type of two objects.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">text</code></p>

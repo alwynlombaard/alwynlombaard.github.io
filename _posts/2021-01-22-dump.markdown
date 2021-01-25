@@ -366,16 +366,105 @@ Steps:
 - Drag & Drop
 
 #### Navigation
+- Hierarchical Navigation
+    - The `NavigationPage` class provides a hierarchical navigation experience where the user is able to navigate through pages, forwards and backwards, as desired. The class implements navigation as a last-in, first-out (LIFO) stack of Page objects.
 - TabbedPage
+    - The Xamarin.Forms `TabbedPage` consists of a list of tabs and a larger detail area, with each tab loading content into the detail area.
 - CarouselPage
+    - The Xamarin.Forms `CarouselPage` is a page that users can swipe from side to side to navigate through pages of content, like a gallery.
 - FlyoutPage
+    - The Xamarin.Forms `FlyoutPage` is a page that manages two pages of related information – a flyout page that presents items, and a detail page that presents details about items on the flyout page.
 - ModalPage
+    - Xamarin.Forms also provides support for modal pages. A modal page encourages users to complete a self-contained task that cannot be navigated away from until the task is completed or cancelled.
 
 
 #### Shell
+- Xamarin.Forms Shell reduces the complexity of mobile application development by providing the fundamental features that most mobile applications require, including:
+    - A single place to describe the visual hierarchy of an application.
+    - A common navigation user experience.
+    - A URI-based navigation scheme that permits navigation to any page in the application.
+    - An integrated search handler. 
 - Flyout
 - Tabs
 - Navigation
+
+
+
+## SOLID
+- Single-responsibility principle
+
+    A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.
+
+- Open–closed principle
+
+    "Software entities ... should be open for extension, but closed for modification."
+
+- Liskov substitution principle
+
+    "Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program." 
+
+- Interface segregation principle
+
+    "Many client-specific interfaces are better than one general-purpose interface."
+
+- Dependency inversion principle
+
+    One should "depend upon abstractions, not concretions."
+
+## OOD Paterns 
+[ref](https://ronnieschaniel.medium.com/object-oriented-design-patterns-explained-using-practical-examples-84807445b092)
+- **Creational**
+    - Abstract Factory
+        - The Abstract Factory provides an interface for creating families of related or dependent objects without the need to specify their concrete classes.
+    - Factory Method
+        - The Factory Method defines an interface for object creation but let’s the subclass decide which object to create.
+    - Builder
+        - The Builder pattern enables a more readable object creation and let’s you specify the fields that are actually needed.
+    - Prototype
+        - The prototype pattern helps if objects are expensive to create and new objects will be similar to existing objects. It uses the clone method to duplicate existing instances to be used as a prototype for new instances.
+    - Singleton
+        - A Singleton ensures that only one instance of an object is created and that this instance is globally accessible. There are not many occasions where it is acceptable to use a Singleton as it introduces global state. Logging is one meaningful example for the Singleton
+
+- **Structural**
+    - Adapter
+        - The Adapter Pattern works between two independent or incompatible interfaces.
+    - Bridge
+        - The Bridge pattern is used to decouple interfaces from implementations, if there are hierarchies in interfaces as well as implementations. 
+    - Composite
+        - The composite pattern allows to treat a group of objects the same way as a single object. This is for example used in tree-like object structures where a parent node’s operation influences or is dependent on child nodes.
+    - Decorator
+        - The decorator pattern allows to add functionality to an object at run-time without altering its structure.
+    - Facade
+        - A Facade simplifies the interface to an object or a group of objects “behind” this facade.
+    - Flyweight
+        - The Flyweight pattern is applied if lots of objects from one class need to be constructed.
+    - Proxy
+        - In this pattern an object is a proxy to something else and can control the creation and access of it. 
+- **Behavioural**
+    - Chain of responsibility
+       - This pattern creates a chain of receiver objects for a request. It avoids coupling the sender of a request to the receiver and gives multiple objects the chance to handle the request.
+    - Command
+        - In the command pattern an object is used to encapsulate all information needed to perform an action or trigger an event at a later time.
+    - Interpreter
+        - The Interpreter pattern defines a representation for the grammar of a language and provides the ability to interpret sentences of that language
+    - Iterator
+        - The Iterator is used to traverse a container of data to access the container’s elements without the need to know the underlying structure.
+    - Mediator
+        - If two or more objects need to cooperate, the Mediator pattern might be applied. Especially if the objects do not know each other, if they should not be tightly coupled, or their interaction is complex, this pattern can help.
+    - Memento
+        - The Memento pattern is useful if a certain state of an object should be saved for later usage.
+    - Observer
+        - In the observer pattern observer objects subscribe to an observable object to be notified every time the observable changes its data. Observers are loosely coupled and can be added and removed at run-time. With regard to how the observer finally gets the data from the observable, there are two variants: push and pull.
+    - State
+        - The State pattern lets an object alter its behaviour when its internal state changes. This pattern is similar to the strategy pattern, but in this case it is decided internally how the objects behaves.
+    - Strategy
+        - In the context of the Strategy pattern there exist multiple variants for one algorithm where one variant is chosen to be executed at runtime.
+    - Template
+        - The Template pattern defines a structure for sub classes in which steps of an algorithm and their order are defined. This ensures that the sub classes follow the exact same steps, providing better overview and consistency. It also allows to define default implementations for steps that can be overridden by subclasses.
+    - Visitor
+        - The Visitor pattern allows to apply one or more operation to a set of objects at run-time without having the operations tightly coupled with the object structure. This let’s you implement double dispatch where a function call to different concrete functions is depending on the run-time type of two objects.
+
+
 
 
 `text`
