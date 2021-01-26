@@ -918,6 +918,168 @@ _</p>
   </li>
 </ul>
 
+<h3 id="xamarinios-fundamentals">Xamarin.iOS fundamentals</h3>
+
+<ul>
+  <li>
+    <p><strong>User Interface</strong></p>
+
+    <ul>
+      <li>Controls
+        <ul>
+          <li>Alerts
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">UIActionSheet</code> and <code class="language-plaintext highlighter-rouge">UIAlertView</code> deprecated</li>
+              <li>Replaced with <code class="language-plaintext highlighter-rouge">UIAlertController</code></li>
+            </ul>
+          </li>
+          <li>
+            <p>Use UIAlertControllerStyle to indicate the type of alert to display. These alerts types are:</p>
+
+            <ul>
+              <li><code class="language-plaintext highlighter-rouge">UIAlertControllerStyleActionSheet</code>
+                <ul>
+                  <li>Pre-iOS 8 this would have been a <code class="language-plaintext highlighter-rouge">UIActionSheet</code></li>
+                </ul>
+              </li>
+              <li><code class="language-plaintext highlighter-rouge">UIAlertControllerStyleAlert</code>
+                <ul>
+                  <li>Pre-iOS 8 this would have been <code class="language-plaintext highlighter-rouge">UIAlertView</code></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  //Create Alert
+  var okAlertController = UIAlertController.Create ("Title", "The message", UIAlertControllerStyle.Alert);
+
+  //Add Action
+  okCancelAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, alert =&gt; Console.WriteLine ("Okay was clicked")));
+  okCancelAlertController.AddAction(UIAlertAction.Create("Cancel", UIAlertActionStyle.Cancel, alert =&gt; Console.WriteLine ("Cancel was clicked")));
+
+  //required for iPad
+  UIPopoverPresentationController presentationPopover = actionSheetAlert.PopoverPresentationController;
+  if (presentationPopover!=null) {
+      presentationPopover.SourceView = this.View;
+      presentationPopover.PermittedArrowDirections = UIPopoverArrowDirection.Up;
+  }
+
+  // Present Alert
+  PresentViewController (okAlertController, true, null);
+</code></pre></div>            </div>
+          </li>
+          <li>Buttons
+            <ul>
+              <li>UIButton
+                <ul>
+                  <li>Set the button’s text. Use the SetTitle method, which requires the text and a UIControlState value for button state.
+                    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  myButton.SetTitle("Hello, World!", UIControlState.Normal);
+</code></pre></div>                    </div>
+                  </li>
+                  <li>The button’s state types are listed below:
+                    <ul>
+                      <li>UIControlState.Normal</li>
+                      <li>UIControlState.Highlighted</li>
+                      <li>UIControlState.Disabled</li>
+                      <li>UIControlState.Selected</li>
+                      <li>UIControlState.Focused</li>
+                      <li>UIControlState.Application</li>
+                      <li>UIControlState.Reserved</li>
+                    </ul>
+                  </li>
+                  <li>UIButton Types
+                    <ul>
+                      <li>UIButtonType.System - A general-purpose button</li>
+                      <li>UIButtonType.DetailDisclosure - Indicates the availability of detailed information, usually about a specific item in a table</li>
+                      <li>UIButtonType.InfoDark - Indicates the availability of configuration information; dark-colored</li>
+                      <li>UIButtonType.InfoLight - Indicates the availability of configuration information; light-colored</li>
+                      <li>UIButtonType..AddContact - Indicates that a contact can be added</li>
+                      <li>UIButtonType.Custom - Customizable button</li>
+                      <li>Tap
+                        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  myButton.TouchUpInside += (sender, e) =&gt; {
+      DoSomething();
+  };
+</code></pre></div>                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Collection Views
+            <ul>
+              <li>UICollecionView
+                <ul>
+                  <li>Delegation and data source patterns</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Images</li>
+          <li>Manual Camery Controls
+            <ul>
+              <li>AVFoundation Framework</li>
+            </ul>
+          </li>
+          <li>Maps
+            <ul>
+              <li>Map Kit</li>
+            </ul>
+          </li>
+          <li>Labels
+            <ul>
+              <li>UILabel</li>
+            </ul>
+          </li>
+          <li>Pickers and Date Pickers
+            <ul>
+              <li>Wheel like control</li>
+              <li>UIPickerView subclass called UIDatePicker</li>
+            </ul>
+          </li>
+          <li>Progress and Activity Indicators
+            <ul>
+              <li>Activity Indicators</li>
+              <li>Progress Bars</li>
+            </ul>
+          </li>
+          <li>Sliders, Switches and Segmented Controls
+            <ul>
+              <li>UISwitch</li>
+            </ul>
+          </li>
+          <li>Stack View
+            <ul>
+              <li>UIStackView
+                <ul>
+                  <li>The Stack View control (UIStackView) leverages the power of Auto Layout and Size Classes to manage a stack of subviews, either horizontally or vertically, which dynamically responds to the orientation and screen size of the iOS device.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Tables and Cells</li>
+          <li>Text Input
+            <ul>
+              <li>UITextField</li>
+              <li>UITextView</li>
+            </ul>
+          </li>
+          <li>Tab Bars and Tab Bar Controllers
+            <ul>
+              <li>iOS applications using a tab-navigation UI are built using the UITabBarController</li>
+            </ul>
+          </li>
+          <li>WebViews
+            <ul>
+              <li>SFSafariViewController</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
 <hr />
 
 <p><code class="language-plaintext highlighter-rouge">text</code></p>

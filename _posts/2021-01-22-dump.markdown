@@ -639,7 +639,101 @@ _
             - With Fragments
         - WebView
 
+
+### Xamarin.iOS fundamentals
+
+- **User Interface**
+
+    - Controls
+        - Alerts
+            - `UIActionSheet` and `UIAlertView` deprecated
+            - Replaced with `UIAlertController`
+        - Use UIAlertControllerStyle to indicate the type of alert to display. These alerts types are:
+
+            - `UIAlertControllerStyleActionSheet`
+                - Pre-iOS 8 this would have been a `UIActionSheet`
+            - `UIAlertControllerStyleAlert`
+                - Pre-iOS 8 this would have been `UIAlertView`
+
+            ```
+            //Create Alert
+            var okAlertController = UIAlertController.Create ("Title", "The message", UIAlertControllerStyle.Alert);
+
+            //Add Action
+            okCancelAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, alert => Console.WriteLine ("Okay was clicked")));
+            okCancelAlertController.AddAction(UIAlertAction.Create("Cancel", UIAlertActionStyle.Cancel, alert => Console.WriteLine ("Cancel was clicked")));
+
+            //required for iPad
+            UIPopoverPresentationController presentationPopover = actionSheetAlert.PopoverPresentationController;
+            if (presentationPopover!=null) {
+                presentationPopover.SourceView = this.View;
+                presentationPopover.PermittedArrowDirections = UIPopoverArrowDirection.Up;
+            }
+
+            // Present Alert
+            PresentViewController (okAlertController, true, null);
+            ```
+
+
+        - Buttons
+            - UIButton
+                - Set the button's text. Use the SetTitle method, which requires the text and a UIControlState value for button state.
+                ```
+                myButton.SetTitle("Hello, World!", UIControlState.Normal);
+                ```
+                - The button's state types are listed below:
+                    - UIControlState.Normal
+                    - UIControlState.Highlighted
+                    - UIControlState.Disabled
+                    - UIControlState.Selected
+                    - UIControlState.Focused
+                    - UIControlState.Application
+                    - UIControlState.Reserved
+                - UIButton Types
+                    - UIButtonType.System - A general-purpose button
+                    - UIButtonType.DetailDisclosure - Indicates the availability of detailed information, usually about a specific item in a table
+                    - UIButtonType.InfoDark - Indicates the availability of configuration information; dark-colored
+                    - UIButtonType.InfoLight - Indicates the availability of configuration information; light-colored
+                    - UIButtonType..AddContact - Indicates that a contact can be added
+                    - UIButtonType.Custom - Customizable button
+                    - Tap
+                    ```
+                    myButton.TouchUpInside += (sender, e) => {
+                            DoSomething();
+                    };
+                    ```
+
+        - Collection Views
+            - UICollecionView
+                - Delegation and data source patterns
+        - Images
+        - Manual Camery Controls
+            - AVFoundation Framework
+        - Maps
+            - Map Kit
+        - Labels
+            - UILabel
+        - Pickers and Date Pickers
+            - Wheel like control
+            - UIPickerView subclass called UIDatePicker
+        - Progress and Activity Indicators
+            - Activity Indicators
+            - Progress Bars
+        - Sliders, Switches and Segmented Controls
+            - UISwitch
+        - Stack View
+            - UIStackView
+                - The Stack View control (UIStackView) leverages the power of Auto Layout and Size Classes to manage a stack of subviews, either horizontally or vertically, which dynamically responds to the orientation and screen size of the iOS device.
+        - Tables and Cells
+        - Text Input
+            - UITextField
+            - UITextView
+        - Tab Bars and Tab Bar Controllers
+            - iOS applications using a tab-navigation UI are built using the UITabBarController
+        - WebViews
+            - SFSafariViewController
         
+
 ---
 
 `text`
