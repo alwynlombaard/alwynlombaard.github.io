@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Swift Notes | Alwyn Lombaard’s blog</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Swift Notes" />
+<meta name="author" content="Alwyn Lombaard" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Mobile developer (guitar student and athlete in my spare time)" />
+<meta property="og:description" content="Mobile developer (guitar student and athlete in my spare time)" />
+<link rel="canonical" href="http://localhost:4000/ios/2015/01/01/swift.html" />
+<meta property="og:url" content="http://localhost:4000/ios/2015/01/01/swift.html" />
+<meta property="og:site_name" content="Alwyn Lombaard’s blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2015-01-01T00:00:00+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","author":{"@type":"Person","name":"Alwyn Lombaard"},"url":"http://localhost:4000/ios/2015/01/01/swift.html","headline":"Swift Notes","dateModified":"2015-01-01T00:00:00+00:00","datePublished":"2015-01-01T00:00:00+00:00","description":"Mobile developer (guitar student and athlete in my spare time)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ios/2015/01/01/swift.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Alwyn Lombaard's blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Alwyn Lombaard&#39;s blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/playlist/">Playlist</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Swift Notes</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2015-01-01T00:00:00+00:00" itemprop="datePublished">Jan 1, 2015
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Alwyn Lombaard</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--more-->
+
+<h2 id="swift-summary">Swift Summary</h2>
+
+<p>##Swift</p>
+<ul>
+  <li>Swift eliminates entire classes of unsafe code. Variables are always initialized before use, arrays and integers are checked for overflow, memory is automatically managed, and enforcement of exclusive access to memory guards against many programming mistakes</li>
+  <li>Another safety feature is that by default Swift objects can never be nil</li>
+  <li>Swift has an innovative feature known as optionals. An optional may contain nil, but Swift syntax forces you to safely deal with it using the ? syntax to indicate to the compiler you understand the behavior and will handle it safely.</li>
+  <li>
+    <p>Swift is a successor to both the C and Objective-C languages. It includes low-level primitives such as types, flow control, and operators. It also provides object-oriented features such as classes, protocols, and generics, giving Cocoa and Cocoa Touch developers the performance and power they demand.</p>
+  </li>
+  <li>Overview
+    <ul>
+      <li>Use let to make a constant and var to make a variable</li>
+      <li>
+        <p>String interlopation</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  let name = "John" 
+  let greeting = "Hello \(name)"
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Create arrays and dictionaries using brackets ([]), and access their elements by writing the index or key in brackets. A comma is allowed after the last element.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var myList = ["item1", "item2", "item3"]
+
+  var myDictionary = [
+      "Key1": "Value1",
+      "Key2": "Value2
+  ]
+
+  myDictionary["Key1"] = "Value x"
+
+  myList.append("item4")
+
+  let emptyArray = [String]()
+  let emptyDictionary = [String: Float]()
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>type information can be inferred</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  myList = []
+  myDictionary = [:]
+</code></pre></div>        </div>
+      </li>
+      <li>Control Flow
+        <ul>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">if</code> and <code class="language-plaintext highlighter-rouge">switch</code> to make conditionals, and use <code class="language-plaintext highlighter-rouge">for</code>-<code class="language-plaintext highlighter-rouge">in</code>, <code class="language-plaintext highlighter-rouge">while</code>, and <code class="language-plaintext highlighter-rouge">repeat-while</code> to make loops. Parentheses around the condition or loop variable are optional. Braces around the body are required.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  let vegetable = "red pepper"
+  switch vegetable {
+  case "celery":
+      print("Add some raisins and make ants on a log.")
+  case "cucumber", "watercress":
+      print("That would make a good tea sandwich.")
+  case let x where x.hasSuffix("pepper"):
+      print("Is it a spicy \(x)?")
+  default:
+      print("Everything tastes good in soup.")
+  }
+  // Prints "Is it a spicy red pepper?"
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>You can keep an index in a loop by using <code class="language-plaintext highlighter-rouge">..&lt;</code> to make a range of indexes.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var total = 0
+  for i in 0..&lt;4 {
+      total += i
+  }
+  print(total)
+  // Prints "6"
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">..&lt;</code> to make a range that omits its upper value, and use <code class="language-plaintext highlighter-rouge">...</code> to make a range that includes both values.</p>
+          </li>
+        </ul>
+      </li>
+      <li>Functions and Closures
+        <ul>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">func</code> to declare a function. Call a function by following its name with a list of arguments in parentheses. Use <code class="language-plaintext highlighter-rouge">-&gt;</code> to separate the parameter names and types from the function’s return type.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func greet(person: String, day: String) -&gt; String {
+      return "Hello \(person), today is \(day)."
+  }
+  greet(person: "Bob", day: "Tuesday")
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>By default, functions use their parameter names as labels for their arguments. Write a custom argument label before the parameter name, or write <code class="language-plaintext highlighter-rouge">_</code> to use no argument label.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func greet(_ person: String, on day: String) -&gt; String {
+      return "Hello \(person), today is \(day)."
+  }
+  greet("John", on: "Wednesday")
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Use a tuple to make a compound value—for example, to return multiple values from a function. The elements of a tuple can be referred to either by name or by number.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func calculateStatistics(scores: [Int]) -&gt; (min: Int, max: Int, sum: Int) {
+      var min = scores[0]
+      var max = scores[0]
+      var sum = 0
+
+      for score in scores {
+          if score &gt; max {
+              max = score
+          } else if score &lt; min {
+              min = score
+          }
+          sum += score
+      }
+
+      return (min, max, sum)
+  }
+  let statistics = calculateStatistics(scores: [5, 3, 100, 3, 9])
+  print(statistics.sum)
+  // Prints "120"
+  print(statistics.2)
+  // Prints "120"
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Functions can be nested. Nested functions have access to variables that were declared in the outer function. You can use nested functions to organize the code in a function that is long or complex.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func returnFifteen() -&gt; Int {
+      var y = 10
+      func add() {
+          y += 5
+      }
+      add()
+      return y
+  }
+  returnFifteen()
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Functions are a first-class type. This means that a function can return another function as its value.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func makeIncrementer() -&gt; ((Int) -&gt; Int) {
+      func addOne(number: Int) -&gt; Int {
+          return 1 + number
+      }
+      return addOne
+  }
+  var increment = makeIncrementer()
+  increment(7)
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>A function can take another function as one of its arguments.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func hasAnyMatches(list: [Int], condition: (Int) -&gt; Bool) -&gt; Bool {
+      for item in list {
+          if condition(item) {
+              return true
+          }
+      }
+      return false
+  }
+  func lessThanTen(number: Int) -&gt; Bool {
+      return number &lt; 10
+  }
+  var numbers = [20, 19, 7, 12]
+  hasAnyMatches(list: numbers, condition: lessThanTen)
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>You can write a closure without a name by surrounding code with braces (<code class="language-plaintext highlighter-rouge">{}</code>). Use <code class="language-plaintext highlighter-rouge">in</code> to separate the arguments and return type from the body.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  numbers.map({ (number: Int) -&gt; Int in
+      let result = 3 * number
+      return result
+  })
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>You have several options for writing closures more concisely. When a closure’s type is already known, such as the callback for a delegate, you can omit the type of its parameters, its return type, or both. Single statement closures implicitly return the value of their only statement.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  let mappedNumbers = numbers.map({ number in 3 * number })
+  print(mappedNumbers)
+  // Prints "[60, 57, 21, 36]"
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>You can refer to parameters by number instead of by name—this approach is especially useful in very short closures. A closure passed as the last argument to a function can appear immediately after the parentheses. When a closure is the only argument to a function, you can omit the parentheses entirely.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  let sortedNumbers = numbers.sorted { $0 &gt; $1 }
+  print(sortedNumbers)
+  // Prints "[20, 19, 12, 7]"
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="swiftui">SwiftUI</h3>
+<ul>
+  <li>SwiftUI uses a declarative syntax so you can simply state what your user interface should do.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">text</code></p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><span class="k">public</span> <span class="k">class</span> <span class="nc">SomeCSharpCode</span>
+<span class="p">{</span>
+
+<span class="p">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;SomeXml&gt;</span>
+<span class="nt">&lt;/SomeXml&gt;</span></code></pre></figure>
+
+
+  </div><ul></ul><a class="u-url" href="/ios/2015/01/01/swift.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Alwyn Lombaard&#39;s blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Alwyn Lombaard&#39;s blog</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/alwynlombaard"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">alwynlombaard</span></a></li><li><a href="https://www.twitter.com/mrlombaard"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">mrlombaard</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Mobile developer (guitar student and athlete in my spare time)</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
