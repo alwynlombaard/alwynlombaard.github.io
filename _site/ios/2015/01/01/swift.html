@@ -51,7 +51,7 @@
 
 <h2 id="swift-summary">Swift Summary</h2>
 
-<p>##Swift</p>
+<h2 id="swift">Swift</h2>
 <ul>
   <li>Swift eliminates entire classes of unsafe code. Variables are always initialized before use, arrays and integers are checked for overflow, memory is automatically managed, and enforcement of exclusive access to memory guards against many programming mistakes</li>
   <li>Another safety feature is that by default Swift objects can never be nil</li>
@@ -61,7 +61,7 @@
   </li>
   <li>Overview
     <ul>
-      <li>Use let to make a constant and var to make a variable</li>
+      <li>Use <code class="language-plaintext highlighter-rouge">let</code> to make a constant and <code class="language-plaintext highlighter-rouge">var</code> to make a variable</li>
       <li>
         <p>String interlopation</p>
 
@@ -70,7 +70,7 @@
 </code></pre></div>        </div>
       </li>
       <li>
-        <p>Create arrays and dictionaries using brackets ([]), and access their elements by writing the index or key in brackets. A comma is allowed after the last element.</p>
+        <p>Create arrays and dictionaries using brackets (<code class="language-plaintext highlighter-rouge">[]</code>), and access their elements by writing the index or key in brackets. A comma is allowed after the last element.</p>
 
         <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var myList = ["item1", "item2", "item3"]
 
@@ -94,7 +94,7 @@
   myDictionary = [:]
 </code></pre></div>        </div>
       </li>
-      <li>Control Flow
+      <li><strong>Control Flow</strong>
         <ul>
           <li>
             <p>Use <code class="language-plaintext highlighter-rouge">if</code> and <code class="language-plaintext highlighter-rouge">switch</code> to make conditionals, and use <code class="language-plaintext highlighter-rouge">for</code>-<code class="language-plaintext highlighter-rouge">in</code>, <code class="language-plaintext highlighter-rouge">while</code>, and <code class="language-plaintext highlighter-rouge">repeat-while</code> to make loops. Parentheses around the condition or loop variable are optional. Braces around the body are required.</p>
@@ -129,7 +129,7 @@
           </li>
         </ul>
       </li>
-      <li>Functions and Closures
+      <li><strong>Functions and Closures</strong>
         <ul>
           <li>
             <p>Use <code class="language-plaintext highlighter-rouge">func</code> to declare a function. Call a function by following its name with a list of arguments in parentheses. Use <code class="language-plaintext highlighter-rouge">-&gt;</code> to separate the parameter names and types from the function’s return type.</p>
@@ -245,6 +245,367 @@
   // Prints "[20, 19, 12, 7]"
 </code></pre></div>            </div>
           </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>Objects and Classes</strong></p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  class Shape {
+      var numberOfSides = 0
+      func simpleDescription() -&gt; String {
+          return "A shape with \(numberOfSides) sides."
+      }
+  }
+</code></pre></div>        </div>
+
+        <ul>
+          <li>
+            <p>Create an instance of a class by putting parentheses after the class name. Use dot syntax to access the properties and methods of the instance.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var shape = Shape()
+  shape.numberOfSides = 7
+  var shapeDescription = shape.simpleDescription()
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Set up the class when an instance is created. Use <code class="language-plaintext highlighter-rouge">init</code> to create one.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> class NamedShape {
+     var numberOfSides: Int = 0
+     var name: String
+
+     init(name: String) {
+         self.name = name
+     }
+
+     func simpleDescription() -&gt; String {
+         return "A shape with \(numberOfSides) sides."
+     }
+ }
+</code></pre></div>            </div>
+          </li>
+          <li>Use <code class="language-plaintext highlighter-rouge">deinit</code> to create a deinitializer if you need to perform some cleanup before the object is deallocated.</li>
+          <li>Subclasses include their superclass name after their class name, separated by a colon.</li>
+          <li>
+            <p>Methods on a subclass that override the superclass’s implementation are marked with <code class="language-plaintext highlighter-rouge">override</code></p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  class Square: NamedShape {
+      var sideLength: Double
+
+      init(sideLength: Double, name: String) {
+          self.sideLength = sideLength
+          super.init(name: name)
+          numberOfSides = 4
+      }
+
+      func area() -&gt; Double {
+          return sideLength * sideLength
+      }
+
+      override func simpleDescription() -&gt; String {
+          return "A square with sides of length \(sideLength)."
+      }
+  }
+  let test = Square(sideLength: 5.2, name: "my test square")
+  test.area()
+  test.simpleDescription()
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>In addition to simple properties that are stored, properties can have a getter and a setter.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  class EquilateralTriangle: NamedShape {
+      var sideLength: Double = 0.0
+
+      init(sideLength: Double, name: String) {
+          self.sideLength = sideLength
+          super.init(name: name)
+          numberOfSides = 3
+      }
+
+      var perimeter: Double {
+          get {
+              return 3.0 * sideLength
+          }
+          set {
+              sideLength = newValue / 3.0
+          }
+      }
+
+      override func simpleDescription() -&gt; String {
+          return "An equilateral triangle with sides of length \(sideLength)."
+      }
+  }
+  var triangle = EquilateralTriangle(sideLength: 3.1, name: "a triangle")
+  print(triangle.perimeter)
+  // Prints "9.3"
+  triangle.perimeter = 9.9
+  print(triangle.sideLength)
+  // Prints "3.3000000000000003"
+</code></pre></div>            </div>
+          </li>
+          <li>In the setter for perimeter, the new value has the implicit name <code class="language-plaintext highlighter-rouge">newValue</code>.</li>
+          <li>If you don’t need to compute the property but still need to provide code that is run before and after setting a new value, use <code class="language-plaintext highlighter-rouge">willSet</code> and <code class="language-plaintext highlighter-rouge">didSet</code></li>
+          <li>
+            <p>When working with optional values, you can write ? before operations like methods, properties, and subscripting. If the value before the ? is nil, everything after the ? is ignored and the value of the whole expression is nil. Otherwise, the optional value is unwrapped, and everything after the ? acts on the unwrapped value. In both cases, the value of the whole expression is an optional value.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  let optionalSquare: Square? = Square(sideLength: 2.5, name: "optional square")
+  let sideLength = optionalSquare?.sideLength
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Enumerations and Structures</strong>
+        <ul>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">enum</code> to create an enumeration. Like classes and all other named types, enumerations can have methods associated with them.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  enum Suit {
+      case spades, hearts, diamonds, clubs
+
+      func simpleDescription() -&gt; String {
+          switch self {
+          case .spades:
+              return "spades"
+          case .hearts:
+              return "hearts"
+          case .diamonds:
+              return "diamonds"
+          case .clubs:
+              return "clubs"
+          }
+      }
+  }
+  let hearts = Suit.hearts
+  let heartsDescription = hearts.simpleDescription()
+</code></pre></div>            </div>
+
+            <hr />
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  enum Rank: Int {
+      case ace = 1
+      case two, three, four, five, six, seven, eight, nine, ten
+      case jack, queen, king
+
+      func simpleDescription() -&gt; String {
+          switch self {
+          case .ace:
+              return "ace"
+          case .jack:
+              return "jack"
+          case .queen:
+              return "queen"
+          case .king:
+              return "king"
+          default:
+              return String(self.rawValue)
+          }
+      }
+  }
+  let ace = Rank.ace
+  let aceRawValue = ace.rawValue
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">struct</code> to create a structure. Structures support many of the same behaviors as classes, including methods and initializers. One of the most important differences between structures and classes is that structures are always copied when they are passed around in your code, but classes are passed by reference.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  struct Card {
+      var rank: Rank
+      var suit: Suit
+      func simpleDescription() -&gt; String {
+          return "The \(rank.simpleDescription()) of \(suit.simpleDescription())"
+      }
+  }
+  let threeOfSpades = Card(rank: .three, suit: .spades)
+  let threeOfSpadesDescription = threeOfSpades.simpleDescription()
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Protocols and Extensions</strong>
+        <ul>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">protocol</code> to declare a protocol.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  protocol ExampleProtocol {
+      var simpleDescription: String { get }
+      mutating func adjust()
+  }
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Classes, enumerations, and structs can all adopt protocols.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  class SimpleClass: ExampleProtocol {
+      var simpleDescription: String = "A very simple class."
+      var anotherProperty: Int = 69105
+      func adjust() {
+          simpleDescription += "  Now 100% adjusted."
+      }
+  }
+  var a = SimpleClass()
+  a.adjust()
+  let aDescription = a.simpleDescription
+
+  struct SimpleStructure: ExampleProtocol {
+      var simpleDescription: String = "A simple structure"
+      mutating func adjust() {
+          simpleDescription += " (adjusted)"
+      }
+  }
+  var b = SimpleStructure()
+  b.adjust()
+  let bDescription = b.simpleDescription
+</code></pre></div>            </div>
+          </li>
+          <li>Notice the use of the <code class="language-plaintext highlighter-rouge">mutating</code>keyword in the declaration of SimpleStructure to mark a method that modifies the structure. The declaration of SimpleClass doesn’t need any of its methods marked as mutating because methods on a class can always modify the class.</li>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">extension</code> to add functionality to an existing type, such as new methods and computed properties. You can use an extension to add protocol conformance to a type that is declared elsewhere, or even to a type that you imported from a library or framework</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  extension Int: ExampleProtocol {
+      var simpleDescription: String {
+          return "The number \(self)"
+      }
+      mutating func adjust() {
+          self += 42
+      }
+  }
+  print(7.simpleDescription)
+  // Prints "The number 7"
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Error Handling</strong>
+        <ul>
+          <li>
+            <p>You represent errors using any type that adopts the <code class="language-plaintext highlighter-rouge">Error</code> protocol.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  enum PrinterError: Error {
+      case outOfPaper
+      case noToner
+      case onFire
+  }
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">throw</code> to throw an error and <code class="language-plaintext highlighter-rouge">throws</code> to mark a function that can throw an error. If you throw an error in a function, the function returns immediately and the code that called the function handles the error.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func send(job: Int, toPrinter printerName: String) throws -&gt; String {
+      if printerName == "Never Has Toner" {
+          throw PrinterError.noToner
+      }
+      return "Job sent"
+  }
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>There are several ways to handle errors. One way is to use <code class="language-plaintext highlighter-rouge">do</code>-<code class="language-plaintext highlighter-rouge">catch</code>. Inside the <code class="language-plaintext highlighter-rouge">do</code> block, you mark code that can throw an error by writing <code class="language-plaintext highlighter-rouge">try</code> in front of it. Inside the <code class="language-plaintext highlighter-rouge">catch</code> block, the error is automatically given the name error unless you give it a different name.</p>
+          </li>
+          <li>
+            <p>You can provide multiple <code class="language-plaintext highlighter-rouge">catch</code> blocks that handle specific errors. You write a pattern after <code class="language-plaintext highlighter-rouge">catch</code> just as you do after <code class="language-plaintext highlighter-rouge">case</code> in a <code class="language-plaintext highlighter-rouge">switch</code>.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  do {
+      let printerResponse = try send(job: 1440, toPrinter: "Gutenberg")
+      print(printerResponse)
+  } catch PrinterError.onFire {
+      print("I'll just put this over here, with the rest of the fire.")
+  } catch let printerError as PrinterError {
+      print("Printer error: \(printerError).")
+  } catch {
+      print(error)
+  }
+  // Prints "Job sent"
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Another way to handle errors is to use <code class="language-plaintext highlighter-rouge">try?</code> to convert the result to an optional. If the function throws an error, the specific error is discarded and the result is <code class="language-plaintext highlighter-rouge">nil</code>. Otherwise, the result is an optional containing the value that the function returned.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  let printerSuccess = try? send(job: 1884, toPrinter: "Mergenthaler")
+  let printerFailure = try? send(job: 1885, toPrinter: "Never Has Toner")
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">defer</code> to write a block of code that is executed after all other code in the function, just before the function returns. The code is executed regardless of whether the function throws an error. You can use defer to write setup and cleanup code next to each other, even though they need to be executed at different times.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var fridgeIsOpen = false
+  let fridgeContent = ["milk", "eggs", "leftovers"]
+
+  func fridgeContains(_ food: String) -&gt; Bool {
+      fridgeIsOpen = true
+      defer {
+          fridgeIsOpen = false
+      }
+
+      let result = fridgeContent.contains(food)
+      return result
+  }
+  fridgeContains("banana")
+  print(fridgeIsOpen)
+  // Prints "false"
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Generics</strong>
+        <ul>
+          <li>
+            <p>Write a name inside angle brackets to make a generic function or type.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func makeArray&lt;Item&gt;(repeating item: Item, numberOfTimes: Int) -&gt; [Item] {
+      var result = [Item]()
+      for _ in 0..&lt;numberOfTimes {
+          result.append(item)
+      }
+      return result
+  }
+  makeArray(repeating: "knock", numberOfTimes: 4)
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>You can make generic forms of functions and methods, as well as classes, enumerations, and structures.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // Reimplement the Swift standard library's optional type
+  enum OptionalValue&lt;Wrapped&gt; {
+      case none
+      case some(Wrapped)
+  }
+  var possibleInteger: OptionalValue&lt;Int&gt; = .none
+  possibleInteger = .some(100)
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Use <code class="language-plaintext highlighter-rouge">where</code> right before the body to specify a list of requirements—for example, to require the type to implement a protocol, to require two types to be the same, or to require a class to have a particular superclass.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  func anyCommonElements&lt;T: Sequence, U: Sequence&gt;(_ lhs: T, _ rhs: U) -&gt; Bool
+      where T.Element: Equatable, T.Element == U.Element
+  {
+      for lhsItem in lhs {
+          for rhsItem in rhs {
+              if lhsItem == rhsItem {
+                  return true
+              }
+          }
+      }
+      return false
+  }
+  anyCommonElements([1, 2, 3], [3])
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>Writing <code class="language-plaintext highlighter-rouge">&lt;T: Equatable&gt;</code> is the same as writing <code class="language-plaintext highlighter-rouge">&lt;T&gt; ... where T: Equatable</code>.</p>
+          </li>
+        </ul>
+      </li>
+      <li><strong>Types</strong>
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">String</code></li>
+          <li><code class="language-plaintext highlighter-rouge">Int</code>, <code class="language-plaintext highlighter-rouge">UInt</code>, <code class="language-plaintext highlighter-rouge">Int32</code>, <code class="language-plaintext highlighter-rouge">UInt32</code>, <code class="language-plaintext highlighter-rouge">Int64</code>, <code class="language-plaintext highlighter-rouge">UInt64</code>, <code class="language-plaintext highlighter-rouge">Int8</code>, <code class="language-plaintext highlighter-rouge">UInt8</code></li>
+          <li><code class="language-plaintext highlighter-rouge">Doulbe</code>, <code class="language-plaintext highlighter-rouge">Float</code></li>
+          <li>Integer prefix: Decimal, binary <code class="language-plaintext highlighter-rouge">0b</code>, octal <code class="language-plaintext highlighter-rouge">0o</code>, hexadecimal <code class="language-plaintext highlighter-rouge">0x</code></li>
+          <li>Floating-point prefex: Decimal , hexadecimal <code class="language-plaintext highlighter-rouge">0x</code></li>
+          <li><code class="language-plaintext highlighter-rouge">Bool</code></li>
+          <li>Tuple <code class="language-plaintext highlighter-rouge">(404, "Not Found")</code> is a tuple of type <code class="language-plaintext highlighter-rouge">(Int, String)</code></li>
         </ul>
       </li>
     </ul>
