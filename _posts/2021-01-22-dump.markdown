@@ -736,9 +736,6 @@ _
 
 ---
 
-## Flutter Summary
-
-
 `text`
 
 {% highlight csharp %}
