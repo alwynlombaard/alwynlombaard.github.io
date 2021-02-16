@@ -3,7 +3,7 @@ layout: post
 title: "Flutter Notes"
 date: 2015-01-01 00:00:00 +0000
 comments: true
-categories: Flutter
+categories: flutter
 tags: Flutter
 author: Alwyn Lombaard
 published: true
@@ -15,22 +15,252 @@ excerpt_separator: <!--more-->
 ## Flutter Summary
 
 ## Dart
+- Important concepts
+    - As you learn about the Dart language, keep these facts and concepts in mind:
 
+    - Everything you can place in a variable is an `Object`, and every object is an instance of a class. 
 
+    - Although Dart is strongly typed, type annotations are optional because Dart can infer types. When you want to explicitly say that no type is expected, use the special type `dynamic`.
 
-`text`
+    - Dart supports generic types, like `List<int>` (a list of integers) or `List<dynamic>` (a list of objects of any type).
 
-{% highlight csharp %}
+    - Dart supports top-level functions (such as `main()`), as well as functions tied to a class or object (static and instance methods, respectively). You can also create functions within functions (nested or local functions).
 
-public class SomeCSharpCode
-{
+    - Similarly, Dart supports top-level variables, as well as variables tied to a class or object (static and instance variables). Instance variables are sometimes known as fields or properties.
 
-}
+    - Unlike Java, Dart doesn’t have the keywords `public`, `protected`, and `private`. If an identifier starts with an underscore (`_`), it’s private to its library. For details, see Libraries and visibility.
 
-{% endhighlight %}
+    - Identifiers can start with a letter or underscore (`_`), followed by any combination of those characters plus digits.
 
-{% highlight xml%}
-<SomeXml>
-</SomeXml>
-{% endhighlight %}
+    - Dart has both expressions (which have runtime values) and statements (which don’t). For example, the conditional expression condition ? expr1 : expr2 has a value of expr1 or expr2. Compare that to an if-else statement, which has no value. A statement often contains one or more expressions, but an expression can’t directly contain a statement.
+
+    - Dart tools can report two kinds of problems: warnings and errors. Warnings are just indications that your code might not work, but they don’t prevent your program from executing. Errors can be either compile-time or run-time. A compile-time error prevents the code from executing at all; a run-time error results in an exception being raised while the code executes.
+
+- ### Built-in-types
+    - The Dart language has special support for the following types:
+
+        - numbers
+        - strings
+        - booleans
+        - lists (also known as arrays)
+        - sets
+        - maps
+        - runes (for expressing Unicode characters in a string)
+        - symbols
     
+    - Numbers
+        - int
+        - double
+    - Strings
+        - Interpolate  `'literal $name'`
+        - Interpolate `'literal ${name.toUpperCase()}'`
+        - Concatenate
+
+                var s1 = 'String '
+                    'concatenation'
+                    " works even over line breaks.";
+
+                var s1 = '''
+                You can create
+                multi-line strings like this one.
+                ''';
+
+                var s2 = """This is also a
+                multi-line string.""";
+
+        - Raw string by prefixing with `r`
+
+                var s = r'In a raw string, not even \n gets special treatment.';
+
+    - Lists
+        - In Dart, arrays are List objects, so most people just call them lists.
+
+                var list = [1, 2, 3];
+
+        - For example, you can use the spread operator (`...`) to insert all the values of a list into another list:
+
+                var list = [1, 2, 3];
+                var list2 = [0, ...list];
+        
+        - If the expression to the right of the spread operator might be null, you can avoid exceptions by using a null-aware spread operator (`?`):
+
+                var list;
+                var list2 = [0, ...?list];
+                assert(list2.length == 1);
+
+        - Dart also offers collection `if` and collection `for`, which you can use to build collections using conditionals (if) and repetition (for).
+
+                var nav = [
+                'Home',
+                'Furniture',
+                'Plants',
+                if (promoActive) 'Outlet'
+                ];
+
+
+                var listOfInts = [1, 2, 3];
+                var listOfStrings = [
+                '#0',
+                for (var i in listOfInts) '#$i'
+                ];
+
+    - Sets
+        - A set in Dart is an unordered collection of unique items. Dart infers that halogens has the type `Set<String>`
+            
+                var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
+
+        - To create an empty set, use `{}` preceded by a type argument
+
+                var names = <String>{};
+
+        -  If you forget the type annotation on `{}` or the variable it’s assigned to, then Dart creates an object of type `Map<dynamic, dynamic>`.
+
+
+        - Add items to an existing set using the `add()` or `addAll()` methods:
+
+                var elements = <String>{};
+                elements.add('fluorine');
+                elements.addAll(halogens);
+
+        - Use .`length` to get the number of items in the set:
+
+        - To create a set that’s a compile-time constant, add `const` before the set literal:
+
+                final constantSet = const {
+                'fluorine',
+                'chlorine',
+                'bromine',
+                'iodine',
+                'astatine',
+                };
+                // constantSet.add('helium'); // This line will cause an error.
+
+        - Sets support spread operators (`...` and `...?`)
+
+    - Maps
+
+        - In general, a map is an object that associates keys and values.
+
+                var gifts = {
+                // Key:    Value
+                'first': 'partridge',
+                'second': 'turtledoves',
+                'fifth': 'golden rings'
+                };
+
+                var nobleGases = {
+                2: 'helium',
+                10: 'neon',
+                18: 'argon',
+                };
+
+        - You can create the same objects using a `Map` constructor:
+
+                var gifts = Map();
+                gifts['first'] = 'partridge';
+                gifts['second'] = 'turtledoves';
+                gifts['fifth'] = 'golden rings';
+
+                var nobleGases = Map();
+                nobleGases[2] = 'helium';
+                nobleGases[10] = 'neon';
+                nobleGases[18] = 'argon';
+
+        - In Dart, the `new` keyword is optional
+
+        - Add
+
+                var gifts = {'first': 'partridge'};
+                gifts['fourth'] = 'calling birds'; // Add a key-value pair
+
+        - Retrieve
+
+                var gifts = {'first': 'partridge'};
+                assert(gifts['first'] == 'partridge');
+
+        - If you look for a key that isn’t in a map, you get a `null` in return:
+
+                var gifts = {'first': 'partridge'};
+                assert(gifts['fifth'] == null);
+
+        - Use .`length` to get the number of key-value pairs in the map:
+
+                var gifts = {'first': 'partridge'};
+                gifts['fourth'] = 'calling birds';
+                assert(gifts.length == 2);
+
+        - To create a map that’s a compile-time constant, add `const` before the map literal:
+
+                final constantMap = const {
+                2: 'helium',
+                10: 'neon',
+                18: 'argon',
+                };
+
+                // constantMap[2] = 'Helium'; // This line will cause an error.
+
+- ### Functions
+    - Dart is a true object-oriented language, so even functions are objects and have a type, `Function`. 
+
+            bool isNoble(int atomicNumber) {
+            return _nobleGases[atomicNumber] != null;
+            }
+    - For functions that contain just one expression, you can use a shorthand syntax: The `=>` expr syntax is a shorthand for `{ return expr; }`. The `=>` notation is sometimes referred to as arrow syntax.
+
+            bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
+
+
+    - Parameters
+        - A function can have any number of required positional parameters. These can be followed either by named parameters or by optional positional parameters (but not both).
+
+        - Named parameters
+            - Named parameters are optional unless they’re specifically marked as `required`.
+        
+            - Calling with named parameters
+
+                    enableFlags(bold: true, hidden: false);
+
+            - Defining with named parameters
+
+                    void enableFlags({bool bold, bool hidden}) {...}            
+            
+            - Making required
+
+                    const Scrollbar({Key key, @required Widget child})
+
+        - Optional parameters
+            - Wrapping a set of function parameters in `[]` marks them as optional positional parameters:
+
+                    String say(String from, String msg, [String device]) {
+                    var result = '$from says $msg';
+                    if (device != null) {
+                        result = '$result with a $device';
+                    }
+                    return result;
+                    }
+
+        - Default parameter values
+
+                void enableFlags({bool bold = false, bool hidden = false}) {...}
+
+
+                String say(String from, String msg,
+                    [String device = 'carrier pigeon']) {
+                var result = '$from says $msg with a $device';
+                return result;
+                }
+
+            - You can also pass lists or maps as default values.
+
+                    void doStuff(
+                        {List<int> list = const [1, 2, 3],
+                        Map<String, String> gifts = const {
+                        'first': 'paper',
+                        'second': 'cotton',
+                        'third': 'leather'
+                        }}) {
+                    print('list:  $list');
+                    print('gifts: $gifts');
+                    }
+
+        - The main() function
