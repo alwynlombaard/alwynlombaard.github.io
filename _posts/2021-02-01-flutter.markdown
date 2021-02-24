@@ -238,6 +238,8 @@ excerpt_separator: <!--more-->
                     }
                     return result;
                     }
+            
+            - Wrapping a set of function parameters in `{}` marks them as optional non-positional parameters:
 
         - Default parameter values
 
@@ -246,8 +248,8 @@ excerpt_separator: <!--more-->
 
                 String say(String from, String msg,
                     [String device = 'carrier pigeon']) {
-                var result = '$from says $msg with a $device';
-                return result;
+                    var result = '$from says $msg with a $device';
+                    return result;
                 }
 
             - You can also pass lists or maps as default values.
@@ -255,12 +257,122 @@ excerpt_separator: <!--more-->
                     void doStuff(
                         {List<int> list = const [1, 2, 3],
                         Map<String, String> gifts = const {
-                        'first': 'paper',
-                        'second': 'cotton',
-                        'third': 'leather'
+                            'first': 'paper',
+                            'second': 'cotton',
+                            'third': 'leather'
                         }}) {
-                    print('list:  $list');
-                    print('gifts: $gifts');
+
+                        print('list:  $list');
+                        print('gifts: $gifts');
+
                     }
 
-        - The main() function
+    - The main() function
+        - Every app must have a top-level main() function, which serves as the entrypoint to the app. The main() function returns void and has an optional List<String> parameter for arguments.
+
+                // Run the app like this: dart args.dart 1 test
+                void main(List<String> arguments) {
+                    print(arguments);
+
+                    assert(arguments.length == 2);
+                    assert(int.parse(arguments[0]) == 1);
+                    assert(arguments[1] == 'test');
+                }
+                                
+
+    - Functions as first-class objects
+        - You can pass a function as a parameter to another function. For example:
+
+                void printElement(int element) {
+                    print(element);
+                }
+
+                var list = [1, 2, 3];
+
+                // Pass printElement as a parameter.
+                list.forEach(printElement);
+
+        - You can also assign a function to a variable, such as:
+
+                var loudify = (msg) => '!!! ${msg.toUpperCase()} !!!';
+                assert(loudify('hello') == '!!! HELLO !!!');
+                
+    - Anonymous functions
+
+
+- ### Operators
+
+    - Operator	Meaning
+        - `as`	Typecast (also used to specify library prefixes)
+        - `is`	True if the object has the specified type
+        - `is!`	True if the object doesn’t have the specified type
+
+    - Cascade notation (..)
+        - Cascades (`..`) allow you to make a sequence of operations on the same object. In addition to function calls, you can also access fields on that same object.
+
+                querySelector('#confirm') // Get an object.
+                    ..text = 'Confirm' // Use its members.
+                    ..classes.add('important')
+                    ..onClick.listen((e) => window.alert('Confirmed!'));
+
+- ### Control flow statements
+    - Closures inside of Dart’s for loops capture the value of the index, avoiding a common pitfall found in JavaScript. For example, consider:
+
+            var callbacks = [];
+            for (var i = 0; i < 2; i++) {
+                callbacks.add(() => print(i));
+            }
+            callbacks.forEach((c) => c());
+            //The output is 0 and then 1, as expected. 
+            //In contrast, the example would print 2 and then 2 in JavaScript.
+    - If the object that you are iterating over is an `Iterable`, you can use the `forEach()`
+    - Iterable classes such as List and Set also support the for-in form of iteration:
+
+            var collection = [1, 2, 3];
+            for (var x in collection) {
+                print(x); // 1 2 3
+            }
+    - Break and continue
+        - `break` to stop looping
+
+        - `continue` to skip to next loop iteration
+
+                for (int i = 0; i < candidates.length; i++) {
+                    var candidate = candidates[i];
+                    if (candidate.yearsExperience < 5) {
+                        continue;
+                    }
+                    candidate.interview();
+                }
+
+                //or like this if using Iterable (eg for List or Set):
+                candidates
+                    .where((c) => c.yearsExperience >= 5)
+                    .forEach((c) => c.interview());
+
+    - Switch and case
+        - Each non-empty `case` clause ends with a `break` statement, as a rule
+        - Other valid ways to end a non-empty `case` clause are a `continue`, `throw`, or `return` statement.
+        - Empty `case` clauses allows a form of fall-through.
+        - If you really want fall-through, you can use a `continue` statement and a label:
+
+                var command = 'CLOSED';
+                switch (command) {
+                    case 'CLOSED':
+                        executeClosed();
+                        continue nowClosed;
+                        // Continues executing at the nowClosed label.
+
+                    nowClosed:
+                    case 'NOW_CLOSED':
+                        // Runs for both CLOSED and NOW_CLOSED.
+                        executeNowClosed();
+                        break;
+                }
+
+- ### Exceptions
+- ### Classes
+- ### Generics
+- ### Libraries and visibility
+- ### Asynchrony support
+    - Handling Futures

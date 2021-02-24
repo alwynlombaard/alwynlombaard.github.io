@@ -327,8 +327,7 @@
         <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  bool isNoble(int atomicNumber) =&gt; _nobleGases[atomicNumber] != null;
 </code></pre></div>        </div>
       </li>
-      <li>
-        <p>Parameters</p>
+      <li>Parameters
         <ul>
           <li>
             <p>A function can have any number of required positional parameters. These can be followed either by named parameters or by optional positional parameters (but not both).</p>
@@ -372,6 +371,9 @@
   }
 </code></pre></div>                </div>
               </li>
+              <li>
+                <p>Wrapping a set of function parameters in <code class="language-plaintext highlighter-rouge">{}</code> marks them as optional non-positional parameters:</p>
+              </li>
             </ul>
           </li>
           <li>
@@ -382,8 +384,8 @@
 
   String say(String from, String msg,
       [String device = 'carrier pigeon']) {
-  var result = '$from says $msg with a $device';
-  return result;
+      var result = '$from says $msg with a $device';
+      return result;
   }
 </code></pre></div>            </div>
 
@@ -394,20 +396,183 @@
                 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  void doStuff(
       {List&lt;int&gt; list = const [1, 2, 3],
       Map&lt;String, String&gt; gifts = const {
-      'first': 'paper',
-      'second': 'cotton',
-      'third': 'leather'
+          'first': 'paper',
+          'second': 'cotton',
+          'third': 'leather'
       }}) {
-  print('list:  $list');
-  print('gifts: $gifts');
+
+      print('list:  $list');
+      print('gifts: $gifts');
+
   }
 </code></pre></div>                </div>
               </li>
             </ul>
           </li>
-          <li>The main() function</li>
         </ul>
       </li>
+      <li>The main() function
+        <ul>
+          <li>
+            <p>Every app must have a top-level main() function, which serves as the entrypoint to the app. The main() function returns void and has an optional List<String> parameter for arguments.</String></p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  // Run the app like this: dart args.dart 1 test
+  void main(List&lt;String&gt; arguments) {
+      print(arguments);
+
+      assert(arguments.length == 2);
+      assert(int.parse(arguments[0]) == 1);
+      assert(arguments[1] == 'test');
+  }
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li>Functions as first-class objects
+        <ul>
+          <li>
+            <p>You can pass a function as a parameter to another function. For example:</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  void printElement(int element) {
+      print(element);
+  }
+
+  var list = [1, 2, 3];
+
+  // Pass printElement as a parameter.
+  list.forEach(printElement);
+</code></pre></div>            </div>
+          </li>
+          <li>
+            <p>You can also assign a function to a variable, such as:</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var loudify = (msg) =&gt; '!!! ${msg.toUpperCase()} !!!';
+  assert(loudify('hello') == '!!! HELLO !!!');
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li>Anonymous functions</li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="operators">Operators</h3>
+
+    <ul>
+      <li>Operator	Meaning
+        <ul>
+          <li><code class="language-plaintext highlighter-rouge">as</code>	Typecast (also used to specify library prefixes)</li>
+          <li><code class="language-plaintext highlighter-rouge">is</code>	True if the object has the specified type</li>
+          <li><code class="language-plaintext highlighter-rouge">is!</code>	True if the object doesn’t have the specified type</li>
+        </ul>
+      </li>
+      <li>Cascade notation (..)
+        <ul>
+          <li>
+            <p>Cascades (<code class="language-plaintext highlighter-rouge">..</code>) allow you to make a sequence of operations on the same object. In addition to function calls, you can also access fields on that same object.</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  querySelector('#confirm') // Get an object.
+      ..text = 'Confirm' // Use its members.
+      ..classes.add('important')
+      ..onClick.listen((e) =&gt; window.alert('Confirmed!'));
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="control-flow-statements">Control flow statements</h3>
+    <ul>
+      <li>
+        <p>Closures inside of Dart’s for loops capture the value of the index, avoiding a common pitfall found in JavaScript. For example, consider:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var callbacks = [];
+  for (var i = 0; i &lt; 2; i++) {
+      callbacks.add(() =&gt; print(i));
+  }
+  callbacks.forEach((c) =&gt; c());
+  //The output is 0 and then 1, as expected. 
+  //In contrast, the example would print 2 and then 2 in JavaScript.
+</code></pre></div>        </div>
+      </li>
+      <li>If the object that you are iterating over is an <code class="language-plaintext highlighter-rouge">Iterable</code>, you can use the <code class="language-plaintext highlighter-rouge">forEach()</code></li>
+      <li>
+        <p>Iterable classes such as List and Set also support the for-in form of iteration:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var collection = [1, 2, 3];
+  for (var x in collection) {
+      print(x); // 1 2 3
+  }
+</code></pre></div>        </div>
+      </li>
+      <li>Break and continue
+        <ul>
+          <li>
+            <p><code class="language-plaintext highlighter-rouge">break</code> to stop looping</p>
+          </li>
+          <li>
+            <p><code class="language-plaintext highlighter-rouge">continue</code> to skip to next loop iteration</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  for (int i = 0; i &lt; candidates.length; i++) {
+      var candidate = candidates[i];
+      if (candidate.yearsExperience &lt; 5) {
+          continue;
+      }
+      candidate.interview();
+  }
+
+  //or like this if using Iterable (eg for List or Set):
+  candidates
+      .where((c) =&gt; c.yearsExperience &gt;= 5)
+      .forEach((c) =&gt; c.interview());
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li>Switch and case
+        <ul>
+          <li>Each non-empty <code class="language-plaintext highlighter-rouge">case</code> clause ends with a <code class="language-plaintext highlighter-rouge">break</code> statement, as a rule</li>
+          <li>Other valid ways to end a non-empty <code class="language-plaintext highlighter-rouge">case</code> clause are a <code class="language-plaintext highlighter-rouge">continue</code>, <code class="language-plaintext highlighter-rouge">throw</code>, or <code class="language-plaintext highlighter-rouge">return</code> statement.</li>
+          <li>Empty <code class="language-plaintext highlighter-rouge">case</code> clauses allows a form of fall-through.</li>
+          <li>
+            <p>If you really want fall-through, you can use a <code class="language-plaintext highlighter-rouge">continue</code> statement and a label:</p>
+
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  var command = 'CLOSED';
+  switch (command) {
+      case 'CLOSED':
+          executeClosed();
+          continue nowClosed;
+          // Continues executing at the nowClosed label.
+
+      nowClosed:
+      case 'NOW_CLOSED':
+          // Runs for both CLOSED and NOW_CLOSED.
+          executeNowClosed();
+          break;
+  }
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="exceptions">Exceptions</h3>
+  </li>
+  <li>
+    <h3 id="classes">Classes</h3>
+  </li>
+  <li>
+    <h3 id="generics">Generics</h3>
+  </li>
+  <li>
+    <h3 id="libraries-and-visibility">Libraries and visibility</h3>
+  </li>
+  <li>
+    <h3 id="asynchrony-support">Asynchrony support</h3>
+    <ul>
+      <li>Handling Futures</li>
     </ul>
   </li>
 </ul>
