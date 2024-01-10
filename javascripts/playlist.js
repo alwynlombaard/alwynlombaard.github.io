@@ -39,8 +39,8 @@
 					{'name':'Opus 241 No 21 Waltz - Carulli','length':'01:13','file':'Carullli_Opua_241_No_21_20201001_225909.mp3'},
 					{'name':'Opus 60 No 1 - Sor','length':'01:05','file':'Sor_Opus_60_no_1_20151122_131513.mp3'},
 					{'name':'Opus 60 No 22 - Sor','length':'02:31','file':'Sor_Opus_60_No_22_20151031_214715.mp3'},
-					{'name':'Opus 60 No 22 - Sor (again)','length':'02:18','file':'Sor_Opus_60_no_22_Slur_study_20200917.mp3'}
-					
+					{'name':'Opus 60 No 22 - Sor (again)','length':'02:18','file':'Sor_Opus_60_no_22_Slur_study_20200917.mp3'},
+                    {'name':'Havre Gosselin - Vincent Lindsey-Clark','length':'04:57','file':'havre gosselin.mp3'}
 				];
 		$scope.trackCount = $scope.tracks.length;
 		$scope.selectedTrack = function(){ return $scope.tracks[$scope.selectedIndex]};
