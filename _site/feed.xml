@@ -1,662 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-10T17:36:08+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard’s blog</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">Havre Gosselin</title><link href="http://localhost:4000/guitar/2024/01/10/havre-gosselin.html" rel="alternate" type="text/html" title="Havre Gosselin" /><published>2024-01-10T17:30:00+00:00</published><updated>2024-01-10T17:30:00+00:00</updated><id>http://localhost:4000/guitar/2024/01/10/havre-gosselin</id><content type="html" xml:base="http://localhost:4000/guitar/2024/01/10/havre-gosselin.html">&lt;audio controls=&quot;&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-01-11T12:51:23+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alwyn Lombaard</title><subtitle>Mobile developer (guitar student and athlete in my spare time)</subtitle><entry><title type="html">Havre Gosselin</title><link href="http://localhost:4000/guitar/2024/01/10/havre-gosselin.html" rel="alternate" type="text/html" title="Havre Gosselin" /><published>2024-01-10T17:30:00+00:00</published><updated>2024-01-10T17:30:00+00:00</updated><id>http://localhost:4000/guitar/2024/01/10/havre-gosselin</id><content type="html" xml:base="http://localhost:4000/guitar/2024/01/10/havre-gosselin.html">&lt;audio controls=&quot;&quot;&gt;
   &lt;source src=&quot;/music/havre gosselin.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
 &lt;/audio&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Alwyn Lombaard</name></author><category term="guitar" /><summary type="html"></summary></entry><entry><title type="html">Handling push notifications in Flutter with Firebase</title><link href="http://localhost:4000/flutter/2021/12/08/handling-push-notifications-in-fluter-with-firebase.html" rel="alternate" type="text/html" title="Handling push notifications in Flutter with Firebase" /><published>2021-12-08T00:00:00+00:00</published><updated>2021-12-08T00:00:00+00:00</updated><id>http://localhost:4000/flutter/2021/12/08/handling-push-notifications-in-fluter-with-firebase</id><content type="html" xml:base="http://localhost:4000/flutter/2021/12/08/handling-push-notifications-in-fluter-with-firebase.html">&lt;p&gt;Handling push notifications is not a straightforward task, unfortunately. So if you want to handle push notifications in iOS and Android there are a few factors to consider in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Flutter&lt;/code&gt;, namely:&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Alwyn Lombaard</name></author><category term="guitar" /><summary type="html"></summary></entry><entry><title type="html">Guitar Recordings</title><link href="http://localhost:4000/guitar/2020/10/02/recordings.html" rel="alternate" type="text/html" title="Guitar Recordings" /><published>2020-10-02T01:00:00+01:00</published><updated>2020-10-02T01:00:00+01:00</updated><id>http://localhost:4000/guitar/2020/10/02/recordings</id><content type="html" xml:base="http://localhost:4000/guitar/2020/10/02/recordings.html">&lt;p&gt;&lt;a href=&quot;/playlist&quot;&gt;Listen to some of my recordings I’ve made during my practice sessions&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alwyn Lombaard</name></author><category term="guitar" /><category term="guitar" /><summary type="html">Listen to some of my recordings I’ve made during my practice sessions.</summary></entry><entry><title type="html">My humble attempt at Bach Prelude for Lute BWV999</title><link href="http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999.html" rel="alternate" type="text/html" title="My humble attempt at Bach Prelude for Lute BWV999" /><published>2018-04-15T16:17:08+01:00</published><updated>2018-04-15T16:17:08+01:00</updated><id>http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999</id><content type="html" xml:base="http://localhost:4000/guitar/2018/04/15/my-humble-attempt-at-bach-prelude-for-lute-bwv999.html">&lt;audio controls=&quot;&quot;&gt;
+  &lt;source src=&quot;/music/Bach_Prelude_for_Lute_BWV999_20180415_150053.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+&lt;/audio&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Is the app in the foreground or background?&lt;/li&gt;
-  &lt;li&gt;If in the background, is the app in a running or terminated state?&lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Alwyn Lombaard</name></author><category term="guitar" /><summary type="html"></summary></entry><entry><title type="html">My 15 seconds of Xamarin fame</title><link href="http://localhost:4000/xamarin/2016/04/27/my-15-seconds-of-xamarin-fame.html" rel="alternate" type="text/html" title="My 15 seconds of Xamarin fame" /><published>2016-04-27T10:52:22+01:00</published><updated>2016-04-27T10:52:22+01:00</updated><id>http://localhost:4000/xamarin/2016/04/27/my-15-seconds-of-xamarin-fame</id><content type="html" xml:base="http://localhost:4000/xamarin/2016/04/27/my-15-seconds-of-xamarin-fame.html">&lt;p&gt;At the 57 second mark&lt;/p&gt;
 
-&lt;p&gt;These scenarios require specific handling in Flutter depending on the platform.&lt;/p&gt;
+&lt;script type=&quot;text/javascript&quot; async=&quot;&quot; src=&quot;https://play.vidyard.com/embed/v4.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;img style=&quot;width: 100%; margin: auto; display: block;&quot; class=&quot;vidyard-player-embed&quot; src=&quot;https://play.vidyard.com/3zPfzW1cALrJYyKTAGc4ey.jpg&quot; data-uuid=&quot;3zPfzW1cALrJYyKTAGc4ey&quot; data-v=&quot;4&quot; data-type=&quot;lightbox&quot; /&gt;&lt;/p&gt;
 
 &lt;!--more--&gt;
 
-&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;I got my 15 seconds of fame in the video that Xamarin made for the 2016 Xammy Award nominations.&lt;/p&gt;
 
-&lt;p&gt;You can find a guide to set up push notifications in the Flutter documentation:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://customers.microsoft.com/en-us/story/justgiving-nonprofit-xamarin&quot;&gt;It is also featured on the Microsoft customer pages.&lt;/a&gt;&lt;/p&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><summary type="html">At the 57 second mark</summary></entry><entry><title type="html">A simple Angular audio playlist</title><link href="http://localhost:4000/angular/guitar/2015/10/13/a-simple-angular-audio-playlist.html" rel="alternate" type="text/html" title="A simple Angular audio playlist" /><published>2015-10-13T21:34:45+01:00</published><updated>2015-10-13T21:34:45+01:00</updated><id>http://localhost:4000/angular/guitar/2015/10/13/a-simple-angular-audio-playlist</id><content type="html" xml:base="http://localhost:4000/angular/guitar/2015/10/13/a-simple-angular-audio-playlist.html">&lt;p&gt;I recently knocked out this Angular.js app to put my recordings in a playlist.&lt;/p&gt;
 
-&lt;p&gt;Overview:&lt;/p&gt;
+&lt;p&gt;You can play with it &lt;a href=&quot;/playlist&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://firebase.flutter.dev/docs/overview&quot;&gt;Installation and Initialization or FlutterFire&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;the-markup&quot;&gt;The markup&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://firebase.flutter.dev/docs/messaging/usage&quot;&gt;How to use Cloud Messaging in Flutter&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;my-solution-to-setting-up-push-notification-handling&quot;&gt;My solution to setting up push notification handling&lt;/h2&gt;
-
-&lt;p&gt;Below is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dart&lt;/code&gt; code extract that sums up how I approached the setting up and handling of push notifications in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Flutter&lt;/code&gt; for both iOS and Android appications in the following states:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Foreground&lt;/li&gt;
-  &lt;li&gt;Background (app still running)&lt;/li&gt;
-  &lt;li&gt;Terminated (app not running)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The requirement is that in all of these states a push notification message should be handled in the same way.&lt;/p&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Future&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setupPushNotifications&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirebaseMessaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;subscribeToTopic&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;general&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;//handle background messages while app is running&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;FirebaseMessaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onMessageOpenedApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_handlePushNotificationMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;//handle messages that caused the app to launch&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;RemoteMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initialMessage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirebaseMessaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getInitialMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initialMessage&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;_handlePushNotificationMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initialMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-          &lt;span class=&quot;nl&quot;&gt;isFromTerminatedState:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;//foreground messages ios&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirebaseMessaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;instance&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setForegroundNotificationPresentationOptions&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;alert:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;badge:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;sound:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;//foreground messages android&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Platform&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;isAndroid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AndroidNotificationChannel&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AndroidNotificationChannel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-          &lt;span class=&quot;s&quot;&gt;&apos;myapp_channel&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;myapp_ Notifications&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-          &lt;span class=&quot;nl&quot;&gt;description:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;This channel is used for MyApp notifications.&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-          &lt;span class=&quot;nl&quot;&gt;importance:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Importance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FlutterLocalNotificationsPlugin&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flutterLocalNotificationsPlugin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;FlutterLocalNotificationsPlugin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flutterLocalNotificationsPlugin&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;resolvePlatformSpecificImplementation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;
-              &lt;span class=&quot;n&quot;&gt;AndroidFlutterLocalNotificationsPlugin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;()&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;?.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createNotificationChannel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-      &lt;span class=&quot;n&quot;&gt;FirebaseMessaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onMessage&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RemoteMessage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;RemoteNotification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;notification&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;AndroidNotification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;android&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;android&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;notification&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;android&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;flutterLocalNotificationsPlugin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-              &lt;span class=&quot;n&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-              &lt;span class=&quot;n&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-              &lt;span class=&quot;n&quot;&gt;notification&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-              &lt;span class=&quot;n&quot;&gt;NotificationDetails&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-                &lt;span class=&quot;nl&quot;&gt;android:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AndroidNotificationDetails&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-                  &lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;nl&quot;&gt;channelDescription:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-                  &lt;span class=&quot;nl&quot;&gt;icon:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;ic_notification&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-                &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
-              &lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;div class=&quot;playlist&quot; ng-app=&quot;playListApp&quot; ng-controller=&quot;playListController&quot;&amp;gt;
+	&amp;lt;h2&amp;gt;Track: {{selectedTrack().name}}&amp;lt;/h2&amp;gt;
+	&amp;lt;audio preload=&quot;false&quot; id=&quot;playlist-audio&quot; controls=&quot;controls&quot; width=&quot;300&quot;&amp;gt;&amp;lt;/audio&amp;gt;
+	&amp;lt;div id=&quot;extra-controls&quot;&amp;gt;
+		&amp;lt;button id=&quot;btnPrev&quot; class=&quot;ctrlbtn&quot; ng-click=&quot;previous()&quot;&amp;gt;|&amp;amp;lt;&amp;amp;lt; Prev Track&amp;lt;/button&amp;gt; 
+		&amp;lt;button id=&quot;btnNext&quot; class=&quot;ctrlbtn&quot; ng-click=&quot;next()&quot;&amp;gt;Next Track &amp;amp;gt;&amp;amp;gt;|&amp;lt;/button&amp;gt;
+	&amp;lt;/div&amp;gt;
+	&amp;lt;h3&amp;gt;Playlist&amp;lt;/h3&amp;gt;
+	&amp;lt;ul&amp;gt;
+		&amp;lt;li class=&quot;track&quot; ng-repeat=&quot;track in tracks&quot; ng-class=&quot;{active:selectedIndex == $index}&quot; ng-click=&quot;loadTrack($index)&quot;&amp;gt;
+			{{track.track}}. {{track.name}} - {{track.length}}
+		&amp;lt;/li&amp;gt;
+	&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_handlePushNotificationMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;RemoteMessage&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;isFromTerminatedState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;FCM message handled&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;packages-required&quot;&gt;Packages required&lt;/h2&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flutter pub add firebase_core
-
-flutter pub add firebase_messaging
-
-flutter pub add flutter_local_notifications
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;package:firebase_core/firebase_core.dart&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;package:firebase_messaging/firebase_messaging.dart&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;package:flutter_local_notifications/flutter_local_notifications.dart&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;firebase-initialization&quot;&gt;Firebase Initialization&lt;/h2&gt;
-&lt;p&gt;I opted to use a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FutureBuilder&lt;/code&gt; for Firebase initialization. This allows to handle error cases and also to display an activity indicator to the user while initialization is taking place.&lt;/p&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BuildContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FutureBuilder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;future:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_initializeFirebase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;builder:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;snapshot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;snapshot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;hasError&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Could not initialise firebase&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_buildScaffold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;snapshot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;connectionState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ConnectionState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;done&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-          &lt;span class=&quot;n&quot;&gt;setupPushNotifications&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_buildScaffold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SizedBox&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-                &lt;span class=&quot;nl&quot;&gt;height:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;width:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CircularProgressIndicator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()));&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;},&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Future&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_initializeFirebase&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Firebase&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;initializeApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Scaffold&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_buildScaffold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Scaffold&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;appBar:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AppBar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;title:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;widget&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;body:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;nl&quot;&gt;child:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Column&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-          &lt;span class=&quot;nl&quot;&gt;mainAxisAlignment:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MainAxisAlignment&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-          &lt;span class=&quot;nl&quot;&gt;children:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Widget&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;[&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;Text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-              &lt;span class=&quot;s&quot;&gt;&apos;My App&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
-          &lt;span class=&quot;o&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
-      &lt;span class=&quot;o&quot;&gt;),&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;ensure-widgets-are-initialized&quot;&gt;Ensure Widgets are initialized&lt;/h2&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;WidgetsFlutterBinding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;ensureInitialized&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;runApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;());&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyApp&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StatefulWidget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MyApp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;key:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-  &lt;span class=&quot;nd&quot;&gt;@override&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;_MyAppState&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;createState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_MyAppState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;request-permisson&quot;&gt;Request permisson&lt;/h2&gt;
-&lt;p&gt;Request permission from the user to send push notifications. Ask for this at the appropriate time. It could be at app start, but in some cases only after successful user login.&lt;/p&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Future&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requestPushNotificationPermission&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;FirebaseMessaging&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;messaging&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirebaseMessaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;n&quot;&gt;NotificationSettings&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;settings&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;messaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;requestPermission&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;alert:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;announcement:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;badge:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;carPlay:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;criticalAlert:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;provisional:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nl&quot;&gt;sound:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;User granted permission: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;${settings.authorizationStatus}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-
-    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;messaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getToken&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;FCM Device Token: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$token&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;obtaining-the-device-token&quot;&gt;Obtaining the device token&lt;/h2&gt;
-
-&lt;p&gt;In order to trigger push notifications to individual user devices, you need to obtain and store the device token for the user in your back end data store. Here is how to obtain the token.&lt;/p&gt;
-
-&lt;div class=&quot;language-dart highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Future&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;saveDeviceTokenForUser&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;FirebaseMessaging&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getToken&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;//save token&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Flutter" /><category term="Flutter" /><summary type="html">Handling push notifications is not a straightforward task, unfortunately. So if you want to handle push notifications in iOS and Android there are a few factors to consider in Flutter, namely: Is the app in the foreground or background? If in the background, is the app in a running or terminated state? These scenarios require specific handling in Flutter depending on the platform.</summary></entry><entry><title type="html">Reversing an IEnumerable with a binding converter in Xamarin.Forms</title><link href="http://localhost:4000/xamarin/2020/10/26/reversing-a-generic-enumerator-with-a-binding-converter-in-xamarin-forms.html" rel="alternate" type="text/html" title="Reversing an IEnumerable with a binding converter in Xamarin.Forms" /><published>2020-10-26T00:00:00+00:00</published><updated>2020-10-26T00:00:00+00:00</updated><id>http://localhost:4000/xamarin/2020/10/26/reversing-a-generic-enumerator-with-a-binding-converter-in-xamarin-forms</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/10/26/reversing-a-generic-enumerator-with-a-binding-converter-in-xamarin-forms.html">&lt;p&gt;I wanted to bind a property on the viewmodel of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEnumerable&amp;lt;T&amp;gt;&lt;/code&gt; to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ItemsSource&lt;/code&gt; property of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CollectionView&lt;/code&gt; and be able to reverse the order of the items displayed without having to reverse them in the viewmodel or code behind code.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;Here’s how I did it:&lt;/p&gt;
-
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
-
-&lt;p&gt;Define an  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IValueConverter&lt;/code&gt; with generic type (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T&lt;/code&gt;). &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;T&lt;/code&gt; is the type of the items in the Enumerable (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;String&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Int32&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Object&lt;/code&gt; etc)&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ReverseEnumerableConverter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IValueConverter&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Convert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CultureInfo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;culture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IEnumerable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enumerable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Reverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;collection&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ConvertBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CultureInfo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;culture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;NotImplementedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
-&lt;p&gt;The generic type of the IEnumerable&lt;T&gt; must be supplied to the converter.&lt;/T&gt;&lt;/p&gt;
-
-&lt;p&gt;Use Binding markup to supply the generic type argument using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x:TypeArguments&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;In this example the Notes property on the viewmodel is of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List&amp;lt;string&amp;gt;&lt;/code&gt; but it could be any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEnumerable&amp;lt;String&amp;gt;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView.ItemsSource&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Path=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Notes&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding.Converter&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;converters:ReverseEnumerableConverter&lt;/span&gt; 
-                  &lt;span class=&quot;na&quot;&gt;x:TypeArguments=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x:String&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding.Converter&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView.ItemsSource&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView.ItemTemplate&amp;gt;&lt;/span&gt;
-       ...
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView.ItemTemplate&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;If the property was of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEnumerable&amp;lt;int&amp;gt;&lt;/code&gt; for example &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List&amp;lt;int&amp;gt;&lt;/code&gt;:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView.ItemsSource&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Path=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Notes&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding.Converter&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;converters:ReverseEnumerableConverter&lt;/span&gt; 
-                  &lt;span class=&quot;na&quot;&gt;x:TypeArguments=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x:Int32&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding.Converter&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView.ItemsSource&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;CollectionView.ItemTemplate&amp;gt;&lt;/span&gt;
-       ...
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView.ItemTemplate&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/CollectionView&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="Xamarin" /><summary type="html">I wanted to bind a property on the viewmodel of type IEnumerable&amp;lt;T&amp;gt; to the ItemsSource property of a CollectionView and be able to reverse the order of the items displayed without having to reverse them in the viewmodel or code behind code.</summary></entry><entry><title type="html">How to use an IValueConverter to convert a value not on the view model</title><link href="http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms.html" rel="alternate" type="text/html" title="How to use an IValueConverter to convert a value not on the view model" /><published>2020-10-14T01:00:00+01:00</published><updated>2020-10-14T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/10/14/how-to-use-a-value-converter-to-convert-a-value-not-on-the-viewmodel-in-xamarin-forms.html">&lt;p&gt;In &lt;a href=&quot;/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html&quot;&gt;Make conversion code reusable in Xamarin.Forms&lt;/a&gt; I expain how to convert an SVG path (stored in a resource file in this case) to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; property of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Path&lt;/code&gt; view.&lt;/p&gt;
-
-&lt;p&gt;Now I want to be able to use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IValueConverter&lt;/code&gt; to convert a value even if it is not a property on the viewmodel. In this example the value is an SVG path stored as a string in a resource file.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;The fundamental requirement still remains that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; is of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Geometry&lt;/code&gt; and requires a convertion from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Geometry&lt;/code&gt; to be able to use a resource value stored as string.&lt;/p&gt;
-
-&lt;p&gt;For example&lt;br /&gt;
-&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data=&quot;{x:Static localisation:Resources.SharpSignPath}&quot;&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;results in a type mismatch error and does not even compile.&lt;/p&gt;
-
-&lt;p&gt;The solution is to expand the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IValueConverter&lt;/code&gt; and add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;property&lt;/code&gt; that will be used as the source if it has been set.&lt;/p&gt;
-
-&lt;p&gt;Here’s how to do it:&lt;/p&gt;
-
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
-&lt;p&gt;Add a property to the value converter&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PathDataStringSource&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Then adapt the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Convert&lt;/code&gt; function.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Convert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CultureInfo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;culture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;IsNullOrWhiteSpace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PathDataStringSource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PathDataStringSource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;IsNullOrWhiteSpace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Geometry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;PathGeometryConverter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ConvertFromInvariantString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
-&lt;p&gt;Use Binding markup to set &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IValueConverter&lt;/code&gt; and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;property&lt;/code&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;FlatSign&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;White&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Fill=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;White&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path.Data&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;Binding.Converter&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;converters:StringPathToGeometryConverter&lt;/span&gt;
-                    &lt;span class=&quot;na&quot;&gt;PathDataStringSource=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{x:Static localisation:Resources.FlatSignPath}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding.Converter&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Binding&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/Path.Data&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Path&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/sharpsign.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/sharpsign.png&quot; alt=&quot;Step 1&quot; width=&quot;160&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;example of SVG string data rendered in a Path&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="Xamarin" /><summary type="html">In Make conversion code reusable in Xamarin.Forms I expain how to convert an SVG path (stored in a resource file in this case) to the Data property of a Path view. Now I want to be able to use the IValueConverter to convert a value even if it is not a property on the viewmodel. In this example the value is an SVG path stored as a string in a resource file.</summary></entry><entry><title type="html">Make conversion code reusable in Xamarin.Forms</title><link href="http://localhost:4000/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html" rel="alternate" type="text/html" title="Make conversion code reusable in Xamarin.Forms" /><published>2020-10-12T01:00:00+01:00</published><updated>2020-10-12T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html">&lt;p&gt;In &lt;a href=&quot;/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string.html&quot;&gt;How to bind Xamarin.Forms Shapes Path Data to a string&lt;/a&gt; I expain how to convert an SVG path (stored in a resource file in this case) to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; property of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Path&lt;/code&gt; view.&lt;/p&gt;
-
-&lt;p&gt;Now it would be useful to make the conversion code reusable across multiple views in the application.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/pathicons.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/pathicons.png&quot; alt=&quot;Step 1&quot; width=&quot;160&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;example of SVG string data rendered in a Path&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Here’s how to do it:&lt;/p&gt;
-
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
-&lt;p&gt;Create a value converter&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;StringPathToGeometryConverter&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IValueConverter&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Convert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CultureInfo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;culture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Geometry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;PathGeometryConverter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-                &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ConvertFromInvariantString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-                &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stringValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ConvertBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;parameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;CultureInfo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;culture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;NotImplementedException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
-&lt;p&gt;Instantiate the converter in the resource dictionary.&lt;/p&gt;
-
-&lt;p&gt;Register a namespace where the converter is located, for example:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;xmlns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;converters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;clr-namespace:Musictheory.Converters&quot;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Instantiate:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ResourceDictionary&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;converters:StringPathToGeometryConverter&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;x:Key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;StringPathToGeometryConverter&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ResourceDictionary&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
-&lt;p&gt;Reference the converter with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StaticResource&lt;/code&gt; markup extension&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding IconSvgPath, 
-        Converter={StaticResource StringPathToGeometryConverter}}&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;White&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Fill=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;White&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;VerticalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="Xamarin" /><summary type="html">In How to bind Xamarin.Forms Shapes Path Data to a string I expain how to convert an SVG path (stored in a resource file in this case) to the Data property of a Path view. Now it would be useful to make the conversion code reusable across multiple views in the application.</summary></entry><entry><title type="html">How to bind Xamarin.Forms Shapes Path Data to a string</title><link href="http://localhost:4000/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string.html" rel="alternate" type="text/html" title="How to bind Xamarin.Forms Shapes Path Data to a string" /><published>2020-10-09T01:00:00+01:00</published><updated>2020-10-09T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/10/09/how-to-bind-xamarinforms-shapes-path-data-to-a-string.html">&lt;p&gt;I wanted to store an icon SVG path in a resource file as a string and then bind it to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; property of a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Path&lt;/code&gt; view in Xamarin.Forms &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Shapes&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/images/pathicons.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/pathicons.png&quot; alt=&quot;Step 1&quot; width=&quot;160&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;simulator screenshot&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;!--more--&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Data&lt;/code&gt; is of type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Geometry&lt;/code&gt; so a conversion is required in order to be able to bind to it.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding Icon}&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;White&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Fill=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;White&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;VerticalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
-&lt;p&gt;Store the data in a .resx file&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;data&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;TrebleClefPath&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;xml:space=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;preserve&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;value&amp;gt;&lt;/span&gt;M 2002,7851 C 1941,7868 1886,7906 1835,7964 C 1784,8023 1759,8088 1759,8158 C 1759,8202 1774,8252 1803,8305 C 1832,8359 1876,8398 1933,8423 C 1952,8427 1961,8437 1961,8451 C 1961,8456 1954,8461 1937,8465 C 1846,8442 1771,8393 1713,8320 C 1655,8246 1625,8162 1623,8066 C 1626,7963 1657,7867 1716,7779 C 1776,7690 1853,7627 1947,7590 L 1878,7235 C 1724,7363 1599,7496 1502,7636 C 1405,7775 1355,7926 1351,8089 C 1353,8162 1368,8233 1396,8301 C 1424,8370 1466,8432 1522,8489 C 1635,8602 1782,8661 1961,8667 C 2022,8663 2087,8652 2157,8634 L 2002,7851 z M 2074,7841 L 2230,8610 C 2384,8548 2461,8413 2461,8207 C 2452,8138 2432,8076 2398,8021 C 2365,7965 2321,7921 2265,7889 C 2209,7857 2146,7841 2074,7841 z M 1869,6801 C 1902,6781 1940,6746 1981,6697 C 2022,6649 2062,6592 2100,6528 C 2139,6463 2170,6397 2193,6330 C 2216,6264 2227,6201 2227,6143 C 2227,6118 2225,6093 2220,6071 C 2216,6035 2205,6007 2186,5988 C 2167,5970 2143,5960 2113,5960 C 2053,5960 1999,5997 1951,6071 C 1914,6135 1883,6211 1861,6297 C 1838,6384 1825,6470 1823,6557 C 1828,6656 1844,6737 1869,6801 z M 1806,6859 C 1761,6697 1736,6532 1731,6364 C 1732,6256 1743,6155 1764,6061 C 1784,5967 1813,5886 1851,5816 C 1888,5746 1931,5693 1979,5657 C 2022,5625 2053,5608 2070,5608 C 2083,5608 2094,5613 2104,5622 C 2114,5631 2127,5646 2143,5666 C 2262,5835 2322,6039 2322,6277 C 2322,6390 2307,6500 2277,6610 C 2248,6719 2205,6823 2148,6920 C 2090,7018 2022,7103 1943,7176 L 2024,7570 C 2068,7565 2098,7561 2115,7561 C 2191,7561 2259,7577 2322,7609 C 2385,7641 2439,7684 2483,7739 C 2527,7793 2561,7855 2585,7925 C 2608,7995 2621,8068 2621,8144 C 2621,8262 2590,8370 2528,8467 C 2466,8564 2373,8635 2248,8681 C 2256,8730 2270,8801 2291,8892 C 2311,8984 2326,9057 2336,9111 C 2346,9165 2350,9217 2350,9268 C 2350,9347 2331,9417 2293,9479 C 2254,9541 2202,9589 2136,9623 C 2071,9657 1999,9674 1921,9674 C 1811,9674 1715,9643 1633,9582 C 1551,9520 1507,9437 1503,9331 C 1506,9284 1517,9240 1537,9198 C 1557,9156 1584,9122 1619,9096 C 1653,9069 1694,9055 1741,9052 C 1780,9052 1817,9063 1852,9084 C 1886,9106 1914,9135 1935,9172 C 1955,9209 1966,9250 1966,9294 C 1966,9353 1946,9403 1906,9444 C 1866,9485 1815,9506 1754,9506 L 1731,9506 C 1770,9566 1834,9597 1923,9597 C 1968,9597 2014,9587 2060,9569 C 2107,9550 2146,9525 2179,9493 C 2212,9461 2234,9427 2243,9391 C 2260,9350 2268,9293 2268,9222 C 2268,9174 2263,9126 2254,9078 C 2245,9031 2231,8968 2212,8890 C 2193,8813 2179,8753 2171,8712 C 2111,8727 2049,8735 1984,8735 C 1875,8735 1772,8713 1675,8668 C 1578,8623 1493,8561 1419,8481 C 1346,8401 1289,8311 1248,8209 C 1208,8108 1187,8002 1186,7892 C 1190,7790 1209,7692 1245,7600 C 1281,7507 1327,7419 1384,7337 C 1441,7255 1500,7180 1561,7113 C 1623,7047 1704,6962 1806,6859 z&lt;span class=&quot;nt&quot;&gt;&amp;lt;/value&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/data&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
-&lt;p&gt;Add a property to your model and convert from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Geometry&lt;/code&gt;. You can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PathGeometryConverter&lt;/code&gt; to do the conversion.&lt;/p&gt;
-
-&lt;p&gt;For example:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-csharp&quot; data-lang=&quot;csharp&quot;&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Geometry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Icon&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Geometry&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;PathGeometryConverter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;ConvertFromInvariantString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Resources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TrebleClefPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
-&lt;p&gt;Make the conversion code reusable.&lt;/p&gt;
-
-&lt;p&gt;See how to &lt;a href=&quot;/xamarin/2020/10/12/make-conversion-code-reusable-in-xamarin-forms.html&quot;&gt;Make conversion code reusable in Xamarin.Forms&lt;/a&gt;&lt;/p&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="Xamarin" /><summary type="html">I wanted to store an icon SVG path in a resource file as a string and then bind it to the Data property of a Path view in Xamarin.Forms Shapes. simulator screenshot</summary></entry><entry><title type="html">Respond to device orientation with the Xamarin.Forms Orientation State Trigger</title><link href="http://localhost:4000/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger.html" rel="alternate" type="text/html" title="Respond to device orientation with the Xamarin.Forms Orientation State Trigger" /><published>2020-10-08T01:00:00+01:00</published><updated>2020-10-08T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/10/08/respond-to-device-orientation-with-the-xamarin-forms-orientation-state-trigger.html">&lt;p&gt;&lt;span&gt;
-&lt;a href=&quot;/images/notefinder_portrait.png&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;/images/notefinder_portrait.png&quot; alt=&quot;Step 1&quot; width=&quot;160&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;/images/notefinder_landscape.png&quot; target=&quot;_blank&quot;&gt;&lt;img style=&quot;margin:20px&quot; src=&quot;/images/notefinder_landscape.png&quot; alt=&quot;Step 1&quot; height=&quot;160&quot; /&gt;&lt;/a&gt;
-&lt;/span&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;screenshots on iPhone 6s device&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OrientationStateTrigger&lt;/code&gt; is a State Trigger in Xamarin.Forms to easily respond to device orientation changes.&lt;/p&gt;
-
-&lt;p&gt;Below is an example of using it to set a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StackLayout&lt;/code&gt; orientation based on the orientation of the device:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;StackLayout&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mainStack&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;VisualStateManager.VisualStateGroups&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;VisualStateGroup&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;OrientationStates&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;VisualState&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Portrait&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;VisualState.StateTriggers&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;OrientationStateTrigger&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Orientation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Portrait&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/VisualState.StateTriggers&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;VisualState.Setters&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;Setter&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Orientation&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Vertical&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/VisualState.Setters&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/VisualState&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;VisualState&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Landscape&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;VisualState.StateTriggers&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;OrientationStateTrigger&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Orientation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Landscape&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/VisualState.StateTriggers&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;VisualState.Setters&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;Setter&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Property=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Orientation&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Horizontal&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/VisualState.Setters&amp;gt;&lt;/span&gt;
-            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/VisualState&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/VisualStateGroup&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/VisualStateManager.VisualStateGroups&amp;gt;&lt;/span&gt;
-    ...
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/StackLayout&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="Xamarin" /><summary type="html"></summary></entry><entry><title type="html">Guitar Recordings</title><link href="http://localhost:4000/guitar/2020/10/02/recordings.html" rel="alternate" type="text/html" title="Guitar Recordings" /><published>2020-10-02T01:00:00+01:00</published><updated>2020-10-02T01:00:00+01:00</updated><id>http://localhost:4000/guitar/2020/10/02/recordings</id><content type="html" xml:base="http://localhost:4000/guitar/2020/10/02/recordings.html">&lt;p&gt;&lt;a href=&quot;/playlist&quot;&gt;Listen to some of my recordings I’ve made during my practice sessions&lt;/a&gt;.&lt;/p&gt;</content><author><name>Alwyn Lombaard</name></author><category term="guitar" /><category term="guitar" /><summary type="html">Listen to some of my recordings I’ve made during my practice sessions.</summary></entry><entry><title type="html">Xamarin.Forms AppThemeBinding markup extension</title><link href="http://localhost:4000/xamarin/2020/09/28/xamarinforms-appthemebinding.html" rel="alternate" type="text/html" title="Xamarin.Forms AppThemeBinding markup extension" /><published>2020-09-28T01:00:00+01:00</published><updated>2020-09-28T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/09/28/xamarinforms-appthemebinding</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/09/28/xamarinforms-appthemebinding.html">&lt;p&gt;I really like the new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AppThemeBinding&lt;/code&gt; markup extension in Xamarin.Forms to easily handle Dark and Light modes on the mobile device. It can be used in combination with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StaticResource&lt;/code&gt; markup extension.&lt;/p&gt;
-
-&lt;p&gt;Below is an example:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;BackgroundColor=&quot;{AppThemeBinding
-        Light={StaticResource LightBackgroundColor},
-        Dark={StaticResource DarkBackgroundColor}}&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ContentPage.Resources&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Color&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:Key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;LightBackgroundColor&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;WhiteSmoke&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Color&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Color&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;x:Key=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;DarkBackgroundColor&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Black&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Color&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ContentPage.Resources&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;screen recording on iPhone Simulator&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;video width=&quot;300&quot; controls=&quot;&quot;&gt;
-   &lt;source src=&quot;/video/appthemebinding.mov&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="Xamarin" /><summary type="html">I really like the new AppThemeBinding markup extension in Xamarin.Forms to easily handle Dark and Light modes on the mobile device. It can be used in combination with the StaticResource markup extension.</summary></entry><entry><title type="html">Using Xamarin.Forms Shapes to notate notes on the treble clef</title><link href="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes.html" rel="alternate" type="text/html" title="Using Xamarin.Forms Shapes to notate notes on the treble clef" /><published>2020-09-25T01:00:00+01:00</published><updated>2020-09-25T01:00:00+01:00</updated><id>http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes</id><content type="html" xml:base="http://localhost:4000/xamarin/2020/09/25/using-xamarinform-shapes-to-notate-guitar-notes.html">&lt;blockquote&gt;
-  &lt;p&gt;screen recording on an iPhone 6s&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;video width=&quot;300&quot; controls=&quot;&quot;&gt;
-   &lt;source src=&quot;/video/guitarnotes1.mov&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;
-
-&lt;p&gt;I played around with the new &lt;a href=&quot;https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/shapes/&quot;&gt;Shapes&lt;/a&gt; feature in Xamarin.Forms for drawing shapes without having to use SkiaSharp.&lt;/p&gt;
-
-&lt;p&gt;So I developed a screen using a &lt;a href=&quot;https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/grid&quot;&gt;Grid&lt;/a&gt; as the canvas to draw a musical staff with treble clef and note. The range is for notes on a guitar in standard tuning up the the 12th fret on the first (bottom on the guitar) string.&lt;/p&gt;
-
-&lt;p&gt;To make it interactive I added tap gestures to allow the user to tap on a location on the staff and find out what the note is.&lt;/p&gt;
-
-&lt;p&gt;Here is the layout&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;Grid&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.Column=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;VerticalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;StartAndExpand&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;x:Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;canvas&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HeightRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;300&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;WidthRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;250&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;RowSpacing=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;ColumnSpacing=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;BoxView&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;32&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--Staff--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;11&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;13&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;15&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;17&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;19&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--Bar line--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;12&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;8&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;EndAndExpand&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 3,0 L 3,60&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--Top ledger lines--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;WidthRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding LedgerLineWidth}&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-    
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;WidthRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding LedgerLineWidth}&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;7&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;WidthRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding LedgerLineWidth}&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;9&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--Botttom ledger lines--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;WidthRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding LedgerLineWidth}&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;21&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;WidthRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding LedgerLineWidth}&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;23&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;WidthRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding LedgerLineWidth}&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 0,0 L60,0&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;25&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--Treble clef--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;WidthRequest=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{Binding TrebleWidth}&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;8&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;16&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 2002,7851 C 1941,7868 1886,7906 1835,7964 C 1784,8023 1759,8088 1759,8158 C 1759,8202 1774,8252 1803,8305 C 1832,8359 1876,8398 1933,8423 C 1952,8427 1961,8437 1961,8451 C 1961,8456 1954,8461 1937,8465 C 1846,8442 1771,8393 1713,8320 C 1655,8246 1625,8162 1623,8066 C 1626,7963 1657,7867 1716,7779 C 1776,7690 1853,7627 1947,7590 L 1878,7235 C 1724,7363 1599,7496 1502,7636 C 1405,7775 1355,7926 1351,8089 C 1353,8162 1368,8233 1396,8301 C 1424,8370 1466,8432 1522,8489 C 1635,8602 1782,8661 1961,8667 C 2022,8663 2087,8652 2157,8634 L 2002,7851 z M 2074,7841 L 2230,8610 C 2384,8548 2461,8413 2461,8207 C 2452,8138 2432,8076 2398,8021 C 2365,7965 2321,7921 2265,7889 C 2209,7857 2146,7841 2074,7841 z M 1869,6801 C 1902,6781 1940,6746 1981,6697 C 2022,6649 2062,6592 2100,6528 C 2139,6463 2170,6397 2193,6330 C 2216,6264 2227,6201 2227,6143 C 2227,6118 2225,6093 2220,6071 C 2216,6035 2205,6007 2186,5988 C 2167,5970 2143,5960 2113,5960 C 2053,5960 1999,5997 1951,6071 C 1914,6135 1883,6211 1861,6297 C 1838,6384 1825,6470 1823,6557 C 1828,6656 1844,6737 1869,6801 z M 1806,6859 C 1761,6697 1736,6532 1731,6364 C 1732,6256 1743,6155 1764,6061 C 1784,5967 1813,5886 1851,5816 C 1888,5746 1931,5693 1979,5657 C 2022,5625 2053,5608 2070,5608 C 2083,5608 2094,5613 2104,5622 C 2114,5631 2127,5646 2143,5666 C 2262,5835 2322,6039 2322,6277 C 2322,6390 2307,6500 2277,6610 C 2248,6719 2205,6823 2148,6920 C 2090,7018 2022,7103 1943,7176 L 2024,7570 C 2068,7565 2098,7561 2115,7561 C 2191,7561 2259,7577 2322,7609 C 2385,7641 2439,7684 2483,7739 C 2527,7793 2561,7855 2585,7925 C 2608,7995 2621,8068 2621,8144 C 2621,8262 2590,8370 2528,8467 C 2466,8564 2373,8635 2248,8681 C 2256,8730 2270,8801 2291,8892 C 2311,8984 2326,9057 2336,9111 C 2346,9165 2350,9217 2350,9268 C 2350,9347 2331,9417 2293,9479 C 2254,9541 2202,9589 2136,9623 C 2071,9657 1999,9674 1921,9674 C 1811,9674 1715,9643 1633,9582 C 1551,9520 1507,9437 1503,9331 C 1506,9284 1517,9240 1537,9198 C 1557,9156 1584,9122 1619,9096 C 1653,9069 1694,9055 1741,9052 C 1780,9052 1817,9063 1852,9084 C 1886,9106 1914,9135 1935,9172 C 1955,9209 1966,9250 1966,9294 C 1966,9353 1946,9403 1906,9444 C 1866,9485 1815,9506 1754,9506 L 1731,9506 C 1770,9566 1834,9597 1923,9597 C 1968,9597 2014,9587 2060,9569 C 2107,9550 2146,9525 2179,9493 C 2212,9461 2234,9427 2243,9391 C 2260,9350 2268,9293 2268,9222 C 2268,9174 2263,9126 2254,9078 C 2245,9031 2231,8968 2212,8890 C 2193,8813 2179,8753 2171,8712 C 2111,8727 2049,8735 1984,8735 C 1875,8735 1772,8713 1675,8668 C 1578,8623 1493,8561 1419,8481 C 1346,8401 1289,8311 1248,8209 C 1208,8108 1187,8002 1186,7892 C 1190,7790 1209,7692 1245,7600 C 1281,7507 1327,7419 1384,7337 C 1441,7255 1500,7180 1561,7113 C 1623,7047 1704,6962 1806,6859 z&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Fill=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;VerticalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;CenterAndExpand&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Start&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Margin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10,0&quot;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-
-    &lt;span class=&quot;c&quot;&gt;&amp;lt;!--note--&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;Path&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;x:Name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;note&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Data=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;M 36.425204,104.88119 C 25.756184,104.88119 17.112704,110.07537 17.112704,116.44369 C 17.112704,122.81202 25.756194,127.97497 36.425204,127.97494 C 47.094224,127.97494 55.768944,122.81202 55.768954,116.44369 C 55.768954,110.07536 47.094224,104.88117 36.425204,104.88119 z M 31.706454,106.97494 C 34.480794,106.93885 37.898804,108.02436 41.112704,110.19369 C 46.826304,114.05026 49.692844,119.85839 47.518954,123.13119 C 45.345074,126.40401 38.951304,125.92527 33.237704,122.06869 C 27.524114,118.21212 24.657564,112.40399 26.831454,109.13119 C 27.782534,107.69933 29.548634,107.00301 31.706454,106.97494 z &quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Stroke=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Fill=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Black&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;StrokeThickness=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Aspect=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Uniform&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.Row=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;21&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;Grid.RowSpan=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2&quot;&lt;/span&gt;
-        &lt;span class=&quot;na&quot;&gt;HorizontalOptions=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Center&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/Grid&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>Alwyn Lombaard</name></author><category term="Xamarin" /><category term="Xamarin" /><summary type="html">screen recording on an iPhone 6s</summary></entry></feed>
+&lt;h3 id=&quot;the-javascript&quot;&gt;The JavaScript&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&apos;use strict&apos;;
+
+(function(global) {
+	var app = angular.module(&apos;playListApp&apos;, []);
+
+	app.factory(&apos;audio&apos;, function($document) {
+		var audio = $document[0].getElementById(&apos;playlist-audio&apos;);
+		return audio;
+	});
+
+	global.playListController = function ($scope, audio){
+		$scope.mediaPath = &apos;/music/&apos;;
+		$scope.playing = false;
+		$scope.selectedIndex = 0;
+		$scope.tracks = [
+			{&apos;track&apos;:1,&apos;name&apos;:&apos;Brouwer Study No 1&apos;,&apos;length&apos;:&apos;01:06&apos;,&apos;file&apos;:&apos;Brouwer_Study_No_1_20150919_182834.mp3&apos;},
+			{&apos;track&apos;:2,&apos;name&apos;:&apos;Brouwer Study No 2&apos;,&apos;length&apos;:&apos;01:10&apos;,&apos;file&apos;:&apos;Brouwer_Study_No_2_20151004_140303.mp3&apos;},
+			{&apos;track&apos;:3,&apos;name&apos;:&apos;Brouwer Study No 3&apos;,&apos;length&apos;:&apos;00:48&apos;,&apos;file&apos;:&apos;Brouwer_Study_No_3_20151007_214619.mp3&apos;},
+			{&apos;track&apos;:4,&apos;name&apos;:&apos;Brouwer Study No 4&apos;,&apos;length&apos;:&apos;00:48&apos;,&apos;file&apos;:&apos;Brouwer_Study_No_4_20151008_212308.mp3&apos;},
+			{&apos;track&apos;:5,&apos;name&apos;:&apos;Brouwer Study No 5&apos;,&apos;length&apos;:&apos;01:08&apos;,&apos;file&apos;:&apos;Brouwer_Study_No_5_20151011_150048.mp3&apos;},
+			{&apos;track&apos;:6,&apos;name&apos;:&apos;Brouwer Study No 6&apos;,&apos;length&apos;:&apos;01:31&apos;,&apos;file&apos;:&apos;Brouwer_Study_No_6_20151010_132529.mp3&apos;}];
+		$scope.trackCount = $scope.tracks.length;
+		$scope.selectedTrack = function(){ return $scope.tracks[$scope.selectedIndex]};
+		$scope.audioSource = function (){return $scope.mediaPath + $scope.selectedTrack().file;};
+		audio.src = $scope.audioSource();
+		$scope.loadTrack = function(index) {
+			$scope.selectedIndex = index;
+			audio.src = $scope.audioSource();
+			if($scope.playing){
+				audio.play();
+			}
+		}
+		$scope.previous = function(){
+			$scope.selectedIndex--;
+			$scope.selectedIndex = ($scope.selectedIndex &amp;lt; 0 ? $scope.tracks.length - 1 : $scope.selectedIndex);
+			audio.src = $scope.audioSource();
+
+			if($scope.playing){
+				audio.play();
+			}
+		};
+		$scope.next = function(){
+			$scope.selectedIndex++;
+			$scope.selectedIndex = ($scope.selectedIndex &amp;gt;=  $scope.tracks.length ? 0 : $scope.selectedIndex);
+			audio.src = $scope.audioSource();
+			if($scope.playing){
+				audio.play();
+			}
+		};
+		audio.addEventListener(&apos;play&apos;, function() {
+			$scope.$apply(function(){
+				$scope.playing = true;
+			});
+		}, false);
+		audio.addEventListener(&apos;pause&apos;, function() {
+			$scope.$apply(function(){
+				$scope.playing = false;
+			});
+		}, false);
+		audio.addEventListener(&apos;ended&apos;, function() {
+			$scope.$apply(function(){
+				if(($scope.selectedIndex + 1) === $scope.tracks.length){
+					$scope.playing = false;
+					$scope.selectedIndex = 0;
+					audio.src = $scope.audioSource();
+				}
+				else{
+					$scope.playing = true;
+					$scope.next();
+				}
+			});
+		}, false);
+	}
+})(this);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alwyn Lombaard</name></author><category term="angular" /><category term="guitar" /><summary type="html">I recently knocked out this Angular.js app to put my recordings in a playlist.</summary></entry><entry><title type="html">Training session jump</title><link href="http://localhost:4000/athletics/2015/06/09/training-session-jump.html" rel="alternate" type="text/html" title="Training session jump" /><published>2015-06-09T11:31:55+01:00</published><updated>2015-06-09T11:31:55+01:00</updated><id>http://localhost:4000/athletics/2015/06/09/training-session-jump</id><content type="html" xml:base="http://localhost:4000/athletics/2015/06/09/training-session-jump.html">&lt;p&gt;Screwed up the most important part of the runup. The curve and the last 3 strides (and pretty much the entire runup).&lt;/p&gt;
+&lt;video width=&quot;100%&quot; controls=&quot;&quot; muted=&quot;&quot;&gt;
+   &lt;source src=&quot;/video/9-June-2015.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;</content><author><name>Alwyn Lombaard</name></author><category term="athletics" /><summary type="html">Screwed up the most important part of the runup. The curve and the last 3 strides (and pretty much the entire runup).</summary></entry><entry><title type="html">A jump</title><link href="http://localhost:4000/athletics/2015/03/27/a-jump.html" rel="alternate" type="text/html" title="A jump" /><published>2015-03-27T11:53:17+00:00</published><updated>2015-03-27T11:53:17+00:00</updated><id>http://localhost:4000/athletics/2015/03/27/a-jump</id><content type="html" xml:base="http://localhost:4000/athletics/2015/03/27/a-jump.html">&lt;p&gt;&lt;img width=&quot;100%&quot; src=&quot;/images/Jump.jpg&quot; /&gt;&lt;/p&gt;</content><author><name>Alwyn Lombaard</name></author><category term="athletics" /><summary type="html"></summary></entry><entry><title type="html">A jump</title><link href="http://localhost:4000/athletics/2015/03/27/a-jump.html" rel="alternate" type="text/html" title="A jump" /><published>2015-03-27T11:53:17+00:00</published><updated>2015-03-27T11:53:17+00:00</updated><id>http://localhost:4000/athletics/2015/03/27/a-jump</id><content type="html" xml:base="http://localhost:4000/athletics/2015/03/27/a-jump.html">&lt;video width=&quot;100%&quot; controls=&quot;&quot; muted=&quot;&quot;&gt;
+   &lt;source src=&quot;/video/clearance2.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;</content><author><name>Alwyn Lombaard</name></author><category term="athletics" /><summary type="html"></summary></entry><entry><title type="html">A jump</title><link href="http://localhost:4000/athletics/2015/03/26/a-jump.html" rel="alternate" type="text/html" title="A jump" /><published>2015-03-26T16:37:12+00:00</published><updated>2015-03-26T16:37:12+00:00</updated><id>http://localhost:4000/athletics/2015/03/26/a-jump</id><content type="html" xml:base="http://localhost:4000/athletics/2015/03/26/a-jump.html">&lt;video width=&quot;100%&quot; controls=&quot;&quot; muted=&quot;&quot;&gt;
+   &lt;source src=&quot;/video/clearance1.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+&lt;/video&gt;</content><author><name>Alwyn Lombaard</name></author><category term="athletics" /><summary type="html"></summary></entry></feed>

@@ -6,6 +6,7 @@ comments: true
 categories: Xamarin
 tags: Xamarin iOS programming C#
 author: Alwyn Lombaard
+published: false
 ---
 
 Obtain the device token as usual when the user opts in to receive remote push notifications. Then convert it to a base64 string that can be stored and used later.

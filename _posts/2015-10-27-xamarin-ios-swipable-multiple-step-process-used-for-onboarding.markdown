@@ -5,7 +5,7 @@ date: 2015-10-27rak 21:49:01 +0000
 comments: true
 categories: Xamarin
 tags: Xamarin iOS programming C#
-published: true
+published: false
 author: Alwyn Lombaard
 ---
 

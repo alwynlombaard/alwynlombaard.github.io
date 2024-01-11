@@ -6,7 +6,7 @@ comments: true
 categories: Xamarin
 tags: Xamarin
 author: Alwyn Lombaard
-published: true
+published: false
 ---
 I really like the new `AppThemeBinding` markup extension in Xamarin.Forms to easily handle Dark and Light modes on the mobile device. It can be used in combination with the `StaticResource` markup extension.
 

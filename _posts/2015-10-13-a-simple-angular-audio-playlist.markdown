@@ -5,6 +5,7 @@ date: 2015-10-13 20:34:45 +0000
 comments: true
 categories: angular guitar
 author: Alwyn Lombaard
+published: true
 ---
 
 I recently knocked out this Angular.js app to put my recordings in a playlist.

@@ -6,6 +6,7 @@ comments: true
 categories: [programming]
 tags: [ExactTarget, transactional email, C#, .Net]
 author: Alwyn Lombaard
+published: false
 ---
 
 I recently had to use the ExaxtTarget SOAP API to send transactional emails from a website but setting up a new  one required me to log in to ExactTarget and shaving yaks called "Data Extension", "Triggered Send", "Triggered Send Definition", "Delivery Profile", "Email Templates" etc.. 
