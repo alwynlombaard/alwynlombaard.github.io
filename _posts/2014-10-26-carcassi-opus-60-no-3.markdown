@@ -3,7 +3,7 @@ layout: post
 title: "Opus 60 no 3 - Carcassi"
 date: 2014-10-26 21:25:55 +0000
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
 published: false
 ---

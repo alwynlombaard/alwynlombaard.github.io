@@ -3,8 +3,8 @@ layout: post
 title: "How to use an IValueConverter to convert a value not on the view model"
 date: 2020-10-14 00:00:00 +0000
 comments: true
-categories: Xamarin
-tags: Xamarin
+categories: xamarin
+tags: xamarin
 author: Alwyn Lombaard
 published: false
 excerpt_separator: <!--more-->

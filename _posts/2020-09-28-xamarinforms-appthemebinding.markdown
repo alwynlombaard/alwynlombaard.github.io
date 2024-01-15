@@ -3,8 +3,8 @@ layout: post
 title: "Xamarin.Forms AppThemeBinding markup extension"
 date: 2020-09-28 00:00:00 +0000
 comments: true
-categories: Xamarin
-tags: Xamarin
+categories: xamarin
+tags: xamarin
 author: Alwyn Lombaard
 published: false
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "A simple Angular audio playlist"
 date: 2015-10-13 20:34:45 +0000
 comments: true
-categories: angular guitar
+categories: programming
 author: Alwyn Lombaard
 published: true
 ---

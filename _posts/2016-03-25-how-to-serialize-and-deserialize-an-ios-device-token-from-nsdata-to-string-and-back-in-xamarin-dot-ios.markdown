@@ -3,7 +3,7 @@ layout: post
 title: "How to serialize and deserialize an iOS device token from NSData to String and back in Xamarin.iOS"
 date: 2016-03-25 18:28:08 +0000
 comments: true
-categories: Xamarin
+categories: xamarin
 tags: Xamarin iOS programming C#
 author: Alwyn Lombaard
 published: false

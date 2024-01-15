@@ -3,8 +3,8 @@ layout: post
 title: "Respond to device orientation with the Xamarin.Forms Orientation State Trigger"
 date: 2020-10-08 00:00:00 +0000
 comments: true
-categories: Xamarin
-tags: Xamarin
+categories: xamarin
+tags: xamarin
 author: Alwyn Lombaard
 published: false
 ---

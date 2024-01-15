@@ -3,8 +3,8 @@ layout: post
 title: "How to bind Xamarin.Forms Shapes Path Data to a string"
 date: 2020-10-09 00:00:00 +0000
 comments: true
-categories: Xamarin
-tags: Xamarin
+categories: xamarin
+tags: xamarin
 author: Alwyn Lombaard
 published: false
 excerpt_separator: <!--more-->

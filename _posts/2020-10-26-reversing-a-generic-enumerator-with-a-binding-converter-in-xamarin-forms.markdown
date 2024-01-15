@@ -3,8 +3,8 @@ layout: post
 title: "Reversing an IEnumerable<T> with a binding converter in Xamarin.Forms"
 date: 2020-10-26 00:00:00 +0000
 comments: true
-categories: Xamarin
-tags: Xamarin
+categories: xamarin
+tags: xamarin
 author: Alwyn Lombaard
 published: false
 excerpt_separator: <!--more-->

@@ -3,9 +3,10 @@ layout: post
 title: "Havre Gosselin"
 date: 2024-01-10 17:30:00 +0000
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
 published: true
+is_pinned: false
 ---
 
 

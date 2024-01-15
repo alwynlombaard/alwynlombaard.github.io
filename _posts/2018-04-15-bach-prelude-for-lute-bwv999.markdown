@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "My humble attempt at Bach Prelude for Lute BWV999"
+title: "Bach Prelude for Lute BWV999"
 date: 2018-04-15 15:17:08 +0000
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
+is_pinned: true
 ---
 
 <audio controls>

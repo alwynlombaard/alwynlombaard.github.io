@@ -3,7 +3,7 @@ layout: post
 title: "Prelude in D minor - De Visee"
 date: 2014-08-28 19:23:56 +0100
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
 published: false
 ---

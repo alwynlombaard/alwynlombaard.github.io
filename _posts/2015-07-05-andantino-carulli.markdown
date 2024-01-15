@@ -3,7 +3,7 @@ layout: post
 title: "Andantino - Carulli"
 date: 2015-07-05 18:21:45 +0000
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
 published: false
 ---

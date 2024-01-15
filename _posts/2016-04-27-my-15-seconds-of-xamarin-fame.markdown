@@ -3,7 +3,7 @@ layout: post
 title: "My 15 seconds of Xamarin fame"
 date: 2016-04-27 09:52:22 +0000
 comments: false
-categories: Xamarin
+categories: xamarin
 author: Alwyn Lombaard
 is_pinned: true
 excerpt_separator: <!--more-->

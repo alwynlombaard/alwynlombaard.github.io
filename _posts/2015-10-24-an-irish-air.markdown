@@ -3,7 +3,7 @@ layout: post
 title: "An Irish Air"
 date: 2015-10-24 17:46:58 +0000
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
 published: false
 ---

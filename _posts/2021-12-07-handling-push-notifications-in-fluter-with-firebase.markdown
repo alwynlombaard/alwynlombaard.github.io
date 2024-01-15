@@ -3,8 +3,8 @@ layout: post
 title: "Handling push notifications in Flutter with Firebase"
 date: 2021-12-08 00:00:00 +0000
 comments: true
-categories: Flutter
-tags: Flutter
+categories: flutter
+tags: flutter
 author: Alwyn Lombaard
 published: false
 excerpt_separator: <!--more-->

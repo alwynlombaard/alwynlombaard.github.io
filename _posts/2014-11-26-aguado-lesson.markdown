@@ -3,7 +3,7 @@ layout: post
 title: "Lesson in A minor - Aguado"
 date: 2014-11-26 22:31:09 +0000
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
 published: false
 ---

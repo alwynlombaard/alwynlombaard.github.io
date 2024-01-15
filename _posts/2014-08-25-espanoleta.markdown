@@ -3,7 +3,7 @@ layout: post
 title: "Españoleta"
 date: 2014-08-25 20:44:56 +0100
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
 published: false
 ---

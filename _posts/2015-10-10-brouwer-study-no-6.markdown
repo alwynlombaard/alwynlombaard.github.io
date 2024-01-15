@@ -3,7 +3,7 @@ layout: post
 title: "Brouwer Study No 6"
 date: 2015-10-11 13:35:32 +0000
 comments: false
-categories: guitar
+categories: Guitar
 author: Alwyn Lombaard
 published: false
 ---

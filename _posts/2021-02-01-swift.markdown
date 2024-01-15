@@ -4,7 +4,7 @@ title: "Swift Notes"
 date: 2015-01-01 00:00:00 +0000
 comments: true
 categories: iOS
-tags: Swift
+tags: swift
 author: Alwyn Lombaard
 published: false
 excerpt_separator: <!--more-->
