@@ -6,6 +6,7 @@ comments: false
 categories: athletics
 published: true 
 author: Alwyn Lombaard
+is_pinned: true
 ---
 
 <video width="100%" controls muted>
