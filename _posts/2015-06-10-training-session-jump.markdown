@@ -5,6 +5,7 @@ date: 2015-06-09 10:31:55 +0000
 comments: false
 categories: athletics
 author: Alwyn Lombaard
+published: false
 ---
 Screwed up the most important part of the runup. The curve and the last 3 strides (and pretty much the entire runup).
 <video width="100%" controls muted>
