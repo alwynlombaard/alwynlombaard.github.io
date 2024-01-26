@@ -11,8 +11,4 @@ is_pinned: true
 <audio controls>
   <source src="/music/Bach_Prelude_for_Lute_BWV999_20180415_150053.mp3" type="audio/mpeg">
 </audio>
-
-
-
-
->Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar. 
+>Recorded during my practice session.

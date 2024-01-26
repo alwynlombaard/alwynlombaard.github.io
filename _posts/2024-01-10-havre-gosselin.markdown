@@ -13,5 +13,4 @@ is_pinned: false
 <audio controls>
   <source src="/music/havre gosselin.mp3" type="audio/mpeg">
 </audio>
-
->Recorded during my practice. My recordings are aimed at documenting my development while learning to play guitar. 
+>Recorded during my practice session. 
